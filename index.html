@@ -23,10 +23,26 @@
     />
     <link rel="manifest" href="/site.webmanifest" />
     <!-- Styles -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>ShowDown!</title>
   </head>
   <body>
+    <div class="game-container">
+      <section id="first-half">
+        <h2>"<span id="first-half-search-term">Amazon</span>"</h2>
+        <p>has</p>
+        <span id="first-half-search-volume">2,700,000</span>
+        <p>average monthly searches</p>
+      </section>
+      <section id="second-half">
+        <h2>"<span id="second-half-search-term">Amazon</span>"</h2>
+        <p>has</p>
+        <button id="higher-btn">Higher</button>
+        <button id="lower-btn">Lower</button>
+        <span id="first-half-search-volume"></span>
+        <p>average monthly searches</p>
+      </section>
+    </div>
     <!-- JavaScript -->
     <script src="script.js"></script>
   </body>
