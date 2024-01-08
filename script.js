@@ -61,6 +61,10 @@ document.addEventListener("DOMContentLoaded", function () {
   resetGame();
 });
 
+function generateRandomNumber() {
+  return Math.floor(Math.random() * searchData.length);
+}
+
 /**
  * Fully reset the game, the firstHalfSearchTerm, secondHalfSearchTerm, firstHalfSearchVolume..............
  */
@@ -81,12 +85,11 @@ function resetGame() {
   let searchName = document.getElementById("search-name");
 
   // Generate 2 random numbers
-  let randomNumber1 = Math.floor(Math.random() * searchData.length);
-  let randomNumber2 = Math.floor(Math.random() * searchData.length);
+  let randomNumber1 = generateRandomNumber();
+  let randomNumber2 = generateRandomNumber();
   // Make sure the random numbers are not the same
-  if (randomNumber2 === randomNumber1) {
-    randomNumber2 + 2;
-    return randomNumber2;
+  while (randomNumber2 === randomNumber1) {
+    randomNumber2 = generateRandomNumber();
   }
 
   firstHalfSearchTerm.textContent = searchData[randomNumber1].searchTerm;
