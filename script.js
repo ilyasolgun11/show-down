@@ -35,13 +35,6 @@ const searchData = [
     imageOwnerUrl: "https://www.hdwallpapers.net/community/kelso",
   },
   {
-    searchTerm: "Mad Men",
-    searchVolume: 550000,
-    image: "assets/images/mad-men.webp",
-    imageOwnerName: "mezclaconfusa",
-    imageOwnerUrl: "https://www.flickr.com/photos/59087292@N07/",
-  },
-  {
     searchTerm: "Cancer",
     searchVolume: 824000,
     image: "assets/images/cancer.webp",
@@ -60,6 +53,8 @@ const searchData = [
 document.addEventListener("DOMContentLoaded", function () {
   resetGame();
 });
+
+let comparedPairs = [];
 
 /**
  * Generates a random number based on the length of the search data array
@@ -117,7 +112,6 @@ function resetGame() {
 }
 
 // Loop over buttons and see which one is clicked, based on higher or lower fire off choseHigher or choseLower functions
-
 let buttons = document.querySelectorAll(".btn");
 buttons.forEach((button) => {
   button.addEventListener("click", function () {
@@ -130,10 +124,6 @@ buttons.forEach((button) => {
     }
   });
 });
-
-// firstHalfSearchTerm.textContent = searchData[randomNumber2].searchTerm;
-//         firstHalfSearchVolume.textContent =
-//           searchData[randomNumber2].searchVolume;
 
 function choseHigher() {
   if (
