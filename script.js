@@ -43,7 +43,7 @@ const searchData = [
   },
   {
     searchTerm: "Cancer",
-    searchVolume: 823000,
+    searchVolume: 824000,
     image: "assets/images/cancer.webp",
     imageOwnerName: "NIH Image Gallery",
     imageOwnerUrl: "https://www.flickr.com/photos/nihgov/",
@@ -98,7 +98,6 @@ function resetGame() {
   // Generate 2 random numbers
   randomNumber1 = generateRandomNumber();
   randomNumber2 = generateRandomNumber();
-  console.log(randomNumber1, randomNumber2);
   // Make sure the random numbers are not the same
   while (randomNumber2 === randomNumber1) {
     randomNumber2 = generateRandomNumber();
@@ -108,7 +107,6 @@ function resetGame() {
   firstHalfSearchTerm.textContent = searchData[randomNumber1].searchTerm;
   secondHalfSearchTerm.textContent = searchData[randomNumber2].searchTerm;
   firstHalfSearchVolume.textContent = searchData[randomNumber1].searchVolume;
-
   firstHalf.style.backgroundImage = `url(${searchData[randomNumber1].image})`;
   secondHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
   searchName.textContent = searchData[randomNumber1].searchTerm;
@@ -119,6 +117,7 @@ function resetGame() {
 }
 
 // Loop over buttons and see which one is clicked, based on higher or lower fire off choseHigher or choseLower functions
+
 let buttons = document.querySelectorAll(".btn");
 buttons.forEach((button) => {
   button.addEventListener("click", function () {
@@ -132,73 +131,146 @@ buttons.forEach((button) => {
   });
 });
 
-function IntervalAnimate(num1, num2) {
-  const interval = setInterval(() => {
-    if (num1 > num2) {
-      clearInterval(interval);
-    } else {
-      secondHalfSearchVolume.textContent = num1;
-      num1 += 5;
-    }
-  }, 0.1);
-}
-
 // firstHalfSearchTerm.textContent = searchData[randomNumber2].searchTerm;
 //         firstHalfSearchVolume.textContent =
 //           searchData[randomNumber2].searchVolume;
 
 function choseHigher() {
   if (
-    searchData[randomNumber1].searchVolume <
-    searchData[randomNumber2].searchVolume
+    Number(searchData[randomNumber1].searchVolume) <
+    Number(searchData[randomNumber2].searchVolume)
   ) {
+    console.log(randomNumber1);
+    higherChoice.style.display = "none";
+    lowerChoice.style.display = "none";
+    secondHalfSearchVolume.style.display = "block";
+    let guess = Number(searchData[randomNumber2].searchVolume - 350);
+    searchNameContainer.textContent = "average monthly searches";
+    const interval = setInterval(() => {
+      if (guess > Number(searchData[randomNumber2].searchVolume)) {
+        correctAnswer.classList.add("show");
+        correctAnswer.innerHTML = '<i class="fa-solid fa-check"></i>';
+        setTimeout(() => {
+          correctAnswer.classList.remove("show");
+          firstHalfSearchTerm.textContent =
+            searchData[randomNumber2].searchTerm;
+
+          firstHalfSearchVolume.textContent = Number(
+            searchData[randomNumber2].searchVolume
+          );
+          firstHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
+          randomNumber2 = generateRandomNumber();
+          randomNumber1 = generateRandomNumber();
+          while (randomNumber2 === randomNumber1) {
+            randomNumber2 = generateRandomNumber();
+          }
+          secondHalfSearchTerm.textContent =
+            searchData[randomNumber2].searchTerm;
+
+          secondHalfSearchVolume.textContent = Number(
+            searchData[randomNumber2].searchVolume
+          );
+          secondHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
+          higherChoice.style.display = "block";
+          lowerChoice.style.display = "block";
+          secondHalfSearchVolume.style.display = "none";
+          searchNameContainer.textContent = "searches than ";
+          searchName.textContent = searchData[randomNumber1].searchTerm;
+        }, 1000);
+        console.log("ITERATION DONE");
+        clearInterval(interval);
+      } else {
+        console.log("ITERATING...");
+        secondHalfSearchVolume.textContent = guess;
+        guess += 5;
+      }
+    }, 0.1);
+    console.log("Correct!");
+  } else {
     higherChoice.style.display = "none";
     lowerChoice.style.display = "none";
     let guess = searchData[randomNumber2].searchVolume - 350;
     const interval = setInterval(() => {
       if (guess > searchData[randomNumber2].searchVolume) {
-        correctAnswer.classList.add("show");
+        wrongAnswer.classList.add("show");
+        wrongAnswer.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+        console.log("Game over");
         clearInterval(interval);
       } else {
         secondHalfSearchVolume.textContent = guess;
         guess += 5;
       }
     }, 0.1);
-
-    console.log("Correct!");
-  } else {
     console.log("Wrong...");
   }
 }
 
 function choseLower() {
   if (
-    searchData[randomNumber1].searchVolume >
-    searchData[randomNumber2].searchVolume
+    Number(searchData[randomNumber1].searchVolume) >
+    Number(searchData[randomNumber2].searchVolume)
   ) {
+    console.log(randomNumber1);
+    higherChoice.style.display = "none";
+    lowerChoice.style.display = "none";
+    secondHalfSearchVolume.style.display = "block";
+    let guess = Number(searchData[randomNumber2].searchVolume - 350);
+    searchNameContainer.textContent = "average monthly searches";
+    const interval = setInterval(() => {
+      if (guess > Number(searchData[randomNumber2].searchVolume)) {
+        correctAnswer.classList.add("show");
+        correctAnswer.innerHTML = '<i class="fa-solid fa-check"></i>';
+        setTimeout(() => {
+          correctAnswer.classList.remove("show");
+          firstHalfSearchTerm.textContent =
+            searchData[randomNumber2].searchTerm;
+
+          firstHalfSearchVolume.textContent = Number(
+            searchData[randomNumber2].searchVolume
+          );
+          firstHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
+          randomNumber2 = generateRandomNumber();
+          randomNumber1 = generateRandomNumber();
+          while (randomNumber2 === randomNumber1) {
+            randomNumber2 = generateRandomNumber();
+          }
+          secondHalfSearchTerm.textContent =
+            searchData[randomNumber2].searchTerm;
+
+          secondHalfSearchVolume.textContent = Number(
+            searchData[randomNumber2].searchVolume
+          );
+          secondHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
+          higherChoice.style.display = "block";
+          lowerChoice.style.display = "block";
+          secondHalfSearchVolume.style.display = "none";
+          searchNameContainer.textContent = "searches than ";
+          searchName.textContent = searchData[randomNumber1].searchTerm;
+        }, 1000);
+        console.log("ITERATION DONE");
+        clearInterval(interval);
+      } else {
+        console.log("ITERATING...");
+        secondHalfSearchVolume.textContent = guess;
+        guess += 5;
+      }
+    }, 0.1);
     console.log("Correct!");
   } else {
+    higherChoice.style.display = "none";
+    lowerChoice.style.display = "none";
+    let guess = searchData[randomNumber2].searchVolume - 350;
+    const interval = setInterval(() => {
+      if (guess > searchData[randomNumber2].searchVolume) {
+        wrongAnswer.classList.add("show");
+        wrongAnswer.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+        console.log("Game over");
+        clearInterval(interval);
+      } else {
+        secondHalfSearchVolume.textContent = guess;
+        guess += 5;
+      }
+    }, 0.1);
     console.log("Wrong...");
   }
 }
-
-//
-// higherChoice.addEventListener("click", function () {
-//   let guess = searchData[randomNumber2].searchVolume - 350;
-//   if (
-//     searchData[randomNumber1].searchVolume <
-//     searchData[randomNumber2].searchVolume
-//   ) {
-//     higherChoice.style.display = "none";
-//     lowerChoice.style.display = "none";
-//     searchNameContainer.textContent = "average monthly searches";
-//     IntervalAnimate(guess, searchData[randomNumber2].searchVolume);
-//     console.log("You have won");
-//   } else {
-//     higherChoice.style.display = "none";
-//     lowerChoice.style.display = "none";
-//     searchNameContainer.textContent = "average monthly searches";
-//     IntervalAnimate(guess, searchData[randomNumber2].searchVolume);
-//     console.log("You have lost");
-//   }
-// });
