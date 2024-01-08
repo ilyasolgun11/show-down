@@ -28,12 +28,17 @@
   </head>
   <body>
     <div class="game-container">
+      <div id="correct-answer">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div id="wrong-answer"></div>
       <section id="first-half">
         <div class="overlay"></div>
         <h2>"<span id="first-half-search-term"></span>"</h2>
         <p>has</p>
         <span id="first-half-search-volume"></span>
         <p>average monthly searches</p>
+
         <div class="first-half-credit-container">
           <a target="_blank" id="image-owner-link-1"
             >Image by <span id="image-owner-name-1"></span
@@ -57,7 +62,11 @@
         </div>
       </section>
     </div>
-
+    <!-- Font awesome  -->
+    <script
+      src="https://kit.fontawesome.com/a4f987afa2.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- JavaScript -->
     <script type="module" src="script.js"></script>
   </body>

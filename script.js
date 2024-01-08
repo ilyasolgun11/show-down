@@ -88,6 +88,8 @@ let imageOwnerName2 = document.getElementById("image-owner-name-2");
 let imageOwnerLink2 = document.getElementById("image-owner-link-2");
 let higherChoice = document.getElementById("higher-btn");
 let lowerChoice = document.getElementById("lower-btn");
+let correctAnswer = document.getElementById("correct-answer");
+let wrongAnswer = document.getElementById("wrong-answer");
 
 /**
  * Fully resets the game, the firstHalfSearchTerm, secondHalfSearchTerm, firstHalfSearchVolume..............
@@ -155,6 +157,7 @@ function choseHigher() {
     let guess = searchData[randomNumber2].searchVolume - 350;
     const interval = setInterval(() => {
       if (guess > searchData[randomNumber2].searchVolume) {
+        correctAnswer.classList.add("show");
         clearInterval(interval);
       } else {
         secondHalfSearchVolume.textContent = guess;
