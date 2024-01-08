@@ -16,16 +16,16 @@ const searchData = [
   {
     searchTerm: "Water Polo",
     searchVolume: 60500,
-    image: "bassets/images/uilder.webp",
+    image: "assets/images/water-polo.webp",
     imageOwnerName: "Garry Knight",
     imageOwnerUrl: "https://www.flickr.com/photos/garryknight/",
   },
   {
-    searchTerm: "Downton Abbey",
-    searchVolume: 673000,
-    image: "assets/images/builder.webp",
-    imageOwnerName: "Garry Knight",
-    imageOwnerUrl: "https://www.flickr.com/photos/garryknight/",
+    searchTerm: "Kuala Lumpur",
+    searchVolume: 550000,
+    image: "assets/images/kuala-lumpur.webp",
+    imageOwnerName: "Jorge Láscar",
+    imageOwnerUrl: "https://www.flickr.com/photos/jlascar/",
   },
   {
     searchTerm: "Breaking Bad",
@@ -73,18 +73,26 @@ function resetGame() {
   let firstHalfSearchVolume = document.getElementById(
     "first-half-search-volume"
   );
-  let secondHalfSearchVolume = document.getElementById(
-    "second-half-search-volume"
-  );
-  let higherBtn = document.getElementById("higher-btn");
-  let lowerBtn = document.getElementById("lower-btn");
+  //   let secondHalfSearchVolume = document.getElementById(
+  //     "second-half-search-volume"
+  //   );
+  //   let higherBtn = document.getElementById("higher-btn");
+  //   let lowerBtn = document.getElementById("lower-btn");
+  let searchName = document.getElementById("search-name");
 
   // Generate 2 random numbers
   let randomNumber1 = Math.floor(Math.random() * searchData.length);
   let randomNumber2 = Math.floor(Math.random() * searchData.length);
+  // Make sure the random numbers are not the same
+  if (randomNumber2 === randomNumber1) {
+    randomNumber2 + 2;
+    return randomNumber2;
+  }
 
   firstHalfSearchTerm.textContent = searchData[randomNumber1].searchTerm;
   secondHalfSearchTerm.textContent = searchData[randomNumber2].searchTerm;
   firstHalfSearchVolume.textContent = searchData[randomNumber1].searchVolume;
   firstHalf.style.backgroundImage = `url(${searchData[randomNumber1].image})`;
+  secondHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
+  searchName.textContent = searchData[randomNumber1].searchTerm;
 }

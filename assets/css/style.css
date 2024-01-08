@@ -6,6 +6,7 @@ body {
 }
 
 .game-container {
+  margin: 0px;
   background-color: black;
   display: flex;
   width: 100%;
@@ -58,16 +59,24 @@ body {
 
 #higher-btn,
 #lower-btn {
+  color: white;
   font-size: 1.3rem;
   font-weight: 600;
   padding: 15px 60px;
   border-radius: 80px;
   margin-top: 10px;
-  border: 2px solid black;
+  border: 2px solid rgb(255, 255, 255);
   background-color: transparent;
   cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 #lower-btn {
   margin-bottom: 10px;
+}
+
+#higher-btn:hover,
+#lower-btn:hover {
+  background-color: white;
+  color: black;
 }
