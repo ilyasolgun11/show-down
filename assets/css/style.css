@@ -6,6 +6,7 @@ body {
 }
 
 .game-container {
+  background-color: black;
   display: flex;
   width: 100%;
   height: 100vh;
@@ -13,16 +14,28 @@ body {
 
 #first-half,
 #second-half {
-  width: 100%;
-  height: 100%;
+  background: url("") center/cover no-repeat;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
 }
 
 #first-half h2,
 #second-half h2 {
+  color: white;
   font-size: 3rem;
   margin: 0px;
   margin-top: 20px;
@@ -30,12 +43,14 @@ body {
 
 #first-half p,
 #second-half p {
+  color: white;
   font-size: 1.2rem;
   margin: 5px;
 }
 
 #first-half-search-volume,
 #second-half-search-volume {
+  color: white;
   font-size: 4rem;
   letter-spacing: 1px;
   font-weight: 700;

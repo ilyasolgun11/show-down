@@ -2,56 +2,56 @@ const searchData = [
   {
     searchTerm: "Grenfell Tower",
     searchVolume: 550000,
-    image: "grenfell-tower.webp",
+    image: "assets/images/grenfell-tower.webp",
     imageOwnerName: "ChiralJon",
     imageOwnerUrl: "https://www.flickr.com/photos/69057297@N04/",
   },
   {
     searchTerm: "Builder",
     searchVolume: 74000,
-    image: "builder.webp",
+    image: "assets/images/builder.webp",
     imageOwnerName: "Garry Knight",
     imageOwnerUrl: "https://www.flickr.com/photos/garryknight/",
   },
   {
     searchTerm: "Water Polo",
     searchVolume: 60500,
-    image: "builder.webp",
+    image: "bassets/images/uilder.webp",
     imageOwnerName: "Garry Knight",
     imageOwnerUrl: "https://www.flickr.com/photos/garryknight/",
   },
   {
     searchTerm: "Downton Abbey",
     searchVolume: 673000,
-    image: "builder.webp",
+    image: "assets/images/builder.webp",
     imageOwnerName: "Garry Knight",
     imageOwnerUrl: "https://www.flickr.com/photos/garryknight/",
   },
   {
     searchTerm: "Breaking Bad",
     searchVolume: 2240000,
-    image: "builder.webp",
+    image: "assets/images/builder.webp",
     imageOwnerName: "Garry Knight",
     imageOwnerUrl: "https://www.flickr.com/photos/garryknight/",
   },
   {
     searchTerm: "Mad Men",
     searchVolume: 550000,
-    image: "builder.webp",
+    image: "assets/images/builder.webp",
     imageOwnerName: "Garry Knight",
     imageOwnerUrl: "https://www.flickr.com/photos/garryknight/",
   },
   {
     searchTerm: "Cancer",
     searchVolume: 823000,
-    image: "builder.webp",
+    image: "assets/images/builder.webp",
     imageOwnerName: "Garry Knight",
     imageOwnerUrl: "https://www.flickr.com/photos/garryknight/",
   },
   {
     searchTerm: "Kobe Bryant",
     searchVolume: 823000,
-    image: "builder.webp",
+    image: "assets/images/builder.webp",
     imageOwnerName: "Garry Knight",
     imageOwnerUrl: "https://www.flickr.com/photos/garryknight/",
   },
@@ -86,5 +86,5 @@ function resetGame() {
   firstHalfSearchTerm.textContent = searchData[randomNumber1].searchTerm;
   secondHalfSearchTerm.textContent = searchData[randomNumber2].searchTerm;
   firstHalfSearchVolume.textContent = searchData[randomNumber1].searchVolume;
-  firstHalf.style.backgroundImage = `url(${2})`;
+  firstHalf.style.backgroundImage = `url(${searchData[randomNumber1].image})`;
 }
