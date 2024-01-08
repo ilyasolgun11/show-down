@@ -134,6 +134,13 @@ body {
   color: black;
 }
 
+.hide-btn {
+  visibility: hidden;
+  font-size: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
 .score-container {
   display: flex;
   align-items: center;

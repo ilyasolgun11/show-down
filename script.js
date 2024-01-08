@@ -51,100 +51,19 @@ const searchData = [
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
-  resetGame();
+  startGame();
 });
 
-/**
- * Generates a random number based on the length of the search data array
- */
-function generateRandomNumber() {
-  return Math.floor(Math.random() * searchData.length);
-}
-
-let randomNumber1;
-let randomNumber2;
-
-// Grabbing Elements necessary from the DOM
-let firstHalf = document.getElementById("first-half");
-let secondHalf = document.getElementById("second-half");
-let firstHalfSearchTerm = document.getElementById("first-half-search-term");
-let secondHalfSearchTerm = document.getElementById("second-half-search-term");
-let firstHalfSearchVolume = document.getElementById("first-half-search-volume");
-let secondHalfSearchVolume = document.getElementById(
-  "second-half-search-volume"
-);
-let searchName = document.getElementById("search-name");
-let searchNameContainer = document.getElementById("search-name-container");
-let imageOwnerName1 = document.getElementById("image-owner-name-1");
-let imageOwnerLink1 = document.getElementById("image-owner-link-1");
-let imageOwnerName2 = document.getElementById("image-owner-name-2");
-let imageOwnerLink2 = document.getElementById("image-owner-link-2");
-let higherChoice = document.getElementById("higher-btn");
-let lowerChoice = document.getElementById("lower-btn");
-let correctAnswer = document.getElementById("correct-answer");
-let wrongAnswer = document.getElementById("wrong-answer");
-
-/**
- * Fully resets the game
- */
-function resetGame() {
-  // Generate 2 random numbers
-  randomNumber1 = generateRandomNumber();
-  randomNumber2 = generateRandomNumber();
-  console.log(randomNumber1, randomNumber2);
-  // Make sure the random numbers are not the same
-  while (randomNumber2 === randomNumber1) {
-    randomNumber2 = generateRandomNumber();
-  }
-  console.log(randomNumber1, randomNumber2);
-
-  // Set the game based on data from searchData[randomNumber1] and searchData[randomNumber2]
-  // First half Elements
-  firstHalfSearchTerm.textContent = searchData[randomNumber1].searchTerm;
-  firstHalfSearchVolume.textContent = searchData[randomNumber1].searchVolume;
-  firstHalf.style.backgroundImage = `url(${searchData[randomNumber1].image})`;
-  imageOwnerName1.textContent = searchData[randomNumber1].imageOwnerName;
-  imageOwnerLink1.setAttribute("href", searchData[randomNumber1].imageOwnerUrl);
-  // Second Half Elements
-  secondHalfSearchTerm.textContent = searchData[randomNumber2].searchTerm;
-  secondHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
-  searchName.textContent = searchData[randomNumber1].searchTerm;
-  imageOwnerName2.textContent = searchData[randomNumber2].imageOwnerName;
-  imageOwnerLink2.setAttribute("href", searchData[randomNumber2].imageOwnerUrl);
-}
+function startGame() {}
 
 // Loop over buttons and see which one is clicked, based on higher or lower fire off choseHigher or choseLower functions
-let buttons = document.querySelectorAll(".btn");
+const buttons = document.querySelectorAll(".btn");
 buttons.forEach((button) => {
   button.addEventListener("click", function () {
     if (button.getAttribute("data-type") === "higher") {
-      choseHigher();
+      console.log("You clicked Higher");
     } else if (button.getAttribute("data-type") === "lower") {
-      choseLower();
-    } else {
-      console.log("idk");
+      console.log("You clicked Lower");
     }
   });
 });
-
-function choseHigher() {
-  if (
-    searchData[randomNumber1].searchVolume <
-    searchData[randomNumber2].searchVolume
-  ) {
-    console.log("Correct!");
-  } else {
-    console.log("Wrong...");
-  }
-}
-
-function choseLower() {
-  if (
-    searchData[randomNumber1].searchVolume >
-    searchData[randomNumber2].searchVolume
-  ) {
-    console.log("Correct!");
-  } else {
-    console.log("Wrong...");
-  }
-}
