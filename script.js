@@ -198,6 +198,8 @@ buttons.forEach((button) => {
           if (guess > secondHalfSearchVolumeValue) {
             setTimeout(() => {
               startGame();
+              score = 0;
+              currentScore.textContent = 0;
             }, 1000);
             wrongAnswerBox.classList.add("show");
             clearInterval(interval);
@@ -239,6 +241,8 @@ buttons.forEach((button) => {
           if (guess > secondHalfSearchVolumeValue) {
             setTimeout(() => {
               startGame();
+              score = 0;
+              currentScore.textContent = 0;
             }, 1000);
             wrongAnswerBox.classList.add("show");
             clearInterval(interval);
