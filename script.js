@@ -83,6 +83,10 @@ function resetGame() {
   //   let higherBtn = document.getElementById("higher-btn");
   //   let lowerBtn = document.getElementById("lower-btn");
   let searchName = document.getElementById("search-name");
+  let imageOwnerName1 = document.getElementById("image-owner-name-1");
+  let imageOwnerLink1 = document.getElementById("image-owner-link-1");
+  let imageOwnerName2 = document.getElementById("image-owner-name-2");
+  let imageOwnerLink2 = document.getElementById("image-owner-link-2");
 
   // Generate 2 random numbers
   let randomNumber1 = generateRandomNumber();
@@ -98,4 +102,8 @@ function resetGame() {
   firstHalf.style.backgroundImage = `url(${searchData[randomNumber1].image})`;
   secondHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
   searchName.textContent = searchData[randomNumber1].searchTerm;
+  imageOwnerName1.textContent = searchData[randomNumber1].imageOwnerName;
+  imageOwnerLink1.setAttribute("href", searchData[randomNumber1].imageOwnerUrl);
+  imageOwnerName2.textContent = searchData[randomNumber2].imageOwnerName;
+  imageOwnerLink2.setAttribute("href", searchData[randomNumber2].imageOwnerUrl);
 }
