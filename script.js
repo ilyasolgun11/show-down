@@ -55,6 +55,7 @@ let firstHalfSearchVolumeValue;
 let secondHalfSearchVolumeValue;
 let randomNumber1;
 let randomNumber2;
+let score = 0;
 
 /**
  * Start game when the window loads
@@ -81,6 +82,14 @@ let secondHalfSearchVolume = document.getElementById(
   "second-half-search-volume"
 );
 let secondHalf = document.getElementById("second-half");
+// Grab correct and wrong answer boxes from DOM
+let correctAnswerBox = document.getElementById("correct-answer");
+let wrongAnswerBox = document.getElementById("wrong-answer");
+// Grab score count variable from DOM
+let currentScore = document.getElementById("current-score");
+// Grab buttons from DOM
+let higherBtn = document.getElementById("higher-btn");
+let lowerBtn = document.getElementById("lower-btn");
 
 function startGame() {
   // Generate 2 random numbers
@@ -109,8 +118,28 @@ buttons.forEach((button) => {
   button.addEventListener("click", function () {
     if (button.getAttribute("data-type") === "higher") {
       if (firstHalfSearchVolumeValue < secondHalfSearchVolumeValue) {
-        // Trigger the guessedCorrect function
-        guessedCorrect();
+        let guess = secondHalfSearchVolumeValue - 350;
+        // Remove buttons when clicked
+        higherBtn.classList.add("hide-btn");
+        lowerBtn.classList.add("hide-btn");
+        // Add interval animation so that it counts up
+        const interval = setInterval(() => {
+          if (guess > secondHalfSearchVolumeValue) {
+            // Set time between the correctAnswerBox is showing and disappearing
+            // When it disappears trigger the guessed correct function
+            setTimeout(() => {
+              guessedCorrect();
+              higherBtn.classList.remove("hide-btn");
+              lowerBtn.classList.remove("hide-btn");
+              correctAnswerBox.classList.remove("show");
+            }, 1000);
+            correctAnswerBox.classList.add("show");
+            clearInterval(interval);
+          } else {
+            secondHalfSearchVolume.textContent = guess;
+            guess += 5;
+          }
+        });
         console.log("Correct!");
       } else {
         console.log("Wrong");
@@ -118,8 +147,23 @@ buttons.forEach((button) => {
       console.log("You clicked Higher");
     } else if (button.getAttribute("data-type") === "lower") {
       if (firstHalfSearchVolumeValue > secondHalfSearchVolumeValue) {
+        let guess = secondHalfSearchVolumeValue - 350;
         // Trigger the guessedCorrect function
-        guessedCorrect();
+        const interval = setInterval(() => {
+          if (guess > secondHalfSearchVolumeValue) {
+            // Set time between the correctAnswerBox is showing and disappearing
+            // When it disappears trigger the guessed correct function
+            setTimeout(() => {
+              guessedCorrect();
+              correctAnswerBox.classList.remove("show");
+            }, 1000);
+            correctAnswerBox.classList.add("show");
+            clearInterval(interval);
+          } else {
+            secondHalfSearchVolume.textContent = guess;
+            guess += 5;
+          }
+        });
         console.log("Correct!");
       } else {
         console.log("Wrong!");
@@ -142,6 +186,10 @@ function guessedCorrect() {
   firstHalfSearchVolume.textContent = firstHalfSearchVolumeValue;
   firstHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
   console.log(randomNumber1, randomNumber2);
+
+  // Increment value for current score
+  score += 1;
+  currentScore.textContent = score;
 
   // Generate a new random number for the second half
   randomNumber2 = generateRandomNumber();
