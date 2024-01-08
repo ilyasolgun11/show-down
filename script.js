@@ -111,6 +111,11 @@ function startGame() {
   secondHalfSearchVolume.textContent = secondHalfSearchVolumeValue;
   secondHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
   hideSecondSearchVolume();
+  // Remove right and wrong box from DOM
+  correctAnswerBox.classList.remove("show");
+  wrongAnswerBox.classList.remove("show");
+  // Add buttons to game
+  showButtons();
 }
 
 /**
