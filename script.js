@@ -184,7 +184,6 @@ buttons.forEach((button) => {
             guess += 5;
           }
         });
-        console.log("Correct!");
       } else {
         showSecondSearchVolume();
         let guess = secondHalfSearchVolumeValue - 350;
@@ -203,7 +202,6 @@ buttons.forEach((button) => {
           }
         });
       }
-      console.log("You clicked Higher");
     } else if (button.getAttribute("data-type") === "lower") {
       if (firstHalfSearchVolumeValue > secondHalfSearchVolumeValue) {
         showSecondSearchVolume();
@@ -227,11 +225,24 @@ buttons.forEach((button) => {
             guess += 5;
           }
         });
-        console.log("Correct!");
       } else {
-        console.log("Wrong!");
+        showSecondSearchVolume();
+        let guess = secondHalfSearchVolumeValue - 350;
+        hideButtons();
+        // Add interval animation so that it counts up
+        const interval = setInterval(() => {
+          if (guess > secondHalfSearchVolumeValue) {
+            setTimeout(() => {
+              startGame();
+            }, 1000);
+            wrongAnswerBox.classList.add("show");
+            clearInterval(interval);
+          } else {
+            secondHalfSearchVolume.textContent = guess;
+            guess += 5;
+          }
+        });
       }
-      console.log("You clicked Lower");
     }
   });
 });
