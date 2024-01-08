@@ -110,6 +110,51 @@ function startGame() {
   secondHalfSearchVolumeValue = searchData[randomNumber2].searchVolume;
   secondHalfSearchVolume.textContent = secondHalfSearchVolumeValue;
   secondHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
+  hideSecondSearchVolume();
+}
+
+/**
+ * Hide Buttons
+ */
+function hideButtons() {
+  higherBtn.classList.add("hide-btn");
+  higherBtn.style.margin = "0px";
+  higherBtn.style.fontSize = "0.1px";
+  higherBtn.style.padding = "0px";
+  lowerBtn.classList.add("hide-btn");
+  lowerBtn.style.margin = "0px";
+  lowerBtn.style.fontSize = "0.1px";
+  lowerBtn.style.padding = "0px";
+}
+
+/**
+ * Show Buttons
+ */
+function showButtons() {
+  higherBtn.classList.remove("hide-btn");
+  higherBtn.style.margin = "";
+  higherBtn.style.fontSize = "";
+  higherBtn.style.padding = "";
+  lowerBtn.classList.remove("hide-btn");
+  lowerBtn.style.margin = "";
+  lowerBtn.style.fontSize = "";
+  lowerBtn.style.padding = "";
+}
+
+/**
+ * Hide second half search volume
+ */
+function hideSecondSearchVolume() {
+  secondHalfSearchVolume.style.visibility = "hidden";
+  secondHalfSearchVolume.style.fontSize = "0.1px";
+}
+
+/**
+ * Hide second half search volume
+ */
+function showSecondSearchVolume() {
+  secondHalfSearchVolume.style.visibility = "visible";
+  secondHalfSearchVolume.style.fontSize = "";
 }
 
 // Loop over buttons and see which one is clicked, based on higher or lower fire off choseHigher or choseLower functions
@@ -118,10 +163,9 @@ buttons.forEach((button) => {
   button.addEventListener("click", function () {
     if (button.getAttribute("data-type") === "higher") {
       if (firstHalfSearchVolumeValue < secondHalfSearchVolumeValue) {
+        showSecondSearchVolume();
         let guess = secondHalfSearchVolumeValue - 350;
-        // Remove buttons when clicked
-        higherBtn.classList.add("hide-btn");
-        lowerBtn.classList.add("hide-btn");
+        hideButtons();
         // Add interval animation so that it counts up
         const interval = setInterval(() => {
           if (guess > secondHalfSearchVolumeValue) {
@@ -129,8 +173,8 @@ buttons.forEach((button) => {
             // When it disappears trigger the guessed correct function
             setTimeout(() => {
               guessedCorrect();
-              higherBtn.classList.remove("hide-btn");
-              lowerBtn.classList.remove("hide-btn");
+              showButtons();
+              hideSecondSearchVolume();
               correctAnswerBox.classList.remove("show");
             }, 1000);
             correctAnswerBox.classList.add("show");
