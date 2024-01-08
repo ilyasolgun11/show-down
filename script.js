@@ -61,36 +61,42 @@ document.addEventListener("DOMContentLoaded", function () {
   resetGame();
 });
 
+/**
+ * Generates a random number based on the length of the search data array
+ */
 function generateRandomNumber() {
   return Math.floor(Math.random() * searchData.length);
 }
 
+let randomNumber1;
+let randomNumber2;
+
+// Grabbing Elements necessary from the DOM
+let firstHalf = document.getElementById("first-half");
+let secondHalf = document.getElementById("second-half");
+let firstHalfSearchTerm = document.getElementById("first-half-search-term");
+let secondHalfSearchTerm = document.getElementById("second-half-search-term");
+let firstHalfSearchVolume = document.getElementById("first-half-search-volume");
+let secondHalfSearchVolume = document.getElementById(
+  "second-half-search-volume"
+);
+let searchName = document.getElementById("search-name");
+let searchNameContainer = document.getElementById("search-name-container");
+let imageOwnerName1 = document.getElementById("image-owner-name-1");
+let imageOwnerLink1 = document.getElementById("image-owner-link-1");
+let imageOwnerName2 = document.getElementById("image-owner-name-2");
+let imageOwnerLink2 = document.getElementById("image-owner-link-2");
+let higherChoice = document.getElementById("higher-btn");
+let lowerChoice = document.getElementById("lower-btn");
+
 /**
- * Fully reset the game, the firstHalfSearchTerm, secondHalfSearchTerm, firstHalfSearchVolume..............
+ * Fully resets the game, the firstHalfSearchTerm, secondHalfSearchTerm, firstHalfSearchVolume..............
  */
 function resetGame() {
-  // Grabbing Elements necessary from the DOM
-  let firstHalf = document.getElementById("first-half");
-  let secondHalf = document.getElementById("second-half");
-  let firstHalfSearchTerm = document.getElementById("first-half-search-term");
-  let secondHalfSearchTerm = document.getElementById("second-half-search-term");
-  let firstHalfSearchVolume = document.getElementById(
-    "first-half-search-volume"
-  );
-  //   let secondHalfSearchVolume = document.getElementById(
-  //     "second-half-search-volume"
-  //   );
-  //   let higherBtn = document.getElementById("higher-btn");
-  //   let lowerBtn = document.getElementById("lower-btn");
-  let searchName = document.getElementById("search-name");
-  let imageOwnerName1 = document.getElementById("image-owner-name-1");
-  let imageOwnerLink1 = document.getElementById("image-owner-link-1");
-  let imageOwnerName2 = document.getElementById("image-owner-name-2");
-  let imageOwnerLink2 = document.getElementById("image-owner-link-2");
-
   // Generate 2 random numbers
-  let randomNumber1 = generateRandomNumber();
-  let randomNumber2 = generateRandomNumber();
+  randomNumber1 = generateRandomNumber();
+  randomNumber2 = generateRandomNumber();
+  console.log(randomNumber1, randomNumber2);
   // Make sure the random numbers are not the same
   while (randomNumber2 === randomNumber1) {
     randomNumber2 = generateRandomNumber();
@@ -99,6 +105,7 @@ function resetGame() {
   firstHalfSearchTerm.textContent = searchData[randomNumber1].searchTerm;
   secondHalfSearchTerm.textContent = searchData[randomNumber2].searchTerm;
   firstHalfSearchVolume.textContent = searchData[randomNumber1].searchVolume;
+
   firstHalf.style.backgroundImage = `url(${searchData[randomNumber1].image})`;
   secondHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
   searchName.textContent = searchData[randomNumber1].searchTerm;
@@ -107,3 +114,63 @@ function resetGame() {
   imageOwnerName2.textContent = searchData[randomNumber2].imageOwnerName;
   imageOwnerLink2.setAttribute("href", searchData[randomNumber2].imageOwnerUrl);
 }
+
+let buttons = document.querySelectorAll(".btn");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", function () {
+    if (button.getAttribute("data-type") === "higher") {
+      choseHigher();
+      console.log("This is the higher button");
+    } else if (button.getAttribute("data-type") === "lower") {
+      console.log("This is the lower button");
+    } else {
+      console.log("idk");
+    }
+  });
+});
+
+function choseHigher() {
+  if (
+    searchData[randomNumber1].searchVolume <
+    searchData[randomNumber2].searchVolume
+  ) {
+    console.log("Correct!");
+  } else {
+    console.log("Wrong...");
+  }
+}
+
+function choseLower() {}
+
+// function IntervalAnimate(num1, num2) {
+//   const interval = setInterval(() => {
+//     if (num1 > num2) {
+//       clearInterval(interval);
+//     } else {
+//       secondHalfSearchVolume.textContent = num1;
+//       num1 += 5;
+//     }
+//   }, 0.1);
+// }
+
+//
+// higherChoice.addEventListener("click", function () {
+//   let guess = searchData[randomNumber2].searchVolume - 350;
+//   if (
+//     searchData[randomNumber1].searchVolume <
+//     searchData[randomNumber2].searchVolume
+//   ) {
+//     higherChoice.style.display = "none";
+//     lowerChoice.style.display = "none";
+//     searchNameContainer.textContent = "average monthly searches";
+//     IntervalAnimate(guess, searchData[randomNumber2].searchVolume);
+//     console.log("You have won");
+//   } else {
+//     higherChoice.style.display = "none";
+//     lowerChoice.style.display = "none";
+//     searchNameContainer.textContent = "average monthly searches";
+//     IntervalAnimate(guess, searchData[randomNumber2].searchVolume);
+//     console.log("You have lost");
+//   }
+// });
