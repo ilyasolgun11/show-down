@@ -22,7 +22,7 @@ const searchData = [
   },
   {
     searchTerm: "Kuala Lumpur",
-    searchVolume: 550000,
+    searchVolume: 560000,
     image: "assets/images/kuala-lumpur.webp",
     imageOwnerName: "Jorge Láscar",
     imageOwnerUrl: "https://www.flickr.com/photos/jlascar/",
@@ -102,6 +102,7 @@ function resetGame() {
     randomNumber2 = generateRandomNumber();
   }
 
+  // Set the game based on data from searchData[randomNumber1] and searchData[randomNumber2]
   firstHalfSearchTerm.textContent = searchData[randomNumber1].searchTerm;
   secondHalfSearchTerm.textContent = searchData[randomNumber2].searchTerm;
   firstHalfSearchVolume.textContent = searchData[randomNumber1].searchVolume;
@@ -115,26 +116,52 @@ function resetGame() {
   imageOwnerLink2.setAttribute("href", searchData[randomNumber2].imageOwnerUrl);
 }
 
+// Loop over buttons and see which one is clicked, based on higher or lower fire off choseHigher or choseLower functions
 let buttons = document.querySelectorAll(".btn");
-
 buttons.forEach((button) => {
   button.addEventListener("click", function () {
     if (button.getAttribute("data-type") === "higher") {
       choseHigher();
-      console.log("This is the higher button");
     } else if (button.getAttribute("data-type") === "lower") {
-      console.log("This is the lower button");
+      choseLower();
     } else {
       console.log("idk");
     }
   });
 });
 
+function IntervalAnimate(num1, num2) {
+  const interval = setInterval(() => {
+    if (num1 > num2) {
+      clearInterval(interval);
+    } else {
+      secondHalfSearchVolume.textContent = num1;
+      num1 += 5;
+    }
+  }, 0.1);
+}
+
+// firstHalfSearchTerm.textContent = searchData[randomNumber2].searchTerm;
+//         firstHalfSearchVolume.textContent =
+//           searchData[randomNumber2].searchVolume;
+
 function choseHigher() {
   if (
     searchData[randomNumber1].searchVolume <
     searchData[randomNumber2].searchVolume
   ) {
+    higherChoice.style.display = "none";
+    lowerChoice.style.display = "none";
+    let guess = searchData[randomNumber2].searchVolume - 350;
+    const interval = setInterval(() => {
+      if (guess > searchData[randomNumber2].searchVolume) {
+        clearInterval(interval);
+      } else {
+        secondHalfSearchVolume.textContent = guess;
+        guess += 5;
+      }
+    }, 0.1);
+
     console.log("Correct!");
   } else {
     console.log("Wrong...");
@@ -151,17 +178,6 @@ function choseLower() {
     console.log("Wrong...");
   }
 }
-
-// function IntervalAnimate(num1, num2) {
-//   const interval = setInterval(() => {
-//     if (num1 > num2) {
-//       clearInterval(interval);
-//     } else {
-//       secondHalfSearchVolume.textContent = num1;
-//       num1 += 5;
-//     }
-//   }, 0.1);
-// }
 
 //
 // higherChoice.addEventListener("click", function () {
