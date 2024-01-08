@@ -141,7 +141,16 @@ function choseHigher() {
   }
 }
 
-function choseLower() {}
+function choseLower() {
+  if (
+    searchData[randomNumber1].searchVolume >
+    searchData[randomNumber2].searchVolume
+  ) {
+    console.log("Correct!");
+  } else {
+    console.log("Wrong...");
+  }
+}
 
 // function IntervalAnimate(num1, num2) {
 //   const interval = setInterval(() => {
