@@ -191,14 +191,18 @@ buttons.forEach((button) => {
       console.log("You clicked Higher");
     } else if (button.getAttribute("data-type") === "lower") {
       if (firstHalfSearchVolumeValue > secondHalfSearchVolumeValue) {
+        showSecondSearchVolume();
         let guess = secondHalfSearchVolumeValue - 350;
-        // Trigger the guessedCorrect function
+        hideButtons();
+        // Add interval animation so that it counts up
         const interval = setInterval(() => {
           if (guess > secondHalfSearchVolumeValue) {
             // Set time between the correctAnswerBox is showing and disappearing
             // When it disappears trigger the guessed correct function
             setTimeout(() => {
               guessedCorrect();
+              showButtons();
+              hideSecondSearchVolume();
               correctAnswerBox.classList.remove("show");
             }, 1000);
             correctAnswerBox.classList.add("show");
