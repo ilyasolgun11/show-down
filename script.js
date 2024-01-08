@@ -50,29 +50,37 @@ const searchData = [
   },
 ];
 
+// Set global variables so they can be accessed from anywhere
 let firstHalfSearchVolumeValue;
 let secondHalfSearchVolumeValue;
+let randomNumber1;
+let randomNumber2;
 
+/**
+ * Start game when the window loads
+ */
 document.addEventListener("DOMContentLoaded", function () {
   startGame();
 });
 
+/**
+ *
+ * Generate random number
+ */
 function generateRandomNumber() {
   return Math.floor(Math.random() * searchData.length);
 }
 
-// Declare 2 random numbers
-let randomNumber1;
-let randomNumber2;
-
 // Grab first half DOM elements
 let firstHalfSearchTerm = document.getElementById("first-half-search-term");
 let firstHalfSearchVolume = document.getElementById("first-half-search-volume");
+let firstHalf = document.getElementById("first-half");
 // Grab second half DOM elements
 let secondHalfSearchTerm = document.getElementById("second-half-search-term");
 let secondHalfSearchVolume = document.getElementById(
   "second-half-search-volume"
 );
+let secondHalf = document.getElementById("second-half");
 
 function startGame() {
   // Generate 2 random numbers
@@ -87,13 +95,12 @@ function startGame() {
   // Setting global variable value to searchData[randomNumber1].searchVolume
   firstHalfSearchVolumeValue = searchData[randomNumber1].searchVolume;
   firstHalfSearchVolume.textContent = firstHalfSearchVolumeValue;
+  firstHalf.style.backgroundImage = `url(${searchData[randomNumber1].image})`;
   secondHalfSearchTerm.textContent = searchData[randomNumber2].searchTerm;
   // Setting global variable value to searchData[randomNumber2].searchVolume
   secondHalfSearchVolumeValue = searchData[randomNumber2].searchVolume;
   secondHalfSearchVolume.textContent = secondHalfSearchVolumeValue;
-  console.log(`First value is ${searchData[randomNumber1].searchVolume}`);
-  console.log(`Second value is ${searchData[randomNumber2].searchVolume}`);
-  console.log("Game started");
+  secondHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
 }
 
 // Loop over buttons and see which one is clicked, based on higher or lower fire off choseHigher or choseLower functions
@@ -102,6 +109,7 @@ buttons.forEach((button) => {
   button.addEventListener("click", function () {
     if (button.getAttribute("data-type") === "higher") {
       if (firstHalfSearchVolumeValue < secondHalfSearchVolumeValue) {
+        // Trigger the guessedCorrect function
         guessedCorrect();
         console.log("Correct!");
       } else {
@@ -109,23 +117,37 @@ buttons.forEach((button) => {
       }
       console.log("You clicked Higher");
     } else if (button.getAttribute("data-type") === "lower") {
+      if (firstHalfSearchVolumeValue > secondHalfSearchVolumeValue) {
+        // Trigger the guessedCorrect function
+        guessedCorrect();
+        console.log("Correct!");
+      } else {
+        console.log("Wrong!");
+      }
       console.log("You clicked Lower");
     }
   });
 });
 
+/**
+ * If the user guesses correctly we trigger this function that switches over the elements
+ * that was in the secondHalf to the firstHalf and then creates a new random number for
+ * the second half, this number is then used to set the secondHalf new DOM elements in which
+ * the user can guess again.
+ */
 function guessedCorrect() {
+  // Shifting the content that was on the secondHalf to the firstHalf
   firstHalfSearchTerm.textContent = searchData[randomNumber2].searchTerm;
   firstHalfSearchVolumeValue = searchData[randomNumber2].searchVolume;
   firstHalfSearchVolume.textContent = firstHalfSearchVolumeValue;
-  console.log(
-    `first half search volume is now ${searchData[randomNumber2].searchVolume}`
-  );
+  firstHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
+  console.log(randomNumber1, randomNumber2);
+
+  // Generate a new random number for the second half
   randomNumber2 = generateRandomNumber();
+  // Set the secondHalf DOM elements with the new random number
   secondHalfSearchTerm.textContent = searchData[randomNumber2].searchTerm;
   secondHalfSearchVolumeValue = searchData[randomNumber2].searchVolume;
   secondHalfSearchVolume.textContent = secondHalfSearchVolumeValue;
-  console.log(
-    `The second half search volume is now ${searchData[randomNumber2].searchVolume}`
-  );
+  secondHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
 }
