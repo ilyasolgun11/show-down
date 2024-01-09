@@ -206,6 +206,11 @@ body {
   gap: 1rem;
 }
 
+#fail-screen .copyright {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
 .socials i:hover {
   color: rgb(29, 165, 24);
   cursor: pointer;

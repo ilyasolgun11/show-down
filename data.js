@@ -364,4 +364,34 @@ let fansData = [
     imageOwnerUrl:
       "https://commons.wikimedia.org/wiki/File:Crystal_Palace_F.C._versus_Lewes.jpg",
   },
+  {
+    searchTerm: "Galatasaray",
+    searchVolume: 15000000,
+    image: "assets/images/fansmode/galatasaray.webp",
+    imageOwnerName: "l3o_",
+    imageOwnerUrl: "https://www.flickr.com/photos/134803508@N03/30262743530",
+  },
+  {
+    searchTerm: "Fenerbahce",
+    searchVolume: 14800000,
+    image: "assets/images/fansmode/fenerbahce.webp",
+    imageOwnerName: "TURKPIX",
+    imageOwnerUrl: "https://www.flickr.com/photos/89628381@N03/14140712356",
+  },
+  {
+    searchTerm: "Beşiktaş",
+    searchVolume: 9200000,
+    image: "assets/images/fansmode/besiktas.webp",
+    imageOwnerName: "Biso",
+    imageOwnerUrl:
+      "https://commons.wikimedia.org/wiki/File:Be%C5%9Fikta%C5%9F_J.K.JPG",
+  },
+  {
+    searchTerm: "Trabzonspor",
+    searchVolume: 7300000,
+    image: "assets/images/fansmode/trabzonspor.webp",
+    imageOwnerName: "Biso",
+    imageOwnerUrl:
+      "https://commons.wikimedia.org/wiki/File:Be%C5%9Fikta%C5%9F_J.K.JPG",
+  },
 ];
