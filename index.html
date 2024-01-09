@@ -28,12 +28,44 @@
   </head>
   <body>
     <div class="game-container">
+      <div id="main-menu">
+        <div class="logo-section">
+          <img
+            class="main-menu-logo"
+            src="assets/images/logo.png"
+            alt="Game logo"
+          />
+        </div>
+        <div class="introduction-section">
+          <h3>What is Show Down?</h3>
+          <p>
+            You have to guess whether something had less or more google searches
+            in the past month!
+          </p>
+        </div>
+        <div class="game-modes-container">
+          <h3>Game modes</h3>
+          <div class="game-modes">
+            <div class="game-modes-overlay"></div>
+            <div class="random-mode" id="random-mode">
+              <h2>Random</h2>
+            </div>
+            <div class="fans-mode" id="fans-mode">
+              <h2>Fans</h2>
+            </div>
+            <div class="random-mode">
+              <h2>Random</h2>
+            </div>
+          </div>
+        </div>
+      </div>
       <div id="fail-screen">
         <img class="pop-up-logo" src="assets/images/logo.png" alt="Game logo" />
         <h3>You scored:</h3>
         <span id="failed-at-score"></span>
         <p id="congrats-message"></p>
         <button id="failed-screen-play-again">Play Again</button>
+        <button id="failed-screen-main-menu">Main Menu</button>
         <div class="socials">
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-facebook"></i>

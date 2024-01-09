@@ -291,3 +291,22 @@ let searchData = [
     imageOwnerUrl: "https://www.flickr.com/photos/ebayink/3440028348",
   },
 ];
+
+let fansData = [
+  {
+    searchTerm: "Manchester United",
+    searchVolume: 82000000,
+  },
+  {
+    searchTerm: "Chelsea",
+    searchVolume: 54000000,
+  },
+  {
+    searchTerm: "Manchester City",
+    searchVolume: 47000000,
+  },
+  {
+    searchTerm: "Liverpool",
+    searchVolume: 45000000,
+  },
+];

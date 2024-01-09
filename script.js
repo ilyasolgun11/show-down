@@ -1,28 +1,3 @@
-let currentArray = searchData;
-console.log(currentArray);
-
-// Set global variables so they can be accessed from anywhere
-let firstHalfSearchVolumeValue;
-let secondHalfSearchVolumeValue;
-let randomNumber1;
-let randomNumber2;
-let score = 0;
-
-/**
- * Start game when the window loads
- */
-document.addEventListener("DOMContentLoaded", function () {
-  startGame();
-});
-
-/**
- *
- * Generate random number
- */
-function generateRandomNumber() {
-  return Math.floor(Math.random() * currentArray.length);
-}
-
 // Grab first half DOM elements
 let firstHalfSearchTerm = document.getElementById("first-half-search-term");
 let firstHalfSearchVolume = document.getElementById("first-half-search-volume");
@@ -54,6 +29,51 @@ let failedScreen = document.getElementById("fail-screen");
 let failedAtScore = document.getElementById("failed-at-score");
 let congratsMessage = document.getElementById("congrats-message");
 let failedPlayAgainBtn = document.getElementById("failed-screen-play-again");
+// Grab main menu from DOM
+const mainMenu = document.getElementById("main-menu");
+let randomMode = document.getElementById("random-mode");
+let fansMode = document.getElementById("fans-mode");
+
+// Set global variables so they can be accessed from anywhere
+let firstHalfSearchVolumeValue;
+let secondHalfSearchVolumeValue;
+let randomNumber1;
+let randomNumber2;
+let score = 0;
+let currentArray;
+
+/**
+ * Gives the player to have the option of choosing the game mode
+ */
+function gameMainMenu() {
+  mainMenu.style.display = "block";
+  fansMode.addEventListener("click", function () {
+    currentArray = fansData;
+    mainMenu.style.display = "none";
+    startGame();
+  });
+
+  randomMode.addEventListener("click", function () {
+    currentArray = searchData;
+    mainMenu.style.display = "none";
+    startGame();
+  });
+}
+
+/**
+ * Start game when the window loads
+ */
+document.addEventListener("DOMContentLoaded", function () {
+  gameMainMenu();
+});
+
+/**
+ *
+ * Generate random number
+ */
+function generateRandomNumber() {
+  return Math.floor(Math.random() * currentArray.length);
+}
 
 /**
  * Displays fail screen and gives user the option to play again
