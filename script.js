@@ -211,6 +211,85 @@ const searchData = [
     imageOwnerName: "Andrés Fevrier",
     imageOwnerUrl: "https://www.flickr.com/photos/10567940@N05/2272780440",
   },
+  {
+    searchTerm: "Vietnam",
+    searchVolume: 1220000,
+    image: "assets/images/vietnam.webp",
+    imageOwnerName: "guido da rozze",
+    imageOwnerUrl: "https://www.flickr.com/photos/gudi3101/6821789376",
+  },
+  {
+    searchTerm: "Bitcoin",
+    searchVolume: 11100000,
+    image: "assets/images/bitcoin.webp",
+    imageOwnerName: "CUTCHOGUE",
+    imageOwnerUrl:
+      "https://cutchogue.librarycalendar.com/event/new-money-bitcoin-and-altcoin-presentation-10844",
+  },
+  {
+    searchTerm: "Teeth Whitening",
+    searchVolume: 301000,
+    image: "assets/images/teeth-whitening.webp",
+    imageOwnerName: "Dr. F. Keshavarz",
+    imageOwnerUrl:
+      "https://www.keshavarzdentistry.com/icon-teeth-whitening-treatment-after-braces/",
+  },
+  {
+    searchTerm: "Xi Jinping",
+    searchVolume: 201000,
+    image: "assets/images/xijinping.webp",
+    imageOwnerName: "UN Geneva",
+    imageOwnerUrl: "https://www.flickr.com/photos/unisgeneva/32270494731",
+  },
+  {
+    searchTerm: "Deutsche Bank",
+    searchVolume: 201000,
+    image: "assets/images/deutsche-bank.webp",
+    imageOwnerName: "Can Pac Swire",
+    imageOwnerUrl: "https://www.flickr.com/photos/18378305@N00/48921239848",
+  },
+  {
+    searchTerm: "Golden Retriever",
+    searchVolume: 1830000,
+    image: "assets/images/golden-retriever.webp",
+    imageOwnerName: "Rob Kleine",
+    imageOwnerUrl: "https://www.flickr.com/photos/rkleine/4228943963",
+  },
+  {
+    searchTerm: "Red Nose Day",
+    searchVolume: 201000,
+    image: "assets/images/red-nose-day.webp",
+    imageOwnerName: "Richard",
+    imageOwnerUrl: "https://www.flickr.com/photos/redcow/3350050686",
+  },
+  {
+    searchTerm: "Valorant",
+    searchVolume: 9100000,
+    image: "assets/images/valorant.webp",
+    imageOwnerName: "Esports EMEA",
+    imageOwnerUrl: "https://www.flickr.com/photos/valesports/50978367208",
+  },
+  {
+    searchTerm: "Snapchat",
+    searchVolume: 209700000,
+    image: "assets/images/snapchat.webp",
+    imageOwnerName: "Blogtrepreneur",
+    imageOwnerUrl: "https://www.flickr.com/photos/143601516@N03/28500473612",
+  },
+  {
+    searchTerm: "Wembley Stadium",
+    searchVolume: 202000,
+    image: "assets/images/wembley-stadium.webp",
+    imageOwnerName: "Steve",
+    imageOwnerUrl: "https://www.flickr.com/photos/24767349@N02/5799582012",
+  },
+  {
+    searchTerm: "Ebay",
+    searchVolume: 739200000,
+    image: "assets/images/ebay.webp",
+    imageOwnerName: "ebayink",
+    imageOwnerUrl: "https://www.flickr.com/photos/ebayink/3440028348",
+  },
 ];
 
 // Set global variables so they can be accessed from anywhere
