@@ -389,9 +389,37 @@ let fansData = [
   {
     searchTerm: "Trabzonspor",
     searchVolume: 7300000,
-    image: "assets/images/fansmode/trabzonspor.webp",
-    imageOwnerName: "Biso",
-    imageOwnerUrl:
-      "https://commons.wikimedia.org/wiki/File:Be%C5%9Fikta%C5%9F_J.K.JPG",
+    image: "assets/images/fansmode/me-trabzon-spor.webp",
+    imageOwnerName: "Me",
+    imageOwnerUrl: "",
+  },
+  {
+    searchTerm: "Başakşehir",
+    searchVolume: 3000000,
+    image: "assets/images/fansmode/basaksehir.webp",
+    imageOwnerName: "l3o_",
+    imageOwnerUrl: "https://www.flickr.com/photos/134803508@N03/40926067563/",
+  },
+  {
+    searchTerm: "Alanyaspor",
+    searchVolume: 900000,
+    image: "assets/images/fansmode/alanyaspor.webp",
+    imageOwnerName: "l3o_",
+    imageOwnerUrl: "https://www.flickr.com/photos/134803508@N03/27807167848",
+  },
+  {
+    searchTerm: "Kasımpaşa",
+    searchVolume: 840000,
+    image: "assets/images/fansmode/kasimpasa.webp",
+    imageOwnerName: "l3o_",
+    imageOwnerUrl: "https://www.flickr.com/photos/134803508@N03/48737381152",
+  },
+  {
+    searchTerm: "Göztepe",
+    searchVolume: 1950000,
+    image: "assets/images/fansmode/kasimpasa.webp",
+    imageOwnerName: "l3o_",
+    imageOwnerUrl: "https://www.flickr.com/photos/134803508@N03/46885105441/",
   },
 ];
+goztepe.webp;
