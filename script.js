@@ -213,8 +213,6 @@ const searchData = [
   },
 ];
 
-console.log(searchData.length);
-
 // Set global variables so they can be accessed from anywhere
 let firstHalfSearchVolumeValue;
 let secondHalfSearchVolumeValue;
@@ -297,9 +295,17 @@ function failScreenShow() {
       failedScreen.style.visibility = "hidden";
       score = 0;
     });
-  } else if (score > 5) {
+  } else if (score > 5 && score < 10) {
     congratsMessage.textContent = "OMG, we got a genius!";
     failedScreen.style.backgroundImage = `url(${"assets/images/gif/man-celebrating.gif"})`;
+    failedPlayAgainBtn.addEventListener("click", function () {
+      startGame();
+      failedScreen.style.visibility = "hidden";
+      score = 0;
+    });
+  } else if (score > 10) {
+    congratsMessage.textContent = "OMG, what a pro!";
+    failedScreen.style.backgroundImage = `url(${"assets/images/gif/men-celebrating.gif"})`;
     failedPlayAgainBtn.addEventListener("click", function () {
       startGame();
       failedScreen.style.visibility = "hidden";
@@ -541,10 +547,8 @@ function guessedCorrect() {
   // Increment value for current score
   score += 1;
   currentScore.textContent = score;
+  // Generate a new random number for the second half and make sure its not the same as the previous
   previousRandomNumber2 = randomNumber2;
-  console.log(previousRandomNumber2);
-
-  // Generate a new random number for the second half
   do {
     randomNumber2 = generateRandomNumber();
   } while (randomNumber2 === previousRandomNumber2);
