@@ -34,6 +34,8 @@ let failedMainMenu = document.getElementById("failed-screen-main-menu");
 const mainMenu = document.getElementById("main-menu");
 let randomMode = document.getElementById("random-mode");
 let fansMode = document.getElementById("fans-mode");
+// Grab logo from game screen
+let logo = document.getElementById("logo");
 
 // Set global variables so they can be accessed from anywhere
 let firstHalfSearchVolumeValue;
@@ -66,6 +68,12 @@ function gameMainMenu() {
  */
 document.addEventListener("DOMContentLoaded", function () {
   gameMainMenu();
+});
+
+logo.addEventListener("click", function () {
+  gameMainMenu();
+  score = 0;
+  currentScore.textContent = score;
 });
 
 /**
