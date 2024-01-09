@@ -205,6 +205,9 @@ let imageOwnerNameOne = document.getElementById("image-owner-name-1");
 let imageOwnerLinkOne = document.getElementById("image-owner-link-1");
 let imageOwnerNameTwo = document.getElementById("image-owner-name-2");
 let imageOwnerLinkTwo = document.getElementById("image-owner-link-2");
+// Grab overlays from DOM
+let overlay = document.getElementsByClassName("overlay-green");
+let overlayRed = document.getElementsByClassName("overlay-red");
 
 function startGame() {
   // Generate 2 random numbers
@@ -310,8 +313,14 @@ buttons.forEach((button) => {
               showButtons();
               hideSecondSearchVolume();
               correctAnswerBox.classList.remove("show");
+              for (let i = 0; i < overlay.length; i++) {
+                overlay[i].classList.remove("visible");
+              }
             }, 1000);
             correctAnswerBox.classList.add("show");
+            for (let i = 0; i < overlay.length; i++) {
+              overlay[i].classList.add("visible");
+            }
             clearInterval(interval);
           } else {
             secondHalfSearchVolume.textContent = guess;
@@ -330,8 +339,14 @@ buttons.forEach((button) => {
               startGame();
               score = 0;
               currentScore.textContent = 0;
+              for (let i = 0; i < overlayRed.length; i++) {
+                overlayRed[i].classList.remove("visible");
+              }
             }, 1000);
             wrongAnswerBox.classList.add("show");
+            for (let i = 0; i < overlayRed.length; i++) {
+              overlayRed[i].classList.add("visible");
+            }
             clearInterval(interval);
           } else {
             secondHalfSearchVolume.textContent = guess;
@@ -355,8 +370,14 @@ buttons.forEach((button) => {
               showButtons();
               hideSecondSearchVolume();
               correctAnswerBox.classList.remove("show");
+              for (let i = 0; i < overlayRed.length; i++) {
+                overlayRed[i].classList.remove("visible");
+              }
             }, 1000);
             correctAnswerBox.classList.add("show");
+            for (let i = 0; i < overlay.length; i++) {
+              overlay[i].classList.add("visible");
+            }
             clearInterval(interval);
           } else {
             secondHalfSearchVolume.textContent = guess;
@@ -375,8 +396,14 @@ buttons.forEach((button) => {
               startGame();
               score = 0;
               currentScore.textContent = 0;
+              for (let i = 0; i < overlayRed.length; i++) {
+                overlayRed[i].classList.add("hidden");
+              }
             }, 1000);
             wrongAnswerBox.classList.add("show");
+            for (let i = 0; i < overlayRed.length; i++) {
+              overlayRed[i].classList.add("visible");
+            }
             clearInterval(interval);
           } else {
             secondHalfSearchVolume.textContent = guess;
