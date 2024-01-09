@@ -29,6 +29,7 @@ let failedScreen = document.getElementById("fail-screen");
 let failedAtScore = document.getElementById("failed-at-score");
 let congratsMessage = document.getElementById("congrats-message");
 let failedPlayAgainBtn = document.getElementById("failed-screen-play-again");
+let failedMainMenu = document.getElementById("failed-screen-main-menu");
 // Grab main menu from DOM
 const mainMenu = document.getElementById("main-menu");
 let randomMode = document.getElementById("random-mode");
@@ -94,12 +95,22 @@ function failScreenShow() {
       failedScreen.style.visibility = "hidden";
       score = 0;
     });
+    failedMainMenu.addEventListener("click", function () {
+      gameMainMenu();
+      failedScreen.style.visibility = "hidden";
+      score = 0;
+    });
     // If the score is less than 5 but more than 3 then display the following
   } else if (score < 5 && score > 3) {
     congratsMessage.textContent = "Almost a decent score...";
     failedScreen.style.backgroundImage = `url(${"assets/images/gif/drunk-man-at-store.gif"})`;
     failedPlayAgainBtn.addEventListener("click", function () {
       startGame();
+      failedScreen.style.visibility = "hidden";
+      score = 0;
+    });
+    failedMainMenu.addEventListener("click", function () {
+      gameMainMenu();
       failedScreen.style.visibility = "hidden";
       score = 0;
     });
@@ -111,11 +122,21 @@ function failScreenShow() {
       failedScreen.style.visibility = "hidden";
       score = 0;
     });
+    failedMainMenu.addEventListener("click", function () {
+      gameMainMenu();
+      failedScreen.style.visibility = "hidden";
+      score = 0;
+    });
   } else if (score > 10) {
     congratsMessage.textContent = "OMG, what a pro!";
     failedScreen.style.backgroundImage = `url(${"assets/images/gif/men-celebrating.gif"})`;
     failedPlayAgainBtn.addEventListener("click", function () {
       startGame();
+      failedScreen.style.visibility = "hidden";
+      score = 0;
+    });
+    failedMainMenu.addEventListener("click", function () {
+      gameMainMenu();
       failedScreen.style.visibility = "hidden";
       score = 0;
     });
