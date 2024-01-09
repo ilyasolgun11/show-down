@@ -72,9 +72,75 @@ const searchData = [
   {
     searchTerm: "Jerusalem",
     searchVolume: 823000,
-    image: "assets/images/jerulsalem.webp",
+    image: "assets/images/jerusalem.webp",
     imageOwnerName: "Dan",
     imageOwnerUrl: "https://www.flickr.com/photos/twiga_swala/2263943148",
+  },
+  {
+    searchTerm: "Doctor Strange",
+    searchVolume: 1220000,
+    image: "assets/images/doctor-strange.webp",
+    imageOwnerName: "AntMan3001",
+    imageOwnerUrl: "https://www.flickr.com/photos/antdude3001/24027393815",
+  },
+  {
+    searchTerm: "Amazon",
+    searchVolume: 277000000,
+    image: "assets/images/amazon.webp",
+    imageOwnerName: "Darkworld47",
+    imageOwnerUrl: "https://commons.wikimedia.org/wiki/File:Amzlogo.png",
+  },
+  {
+    searchTerm: "Borussia Dortmund",
+    searchVolume: 1500000,
+    image: "assets/images/borussia-dortmund.webp",
+    imageOwnerName: "Adam Howarth",
+    imageOwnerUrl:
+      "https://www.borussiadortmund.co.uk/preview/borussia-dortmund-vs-chelsea-champions-league-preview/",
+  },
+  {
+    searchTerm: "Pablo Picasso",
+    searchVolume: 450000,
+    image: "assets/images/pablo-picasso.webp",
+    imageOwnerName: "Lindsey Mancini",
+    imageOwnerUrl:
+      "https://www.flickr.com/photos/thingsworthdescribing/7953235496",
+  },
+  {
+    searchTerm: "Recipes",
+    searchVolume: 1220000,
+    image: "assets/images/recipes.webp",
+    imageOwnerName: "Meg H",
+    imageOwnerUrl: "https://www.flickr.com/photos/156883244@N04/35120274024",
+  },
+  {
+    searchTerm: "Github",
+    searchVolume: 32000000,
+    image: "assets/images/github.webp",
+    imageOwnerName: "Sourav Kumar",
+    imageOwnerUrl:
+      "https://codeburst.io/why-you-should-start-using-github-right-now-e817d213c6ff",
+  },
+  {
+    searchTerm: "Pug",
+    searchVolume: 1500000,
+    image: "assets/images/pug.webp",
+    imageOwnerName: "hannah k",
+    imageOwnerUrl: "https://www.flickr.com/photos/90692443@N05/8239219385",
+  },
+  {
+    searchTerm: "Pizza",
+    searchVolume: 7480000,
+    image: "assets/images/pizza.webp",
+    imageOwnerName: "Ewan Munro",
+    imageOwnerUrl: "https://www.flickr.com/photos/55935853@N00/3717162237",
+  },
+  {
+    searchTerm: "Scented Candles",
+    searchVolume: 40500,
+    image: "assets/images/scented-candles.webp",
+    imageOwnerName: "slgckgc",
+    imageOwnerUrl: "https://www.flickr.com/photos/slgc/3998375778",
   },
 ];
 
