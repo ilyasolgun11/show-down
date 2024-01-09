@@ -43,6 +43,9 @@ let randomMode = document.getElementById("random-mode");
 let fansMode = document.getElementById("fans-mode");
 // Grab logo from game screen
 let logo = document.getElementById("logo");
+// Grab high score from DOM
+let highScoreMenuDisplay = document.getElementById("high-score");
+let highScoreGameDisplay = document.getElementById("game-high-score");
 
 // Set global variables so they can be accessed from anywhere
 let firstHalfSearchVolumeValue;
@@ -52,6 +55,23 @@ let randomNumber2;
 let score = 0;
 let currentArray;
 let searchCriteria;
+
+function setHighScore(score) {
+  const currentHighScore = getHighScore();
+  if (score > currentHighScore) {
+    localStorage.setItem("highScore", score);
+  }
+}
+
+function getHighScore() {
+  return localStorage.getItem("highScore") || 0;
+}
+
+function updateHighScoreDisplay() {
+  const highScore = getHighScore();
+  highScoreMenuDisplay.textContent = highScore;
+  highScoreGameDisplay.textContent = highScore;
+}
 
 /**
  * Gives the player to have the option of choosing the game mode
@@ -99,6 +119,8 @@ function generateRandomNumber() {
  * Also displays a GIF
  */
 function failScreenShow() {
+  setHighScore(score);
+  updateHighScoreDisplay();
   failedScreen.style.visibility = "visible";
   failedAtScore.textContent = score;
   for (let i = 0; i < overlayRed.length; i++) {

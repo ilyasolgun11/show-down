@@ -30,14 +30,14 @@ body {
   background: linear-gradient(
     -45deg,
     #000000,
-    #2b0000,
+    #170000,
     #000000,
     #000000,
-    #002302,
+    #001b01,
     #000000
   );
   background-size: 400% 400%;
-  animation: movingGradient 30s ease infinite;
+  animation: movingGradient 60s ease infinite;
   display: none;
   position: absolute;
   z-index: 30;
@@ -55,6 +55,16 @@ body {
   align-items: center;
   flex-direction: column;
   color: white;
+}
+
+.game-modes-container {
+  margin-top: 0px;
+}
+
+.game-modes-container h3 {
+  font-size: 2rem;
+  position: relative;
+  margin-top: 20px;
 }
 
 .main-menu-logo {
@@ -76,17 +86,21 @@ body {
   padding: 0px 20px;
 }
 
+.menu-high-score {
+  text-align: center;
+  color: white;
+  margin-bottom: 0px;
+  font-size: 2.5rem;
+  font-family: "Lato", sans-serif;
+  color: rgb(250, 255, 161);
+}
+
 .game-modes {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.4rem;
-}
-
-.game-modes-container h3 {
-  font-size: 2rem;
-  position: relative;
 }
 
 .random-mode {
@@ -412,7 +426,7 @@ body {
 
 #higher-btn,
 #lower-btn {
-  color: white;
+  color: rgb(250, 255, 161);
   font-size: 1.3rem;
   font-weight: 600;
   padding: 15px 80px;
@@ -461,7 +475,8 @@ body {
 
 #first-half .score-container p {
   padding: 0px 15px;
-  color: white;
+  font-family: "Lato", sans-serif;
+  color: rgb(250, 255, 161);
   font-size: 1.3rem;
   font-weight: 600;
 }
@@ -470,11 +485,37 @@ body {
   font-size: 1.2rem;
 }
 
-.first-half-credit-container,
+.first-half-credit-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+}
+
 .second-half-credit-container {
   position: absolute;
   bottom: 10px;
   right: 10px;
+}
+
+.game-high-score {
+  margin-top: 8px;
+  text-align: center;
+  width: 140px;
+  color: white;
+  padding: 8px 18px;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 20;
+  border-radius: 50px;
+  font-family: "Lato", sans-serif;
+  color: rgb(250, 255, 161);
+}
+
+#image-owner-link-1 {
+  margin-right: 4px;
 }
 
 #image-owner-link-1,
