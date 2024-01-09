@@ -192,6 +192,8 @@ const searchData = [
   },
 ];
 
+console.log(searchData.length);
+
 // Set global variables so they can be accessed from anywhere
 let firstHalfSearchVolumeValue;
 let secondHalfSearchVolumeValue;
@@ -520,6 +522,9 @@ function guessedCorrect() {
   currentScore.textContent = score;
 
   // Generate a new random number for the second half
+  while (randomNumber1 === randomNumber2) {
+    randomNumber2 = generateRandomNumber();
+  }
   randomNumber2 = generateRandomNumber();
   // Set the secondHalf DOM elements with the new random number
   secondHalfSearchTerm.textContent = searchData[randomNumber2].searchTerm;

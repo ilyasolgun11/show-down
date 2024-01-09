@@ -70,6 +70,38 @@ body {
   color: white;
 }
 
+.socials {
+  margin-right: 30px;
+  margin-top: 20px;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socials i:hover {
+  color: rgb(29, 165, 24);
+  cursor: pointer;
+}
+
+.socials i:nth-of-type(1) {
+  font-size: 2.3rem;
+}
+
+.socials i:nth-of-type(2) {
+  font-size: 2rem;
+}
+
+.socials i:nth-of-type(3) {
+  font-size: 2.1rem;
+  margin-top: 2px;
+}
+
+.socials i:nth-of-type(4) {
+  font-size: 2.3rem;
+}
+
 .pop-up-logo {
   margin-top: -20px;
   width: 170px;
