@@ -68,11 +68,16 @@ body {
 }
 
 .random-mode {
-  background: url(../images/bitcoin.webp) center/cover no-repeat;
+  background: url(../images/randommode/bitcoin.webp) center/cover no-repeat;
 }
 
 .fans-mode {
-  background: url(../images/manchester-united.webp) center/cover no-repeat;
+  background: url(../images/fansmode/manchester-united.webp) center/cover
+    no-repeat;
+}
+
+.coming-soon-mode {
+  background: url(../images/gif/drunk-man-at-store.gif) center/cover no-repeat;
 }
 
 .random-mode,
