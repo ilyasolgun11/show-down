@@ -186,9 +186,30 @@ const searchData = [
     searchTerm: "Heart Disease",
     searchVolume: 135000,
     image: "assets/images/heart.webp",
-    imageOwnerName: "Heart Disease",
+    imageOwnerName: "English Department",
     imageOwnerUrl:
       "https://blogs.glowscotland.org.uk/er/wwhdepartmentenglish/free-open-book-with-heart-shaped-pages-photo-public-domain-cc0-image/",
+  },
+  {
+    searchTerm: "Ticketmaster",
+    searchVolume: 9140000,
+    image: "assets/images/ticketmaster.webp",
+    imageOwnerName: "Sharib4rd",
+    imageOwnerUrl: "https://www.flickr.com/photos/mattb4rd/3414550230",
+  },
+  {
+    searchTerm: "The JRE",
+    searchVolume: 190000000,
+    image: "assets/images/thejre.webp",
+    imageOwnerName: "Do512",
+    imageOwnerUrl: "https://www.flickr.com/photos/58530249@N04/13168429145",
+  },
+  {
+    searchTerm: "Rocky",
+    searchVolume: 450000,
+    image: "assets/images/rocky.webp",
+    imageOwnerName: "Andrés Fevrier",
+    imageOwnerUrl: "https://www.flickr.com/photos/10567940@N05/2272780440",
   },
 ];
 
@@ -520,12 +541,14 @@ function guessedCorrect() {
   // Increment value for current score
   score += 1;
   currentScore.textContent = score;
+  previousRandomNumber2 = randomNumber2;
+  console.log(previousRandomNumber2);
 
   // Generate a new random number for the second half
-  while (randomNumber1 === randomNumber2) {
+  do {
     randomNumber2 = generateRandomNumber();
-  }
-  randomNumber2 = generateRandomNumber();
+  } while (randomNumber2 === previousRandomNumber2);
+  console.log(randomNumber2);
   // Set the secondHalf DOM elements with the new random number
   secondHalfSearchTerm.textContent = searchData[randomNumber2].searchTerm;
   secondHalfSearchVolumeValue = searchData[randomNumber2].searchVolume;
