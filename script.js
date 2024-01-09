@@ -158,6 +158,38 @@ const searchData = [
     imageOwnerUrl:
       "https://thebluediamondgallery.com/highway-signs/i/immigration.html",
   },
+  {
+    searchTerm: "Germany",
+    searchVolume: 1220000,
+    image: "assets/images/germany.webp",
+    imageOwnerName: "ISPI 90",
+    imageOwnerUrl:
+      "https://www.ispionline.it/en/publication/germany-energy-policy-turbulent-times-between-transition-chances-and-lock-risks-36778",
+  },
+  {
+    searchTerm: "Pac-Man",
+    searchVolume: 5000000,
+    image: "assets/images/pacman.webp",
+    imageOwnerName: "The Pug Father",
+    imageOwnerUrl:
+      "https://commons.wikimedia.org/wiki/File:Pacman_and_the_Lotus_Elise_-_Flickr_-_The_Pug_Father.jpg",
+  },
+  {
+    searchTerm: "Pac-Man",
+    searchVolume: 5000000,
+    image: "assets/images/pacman.webp",
+    imageOwnerName: "The Pug Father",
+    imageOwnerUrl:
+      "https://commons.wikimedia.org/wiki/File:Pacman_and_the_Lotus_Elise_-_Flickr_-_The_Pug_Father.jpg",
+  },
+  {
+    searchTerm: "Heart",
+    searchVolume: 135000,
+    image: "assets/images/heart.webp",
+    imageOwnerName: "Heart Disease",
+    imageOwnerUrl:
+      "https://blogs.glowscotland.org.uk/er/wwhdepartmentenglish/free-open-book-with-heart-shaped-pages-photo-public-domain-cc0-image/",
+  },
 ];
 
 // Set global variables so they can be accessed from anywhere
