@@ -476,9 +476,10 @@ body {
 #first-half .score-container p {
   padding: 0px 15px;
   font-family: "Lato", sans-serif;
-  color: rgb(250, 255, 161);
+  color: white;
   font-size: 1.3rem;
   font-weight: 600;
+  padding-bottom: 3px;
 }
 
 #first-half .score-container p span {
@@ -511,7 +512,7 @@ body {
   z-index: 20;
   border-radius: 50px;
   font-family: "Lato", sans-serif;
-  color: rgb(250, 255, 161);
+  color: white;
 }
 
 #image-owner-link-1 {
