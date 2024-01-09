@@ -348,7 +348,7 @@ buttons.forEach((button) => {
     if (button.getAttribute("data-type") === "higher") {
       if (firstHalfSearchVolumeValue < secondHalfSearchVolumeValue) {
         showSecondSearchVolume();
-        let guess = secondHalfSearchVolumeValue - 100;
+        let guess = secondHalfSearchVolumeValue - 70;
         hideButtons();
         // Add interval animation so that it counts up
         const interval = setInterval(() => {
@@ -377,14 +377,14 @@ buttons.forEach((button) => {
         });
       } else {
         showSecondSearchVolume();
-        let guess = secondHalfSearchVolumeValue - 100;
+        let guess = secondHalfSearchVolumeValue - 70;
         hideButtons();
         // Add interval animation so that it counts up
         const interval = setInterval(() => {
           if (guess > secondHalfSearchVolumeValue - 1) {
+            failScreenShow();
             setTimeout(() => {
               startGame();
-              failScreenShow();
               currentScore.textContent = 0;
               for (let i = 0; i < overlayRed.length; i++) {
                 overlayRed[i].classList.remove("visible");
@@ -405,7 +405,7 @@ buttons.forEach((button) => {
     } else if (button.getAttribute("data-type") === "lower") {
       if (firstHalfSearchVolumeValue > secondHalfSearchVolumeValue) {
         showSecondSearchVolume();
-        let guess = secondHalfSearchVolumeValue - 100;
+        let guess = secondHalfSearchVolumeValue - 70;
         hideButtons();
         // Add interval animation so that it counts up
         const interval = setInterval(() => {
@@ -434,14 +434,15 @@ buttons.forEach((button) => {
         });
       } else {
         showSecondSearchVolume();
-        let guess = secondHalfSearchVolumeValue - 100;
+        let guess = secondHalfSearchVolumeValue - 70;
         hideButtons();
         // Add interval animation so that it counts up
         const interval = setInterval(() => {
           if (guess > secondHalfSearchVolumeValue - 1) {
+            failScreenShow();
             setTimeout(() => {
               startGame();
-              failScreenShow();
+
               currentScore.textContent = 0;
               for (let i = 0; i < overlayRed.length; i++) {
                 overlayRed[i].classList.add("hidden");
