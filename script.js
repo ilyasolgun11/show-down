@@ -378,7 +378,7 @@ const buttons = document.querySelectorAll(".btn");
 buttons.forEach((button) => {
   button.addEventListener("click", function () {
     if (button.getAttribute("data-type") === "higher") {
-      if (firstHalfSearchVolumeValue < secondHalfSearchVolumeValue) {
+      if (firstHalfSearchVolumeValue <= secondHalfSearchVolumeValue) {
         showSecondSearchVolume();
         let guess = secondHalfSearchVolumeValue - 70;
         hideButtons();
@@ -435,7 +435,7 @@ buttons.forEach((button) => {
         });
       }
     } else if (button.getAttribute("data-type") === "lower") {
-      if (firstHalfSearchVolumeValue > secondHalfSearchVolumeValue) {
+      if (firstHalfSearchVolumeValue >= secondHalfSearchVolumeValue) {
         showSecondSearchVolume();
         let guess = secondHalfSearchVolumeValue - 70;
         hideButtons();
