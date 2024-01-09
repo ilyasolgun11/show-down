@@ -348,11 +348,11 @@ buttons.forEach((button) => {
     if (button.getAttribute("data-type") === "higher") {
       if (firstHalfSearchVolumeValue < secondHalfSearchVolumeValue) {
         showSecondSearchVolume();
-        let guess = secondHalfSearchVolumeValue - 500;
+        let guess = secondHalfSearchVolumeValue - 100;
         hideButtons();
         // Add interval animation so that it counts up
         const interval = setInterval(() => {
-          if (guess > secondHalfSearchVolumeValue - 5) {
+          if (guess > secondHalfSearchVolumeValue - 1) {
             // Set time between the correctAnswerBox is showing and disappearing
             // When it disappears trigger the guessed correct function
             setTimeout(() => {
@@ -371,17 +371,17 @@ buttons.forEach((button) => {
             clearInterval(interval);
           } else {
             secondHalfSearchVolume.textContent = guess;
-            guess += 5;
+            guess += 1;
             secondHalfSearchVolume.textContent = guess.toLocaleString();
           }
         });
       } else {
         showSecondSearchVolume();
-        let guess = secondHalfSearchVolumeValue - 500;
+        let guess = secondHalfSearchVolumeValue - 100;
         hideButtons();
         // Add interval animation so that it counts up
         const interval = setInterval(() => {
-          if (guess > secondHalfSearchVolumeValue - 5) {
+          if (guess > secondHalfSearchVolumeValue - 1) {
             setTimeout(() => {
               startGame();
               failScreenShow();
@@ -397,7 +397,7 @@ buttons.forEach((button) => {
             clearInterval(interval);
           } else {
             secondHalfSearchVolume.textContent = guess;
-            guess += 5;
+            guess += 1;
             secondHalfSearchVolume.textContent = guess.toLocaleString();
           }
         });
@@ -405,11 +405,11 @@ buttons.forEach((button) => {
     } else if (button.getAttribute("data-type") === "lower") {
       if (firstHalfSearchVolumeValue > secondHalfSearchVolumeValue) {
         showSecondSearchVolume();
-        let guess = secondHalfSearchVolumeValue - 500;
+        let guess = secondHalfSearchVolumeValue - 100;
         hideButtons();
         // Add interval animation so that it counts up
         const interval = setInterval(() => {
-          if (guess > secondHalfSearchVolumeValue - 5) {
+          if (guess > secondHalfSearchVolumeValue - 1) {
             // Set time between the correctAnswerBox is showing and disappearing
             // When it disappears trigger the guessed correct function
             setTimeout(() => {
@@ -428,17 +428,17 @@ buttons.forEach((button) => {
             clearInterval(interval);
           } else {
             secondHalfSearchVolume.textContent = guess;
-            guess += 5;
+            guess += 1;
             secondHalfSearchVolume.textContent = guess.toLocaleString();
           }
         });
       } else {
         showSecondSearchVolume();
-        let guess = secondHalfSearchVolumeValue - 500;
+        let guess = secondHalfSearchVolumeValue - 100;
         hideButtons();
         // Add interval animation so that it counts up
         const interval = setInterval(() => {
-          if (guess > secondHalfSearchVolumeValue - 5) {
+          if (guess > secondHalfSearchVolumeValue - 1) {
             setTimeout(() => {
               startGame();
               failScreenShow();
@@ -454,7 +454,7 @@ buttons.forEach((button) => {
             clearInterval(interval);
           } else {
             secondHalfSearchVolume.textContent = guess;
-            guess += 5;
+            guess += 1;
             secondHalfSearchVolume.textContent = guess.toLocaleString();
           }
         });
