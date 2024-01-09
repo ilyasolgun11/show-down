@@ -208,7 +208,54 @@ let imageOwnerLinkTwo = document.getElementById("image-owner-link-2");
 // Grab overlays from DOM
 let overlay = document.getElementsByClassName("overlay-green");
 let overlayRed = document.getElementsByClassName("overlay-red");
+// Grab fail screen elements from DOM
+let failedScreen = document.getElementById("fail-screen");
+let failedAtScore = document.getElementById("failed-at-score");
+let congratsMessage = document.getElementById("congrats-message");
+let failedPlayAgainBtn = document.getElementById("failed-screen-play-again");
 
+/**
+ * Displays fail screen and gives user the option to play again
+ * Also displays a GIF
+ */
+function failScreenShow() {
+  failedScreen.style.visibility = "visible";
+  failedAtScore.textContent = score;
+  for (let i = 0; i < overlayRed.length; i++) {
+    overlayRed[i].classList.remove("visible");
+  }
+  // If the score is less than 3 then display the following
+  if (score < 3) {
+    congratsMessage.textContent = "Oof, better luck next time";
+    failedScreen.style.backgroundImage = `url(${"assets/images/gif/joe-biden-giphy.gif"})`;
+    failedPlayAgainBtn.addEventListener("click", function () {
+      startGame();
+      failedScreen.style.visibility = "hidden";
+      score = 0;
+    });
+    // If the score is less than 5 but more than 3 then display the following
+  } else if (score < 5 && score > 3) {
+    congratsMessage.textContent = "Almost a decent score...";
+    failedScreen.style.backgroundImage = `url(${"assets/images/gif/drunk-man-at-store.gif"})`;
+    failedPlayAgainBtn.addEventListener("click", function () {
+      startGame();
+      failedScreen.style.visibility = "hidden";
+      score = 0;
+    });
+  } else if (score > 5) {
+    congratsMessage.textContent = "OMG, we got a genius!";
+    failedScreen.style.backgroundImage = `url(${"assets/images/gif/man-celebrating.gif"})`;
+    failedPlayAgainBtn.addEventListener("click", function () {
+      startGame();
+      failedScreen.style.visibility = "hidden";
+      score = 0;
+    });
+  }
+}
+
+/**
+ * Starts game, resets all elements
+ */
 function startGame() {
   // Generate 2 random numbers
   randomNumber1 = generateRandomNumber();
@@ -337,7 +384,7 @@ buttons.forEach((button) => {
           if (guess > secondHalfSearchVolumeValue - 5) {
             setTimeout(() => {
               startGame();
-              score = 0;
+              failScreenShow();
               currentScore.textContent = 0;
               for (let i = 0; i < overlayRed.length; i++) {
                 overlayRed[i].classList.remove("visible");
@@ -370,8 +417,8 @@ buttons.forEach((button) => {
               showButtons();
               hideSecondSearchVolume();
               correctAnswerBox.classList.remove("show");
-              for (let i = 0; i < overlayRed.length; i++) {
-                overlayRed[i].classList.remove("visible");
+              for (let i = 0; i < overlay.length; i++) {
+                overlay[i].classList.remove("visible");
               }
             }, 1000);
             correctAnswerBox.classList.add("show");
@@ -394,7 +441,7 @@ buttons.forEach((button) => {
           if (guess > secondHalfSearchVolumeValue - 5) {
             setTimeout(() => {
               startGame();
-              score = 0;
+              failScreenShow();
               currentScore.textContent = 0;
               for (let i = 0; i < overlayRed.length; i++) {
                 overlayRed[i].classList.add("hidden");
