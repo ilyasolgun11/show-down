@@ -449,4 +449,34 @@ let fansData = [
     imageOwnerName: "Département des Yvelines",
     imageOwnerUrl: "https://www.flickr.com/photos/yvelines/51306123628",
   },
+  {
+    searchTerm: "Al Nassr",
+    searchVolume: 14000000,
+    image: "assets/images/fansmode/al-nassr.webp",
+    imageOwnerName: "Aryo Atmaja",
+    imageOwnerUrl:
+      "https://www.bola.com/dunia/read/5223753/keran-gol-ronaldo-macet-saat-al-nassr-bekuk-al-baten-netizen-bang-dodo-tetap-berkontribusi-kok",
+  },
+  {
+    searchTerm: "AC Milan",
+    searchVolume: 72000000,
+    image: "assets/images/fansmode/ac-milan.webp",
+    imageOwnerName: "Maarten Van Damme",
+    imageOwnerUrl: "https://www.flickr.com/photos/mavadam/3263541290",
+  },
+  {
+    searchTerm: "Inter Milan",
+    searchVolume: 60300000,
+    image: "assets/images/fansmode/inter-milan.webp",
+    imageOwnerName: "Sona Hovasapyan",
+    imageOwnerUrl:
+      "https://commons.wikimedia.org/wiki/File:Club_Am%C3%A9rica_v_Inter_Milan_-_2009_-_Javier_Zanetti_%28cropped%29.jpg",
+  },
+  {
+    searchTerm: "Roma FC",
+    searchVolume: 42000000,
+    image: "assets/images/fansmode/roma.webp",
+    imageOwnerName: "Massimo Mastropietro",
+    imageOwnerUrl: "https://www.flickr.com/photos/8147424@N02/544390767",
+  },
 ];

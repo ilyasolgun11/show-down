@@ -264,14 +264,6 @@ buttons.forEach((button) => {
   });
 });
 
-document.addEventListener("keyup", function (event) {
-  if (event.key === "ArrowUp") {
-    triggerHigher();
-  } else if (event.key === "ArrowDown") {
-    triggerLower();
-  }
-});
-
 /**
  * Triggers sequence that will see if the guess is higher or lower
  */
