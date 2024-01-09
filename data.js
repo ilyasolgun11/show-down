@@ -177,7 +177,7 @@ let searchData = [
   {
     searchTerm: "Heart Disease",
     searchVolume: 135000,
-    image: "assets/images/heart.webp",
+    image: "assets/images/randommode/heart.webp",
     imageOwnerName: "English Department",
     imageOwnerUrl:
       "https://blogs.glowscotland.org.uk/er/wwhdepartmentenglish/free-open-book-with-heart-shaped-pages-photo-public-domain-cc0-image/",
@@ -278,7 +278,7 @@ let searchData = [
   {
     searchTerm: "Ebay",
     searchVolume: 739200000,
-    image: "assets/images/ebay.webp",
+    image: "assets/images/randommode/ebay.webp",
     imageOwnerName: "ebayink",
     imageOwnerUrl: "https://www.flickr.com/photos/ebayink/3440028348",
   },
@@ -417,9 +417,36 @@ let fansData = [
   {
     searchTerm: "Göztepe",
     searchVolume: 1950000,
-    image: "assets/images/fansmode/kasimpasa.webp",
+    image: "assets/images/fansmode/goztepe.webp",
     imageOwnerName: "l3o_",
     imageOwnerUrl: "https://www.flickr.com/photos/134803508@N03/46885105441/",
   },
+  {
+    searchTerm: "Real Madrid",
+    searchVolume: 252100000,
+    image: "assets/images/fansmode/real-madrid.webp",
+    imageOwnerName: "lvmiquilena",
+    imageOwnerUrl: "https://www.flickr.com/photos/90734637@N07/8259908356",
+  },
+  {
+    searchTerm: "Barcelona FC",
+    searchVolume: 250300000,
+    image: "assets/images/fansmode/barcelona.webp",
+    imageOwnerName: "Juanedc",
+    imageOwnerUrl: "https://www.flickr.com/photos/juanedc/8440189313",
+  },
+  {
+    searchTerm: "Juventus",
+    searchVolume: 104100000,
+    image: "assets/images/fansmode/juventus.webp",
+    imageOwnerName: "Leandro Ceruti",
+    imageOwnerUrl: "https://www.flickr.com/photos/71082787@N02/15079355829",
+  },
+  {
+    searchTerm: "PSG",
+    searchVolume: 91000000,
+    image: "assets/images/fansmode/PSG.webp",
+    imageOwnerName: "Département des Yvelines",
+    imageOwnerUrl: "https://www.flickr.com/photos/yvelines/51306123628",
+  },
 ];
-goztepe.webp;

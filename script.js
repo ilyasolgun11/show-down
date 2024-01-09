@@ -252,127 +252,149 @@ function showSecondSearchVolume() {
   secondHalfSearchVolume.style.fontSize = "";
 }
 
-// Loop over buttons and see which one is clicked, based on higher or lower fire off choseHigher or choseLower functions
-const buttons = document.querySelectorAll(".btn");
+// Gets the data-type of higher and lower buttons and depending on which one the user clicked, it triggers the corresponding function
+let buttons = document.querySelectorAll(".btn");
 buttons.forEach((button) => {
   button.addEventListener("click", function () {
     if (button.getAttribute("data-type") === "higher") {
-      if (firstHalfSearchVolumeValue <= secondHalfSearchVolumeValue) {
-        showSecondSearchVolume();
-        let guess = secondHalfSearchVolumeValue - 70;
-        hideButtons();
-        // Add interval animation so that it counts up
-        const interval = setInterval(() => {
-          if (guess > secondHalfSearchVolumeValue - 1) {
-            // Set time between the correctAnswerBox is showing and disappearing
-            // When it disappears trigger the guessed correct function
-            setTimeout(() => {
-              guessedCorrect();
-              showButtons();
-              hideSecondSearchVolume();
-              correctAnswerBox.classList.remove("show");
-              for (let i = 0; i < overlay.length; i++) {
-                overlay[i].classList.remove("visible");
-              }
-            }, 1000);
-            correctAnswerBox.classList.add("show");
-            for (let i = 0; i < overlay.length; i++) {
-              overlay[i].classList.add("visible");
-            }
-            clearInterval(interval);
-          } else {
-            secondHalfSearchVolume.textContent = guess;
-            guess += 1;
-            secondHalfSearchVolume.textContent = guess.toLocaleString();
-          }
-        });
-      } else {
-        showSecondSearchVolume();
-        let guess = secondHalfSearchVolumeValue - 70;
-        hideButtons();
-        // Add interval animation so that it counts up
-        const interval = setInterval(() => {
-          if (guess > secondHalfSearchVolumeValue - 1) {
-            setTimeout(() => {
-              startGame();
-              failScreenShow();
-              currentScore.textContent = 0;
-              for (let i = 0; i < overlayRed.length; i++) {
-                overlayRed[i].classList.remove("visible");
-              }
-            }, 1000);
-            wrongAnswerBox.classList.add("show");
-            for (let i = 0; i < overlayRed.length; i++) {
-              overlayRed[i].classList.add("visible");
-            }
-            clearInterval(interval);
-          } else {
-            secondHalfSearchVolume.textContent = guess;
-            guess += 1;
-            secondHalfSearchVolume.textContent = guess.toLocaleString();
-          }
-        });
-      }
+      triggerHigher();
     } else if (button.getAttribute("data-type") === "lower") {
-      if (firstHalfSearchVolumeValue >= secondHalfSearchVolumeValue) {
-        showSecondSearchVolume();
-        let guess = secondHalfSearchVolumeValue - 70;
-        hideButtons();
-        // Add interval animation so that it counts up
-        const interval = setInterval(() => {
-          if (guess > secondHalfSearchVolumeValue - 1) {
-            // Set time between the correctAnswerBox is showing and disappearing
-            // When it disappears trigger the guessed correct function
-            setTimeout(() => {
-              guessedCorrect();
-              showButtons();
-              hideSecondSearchVolume();
-              correctAnswerBox.classList.remove("show");
-              for (let i = 0; i < overlay.length; i++) {
-                overlay[i].classList.remove("visible");
-              }
-            }, 1000);
-            correctAnswerBox.classList.add("show");
-            for (let i = 0; i < overlay.length; i++) {
-              overlay[i].classList.add("visible");
-            }
-            clearInterval(interval);
-          } else {
-            secondHalfSearchVolume.textContent = guess;
-            guess += 1;
-            secondHalfSearchVolume.textContent = guess.toLocaleString();
-          }
-        });
-      } else {
-        showSecondSearchVolume();
-        let guess = secondHalfSearchVolumeValue - 70;
-        hideButtons();
-        // Add interval animation so that it counts up
-        const interval = setInterval(() => {
-          if (guess > secondHalfSearchVolumeValue - 1) {
-            setTimeout(() => {
-              startGame();
-              failScreenShow();
-              currentScore.textContent = 0;
-              for (let i = 0; i < overlayRed.length; i++) {
-                overlayRed[i].classList.add("hidden");
-              }
-            }, 1000);
-            wrongAnswerBox.classList.add("show");
-            for (let i = 0; i < overlayRed.length; i++) {
-              overlayRed[i].classList.add("visible");
-            }
-            clearInterval(interval);
-          } else {
-            secondHalfSearchVolume.textContent = guess;
-            guess += 1;
-            secondHalfSearchVolume.textContent = guess.toLocaleString();
-          }
-        });
-      }
+      triggerLower();
     }
   });
 });
+
+document.addEventListener("keyup", function (event) {
+  if (event.key === "ArrowUp") {
+    triggerHigher();
+  } else if (event.key === "ArrowDown") {
+    triggerLower();
+  }
+});
+
+/**
+ * Triggers sequence that will see if the guess is higher or lower
+ */
+function triggerHigher() {
+  if (firstHalfSearchVolumeValue <= secondHalfSearchVolumeValue) {
+    showSecondSearchVolume();
+    let guess = secondHalfSearchVolumeValue - 70;
+    hideButtons();
+    // Add interval animation so that it counts up
+    const interval = setInterval(() => {
+      if (guess > secondHalfSearchVolumeValue - 1) {
+        // Set time between the correctAnswerBox is showing and disappearing
+        // When it disappears trigger the guessed correct function
+        setTimeout(() => {
+          guessedCorrect();
+          showButtons();
+          hideSecondSearchVolume();
+          correctAnswerBox.classList.remove("show");
+          for (let i = 0; i < overlay.length; i++) {
+            overlay[i].classList.remove("visible");
+          }
+        }, 1000);
+        correctAnswerBox.classList.add("show");
+        for (let i = 0; i < overlay.length; i++) {
+          overlay[i].classList.add("visible");
+        }
+        clearInterval(interval);
+      } else {
+        secondHalfSearchVolume.textContent = guess;
+        guess += 1;
+        secondHalfSearchVolume.textContent = guess.toLocaleString();
+      }
+    });
+  } else {
+    showSecondSearchVolume();
+    let guess = secondHalfSearchVolumeValue - 70;
+    hideButtons();
+    // Add interval animation so that it counts up
+    const interval = setInterval(() => {
+      if (guess > secondHalfSearchVolumeValue - 1) {
+        setTimeout(() => {
+          startGame();
+          failScreenShow();
+          currentScore.textContent = 0;
+          for (let i = 0; i < overlayRed.length; i++) {
+            overlayRed[i].classList.remove("visible");
+          }
+        }, 1000);
+        wrongAnswerBox.classList.add("show");
+        for (let i = 0; i < overlayRed.length; i++) {
+          overlayRed[i].classList.add("visible");
+        }
+        clearInterval(interval);
+      } else {
+        secondHalfSearchVolume.textContent = guess;
+        guess += 1;
+        secondHalfSearchVolume.textContent = guess.toLocaleString();
+      }
+    });
+  }
+}
+
+/**
+ * Triggers sequence that will see if the guess is higher or lower
+ */
+function triggerLower() {
+  if (firstHalfSearchVolumeValue >= secondHalfSearchVolumeValue) {
+    showSecondSearchVolume();
+    let guess = secondHalfSearchVolumeValue - 70;
+    hideButtons();
+    // Add interval animation so that it counts up
+    const interval = setInterval(() => {
+      if (guess > secondHalfSearchVolumeValue - 1) {
+        // Set time between the correctAnswerBox is showing and disappearing
+        // When it disappears trigger the guessed correct function
+        setTimeout(() => {
+          guessedCorrect();
+          showButtons();
+          hideSecondSearchVolume();
+          correctAnswerBox.classList.remove("show");
+          for (let i = 0; i < overlay.length; i++) {
+            overlay[i].classList.remove("visible");
+          }
+        }, 1000);
+        correctAnswerBox.classList.add("show");
+        for (let i = 0; i < overlay.length; i++) {
+          overlay[i].classList.add("visible");
+        }
+        clearInterval(interval);
+      } else {
+        secondHalfSearchVolume.textContent = guess;
+        guess += 1;
+        secondHalfSearchVolume.textContent = guess.toLocaleString();
+      }
+    });
+  } else {
+    showSecondSearchVolume();
+    let guess = secondHalfSearchVolumeValue - 70;
+    hideButtons();
+    // Add interval animation so that it counts up
+    const interval = setInterval(() => {
+      if (guess > secondHalfSearchVolumeValue - 1) {
+        setTimeout(() => {
+          startGame();
+          failScreenShow();
+          currentScore.textContent = 0;
+          for (let i = 0; i < overlayRed.length; i++) {
+            overlayRed[i].classList.add("hidden");
+          }
+        }, 1000);
+        wrongAnswerBox.classList.add("show");
+        for (let i = 0; i < overlayRed.length; i++) {
+          overlayRed[i].classList.add("visible");
+        }
+        clearInterval(interval);
+      } else {
+        secondHalfSearchVolume.textContent = guess;
+        guess += 1;
+        secondHalfSearchVolume.textContent = guess.toLocaleString();
+      }
+    });
+  }
+}
 
 /**
  * If the user guesses correctly we trigger this function that switches over the elements
