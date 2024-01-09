@@ -48,6 +48,34 @@ const searchData = [
     imageOwnerName: "Joseph A. Lee",
     imageOwnerUrl: "https://commons.wikimedia.org/wiki/File:Kobe_B_Bryant.jpg",
   },
+  {
+    searchTerm: "Hillsborough Disaster",
+    searchVolume: 33100,
+    image: "assets/images/hillsborough-disaster.webp",
+    imageOwnerName: "David Dixon",
+    imageOwnerUrl: "https://www.geograph.org.uk/photo/4454163",
+  },
+  {
+    searchTerm: "E-Cigarettes",
+    searchVolume: 368000,
+    image: "assets/images/e-cigarettes.webp",
+    imageOwnerName: "Vaping360",
+    imageOwnerUrl: "https://www.flickr.com/photos/vaping360/16161321808",
+  },
+  {
+    searchTerm: "Pittsburgh Penguins",
+    searchVolume: 1220000,
+    image: "assets/images/pittsburgh-penguins.webp",
+    imageOwnerName: "pointnshoot",
+    imageOwnerUrl: "https://www.flickr.com/photos/pointnshoot/2182166668",
+  },
+  {
+    searchTerm: "Jerusalem",
+    searchVolume: 823000,
+    image: "assets/images/jerulsalem.webp",
+    imageOwnerName: "Dan",
+    imageOwnerUrl: "https://www.flickr.com/photos/twiga_swala/2263943148",
+  },
 ];
 
 // Set global variables so they can be accessed from anywhere
@@ -112,7 +140,7 @@ function startGame() {
   firstHalf.style.backgroundImage = `url(${searchData[randomNumber1].image})`;
   // Add image owner name and image link
   imageOwnerNameOne.textContent = searchData[randomNumber1].imageOwnerName;
-  imageOwnerLinkOne.getAttribute(
+  imageOwnerLinkOne.setAttribute(
     "href",
     searchData[randomNumber1].imageOwnerUrl
   );
@@ -124,7 +152,7 @@ function startGame() {
   hideSecondSearchVolume();
   // Add image owner name and image link
   imageOwnerNameTwo.textContent = searchData[randomNumber2].imageOwnerName;
-  imageOwnerLinkTwo.getAttribute(
+  imageOwnerLinkTwo.setAttribute(
     "href",
     searchData[randomNumber2].imageOwnerUrl
   );
@@ -286,7 +314,7 @@ function guessedCorrect() {
   firstHalfSearchVolume.textContent = firstHalfSearchVolumeValue;
   firstHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
   imageOwnerNameOne.textContent = searchData[randomNumber2].imageOwnerName;
-  imageOwnerLinkOne.getAttribute(
+  imageOwnerLinkOne.setAttribute(
     "href",
     searchData[randomNumber2].imageOwnerUrl
   );
@@ -304,7 +332,7 @@ function guessedCorrect() {
   secondHalfSearchVolume.textContent = secondHalfSearchVolumeValue;
   secondHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
   imageOwnerNameTwo.textContent = searchData[randomNumber2].imageOwnerName;
-  imageOwnerLinkTwo.getAttribute(
+  imageOwnerLinkTwo.setAttribute(
     "href",
     searchData[randomNumber2].imageOwnerUrl
   );
