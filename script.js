@@ -382,9 +382,9 @@ buttons.forEach((button) => {
         // Add interval animation so that it counts up
         const interval = setInterval(() => {
           if (guess > secondHalfSearchVolumeValue - 1) {
-            failScreenShow();
             setTimeout(() => {
               startGame();
+              failScreenShow();
               currentScore.textContent = 0;
               for (let i = 0; i < overlayRed.length; i++) {
                 overlayRed[i].classList.remove("visible");
@@ -439,10 +439,9 @@ buttons.forEach((button) => {
         // Add interval animation so that it counts up
         const interval = setInterval(() => {
           if (guess > secondHalfSearchVolumeValue - 1) {
-            failScreenShow();
             setTimeout(() => {
               startGame();
-
+              failScreenShow();
               currentScore.textContent = 0;
               for (let i = 0; i < overlayRed.length; i++) {
                 overlayRed[i].classList.add("hidden");
