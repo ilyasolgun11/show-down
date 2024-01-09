@@ -136,7 +136,8 @@ function startGame() {
   firstHalfSearchTerm.textContent = searchData[randomNumber1].searchTerm;
   // Setting global variable value to searchData[randomNumber1].searchVolume
   firstHalfSearchVolumeValue = searchData[randomNumber1].searchVolume;
-  firstHalfSearchVolume.textContent = firstHalfSearchVolumeValue;
+  firstHalfSearchVolume.textContent =
+    firstHalfSearchVolumeValue.toLocaleString();
   firstHalf.style.backgroundImage = `url(${searchData[randomNumber1].image})`;
   // Add image owner name and image link
   imageOwnerNameOne.textContent = searchData[randomNumber1].imageOwnerName;
@@ -147,7 +148,8 @@ function startGame() {
   secondHalfSearchTerm.textContent = searchData[randomNumber2].searchTerm;
   // Setting global variable value to searchData[randomNumber2].searchVolume
   secondHalfSearchVolumeValue = searchData[randomNumber2].searchVolume;
-  secondHalfSearchVolume.textContent = secondHalfSearchVolumeValue;
+  secondHalfSearchVolume.textContent =
+    secondHalfSearchVolumeValue.toLocaleString();
   secondHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
   hideSecondSearchVolume();
   // Add image owner name and image link
@@ -218,7 +220,7 @@ buttons.forEach((button) => {
         hideButtons();
         // Add interval animation so that it counts up
         const interval = setInterval(() => {
-          if (guess > secondHalfSearchVolumeValue) {
+          if (guess > secondHalfSearchVolumeValue - 5) {
             // Set time between the correctAnswerBox is showing and disappearing
             // When it disappears trigger the guessed correct function
             setTimeout(() => {
@@ -232,6 +234,7 @@ buttons.forEach((button) => {
           } else {
             secondHalfSearchVolume.textContent = guess;
             guess += 5;
+            secondHalfSearchVolume.textContent = guess.toLocaleString();
           }
         });
       } else {
@@ -240,7 +243,7 @@ buttons.forEach((button) => {
         hideButtons();
         // Add interval animation so that it counts up
         const interval = setInterval(() => {
-          if (guess > secondHalfSearchVolumeValue) {
+          if (guess > secondHalfSearchVolumeValue - 5) {
             setTimeout(() => {
               startGame();
               score = 0;
@@ -251,6 +254,7 @@ buttons.forEach((button) => {
           } else {
             secondHalfSearchVolume.textContent = guess;
             guess += 5;
+            secondHalfSearchVolume.textContent = guess.toLocaleString();
           }
         });
       }
@@ -261,7 +265,7 @@ buttons.forEach((button) => {
         hideButtons();
         // Add interval animation so that it counts up
         const interval = setInterval(() => {
-          if (guess > secondHalfSearchVolumeValue) {
+          if (guess > secondHalfSearchVolumeValue - 5) {
             // Set time between the correctAnswerBox is showing and disappearing
             // When it disappears trigger the guessed correct function
             setTimeout(() => {
@@ -275,6 +279,7 @@ buttons.forEach((button) => {
           } else {
             secondHalfSearchVolume.textContent = guess;
             guess += 5;
+            secondHalfSearchVolume.textContent = guess.toLocaleString();
           }
         });
       } else {
@@ -283,7 +288,7 @@ buttons.forEach((button) => {
         hideButtons();
         // Add interval animation so that it counts up
         const interval = setInterval(() => {
-          if (guess > secondHalfSearchVolumeValue) {
+          if (guess > secondHalfSearchVolumeValue - 5) {
             setTimeout(() => {
               startGame();
               score = 0;
@@ -294,6 +299,7 @@ buttons.forEach((button) => {
           } else {
             secondHalfSearchVolume.textContent = guess;
             guess += 5;
+            secondHalfSearchVolume.textContent = guess.toLocaleString();
           }
         });
       }
@@ -311,7 +317,8 @@ function guessedCorrect() {
   // Shifting the content that was on the secondHalf to the firstHalf
   firstHalfSearchTerm.textContent = searchData[randomNumber2].searchTerm;
   firstHalfSearchVolumeValue = searchData[randomNumber2].searchVolume;
-  firstHalfSearchVolume.textContent = firstHalfSearchVolumeValue;
+  firstHalfSearchVolume.textContent =
+    firstHalfSearchVolumeValue.toLocaleString();
   firstHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
   imageOwnerNameOne.textContent = searchData[randomNumber2].imageOwnerName;
   imageOwnerLinkOne.setAttribute(
@@ -329,7 +336,8 @@ function guessedCorrect() {
   // Set the secondHalf DOM elements with the new random number
   secondHalfSearchTerm.textContent = searchData[randomNumber2].searchTerm;
   secondHalfSearchVolumeValue = searchData[randomNumber2].searchVolume;
-  secondHalfSearchVolume.textContent = secondHalfSearchVolumeValue;
+  secondHalfSearchVolume.textContent =
+    secondHalfSearchVolumeValue.toLocaleString();
   secondHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
   imageOwnerNameTwo.textContent = searchData[randomNumber2].imageOwnerName;
   imageOwnerLinkTwo.setAttribute(
