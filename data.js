@@ -282,6 +282,70 @@ let searchData = [
     imageOwnerName: "ebayink",
     imageOwnerUrl: "https://www.flickr.com/photos/ebayink/3440028348",
   },
+  {
+    searchTerm: "Currency Converter",
+    searchVolume: 6120000,
+    image: "assets/images/randommode/currency-converter.webp",
+    imageOwnerName: "Monito-MoneyTransferComparison",
+    imageOwnerUrl: "https://www.flickr.com/photos/money-transfers/44783853370",
+  },
+  {
+    searchTerm: "Protein Shakes",
+    searchVolume: 201900,
+    image: "assets/images/randommode/protein-shakes.webp",
+    imageOwnerName: "Marco Verch",
+    imageOwnerUrl: "https://www.flickr.com/photos/160866001@N07/48238304261",
+  },
+  {
+    searchTerm: "Mona Lisa",
+    searchVolume: 823000,
+    image: "assets/images/randommode/mona-lisa.webp",
+    imageOwnerName: "Richard Mortel",
+    imageOwnerUrl: "https://www.flickr.com/photos/prof_richard/13897565876",
+  },
+  {
+    searchTerm: "Ramadan",
+    searchVolume: 673000,
+    image: "assets/images/randommode/ramadan.webp",
+    imageOwnerName: "Ministry of Information",
+    imageOwnerUrl: "https://www.flickr.com/photos/ictqatar/7581694646",
+  },
+  {
+    searchTerm: "The Rock",
+    searchVolume: 1500000,
+    image: "assets/images/randommode/the-rock.webp",
+    imageOwnerName: "irfan.nasir05",
+    imageOwnerUrl: "https://www.flickr.com/photos/irfanpuniali/8429441527",
+  },
+  {
+    searchTerm: "Powerpuff Girls",
+    searchVolume: 40500,
+    image: "assets/images/randommode/powerpuff-girls.webp",
+    imageOwnerName: "Coffgirl",
+    imageOwnerUrl:
+      "https://www.deviantart.com/coffgirl/art/The-Powerpuff-Girls-CF-2015-581401733",
+  },
+  {
+    searchTerm: "Chevrolet",
+    searchVolume: 3350000,
+    image: "assets/images/randommode/chevrolet.webp",
+    imageOwnerName: "GM Europe",
+    imageOwnerUrl: "https://www.flickr.com/photos/gmeurope/2689590971",
+  },
+  {
+    searchTerm: "Chevrolet",
+    searchVolume: 3350000,
+    image: "assets/images/randommode/chevrolet.webp",
+    imageOwnerName: "GM Europe",
+    imageOwnerUrl: "https://www.flickr.com/photos/gmeurope/2689590971",
+  },
+  {
+    searchTerm: "Schizophrenia",
+    searchVolume: 1000000,
+    image: "assets/images/randommode/schizophrenia.webp",
+    imageOwnerName: "johnbill552",
+    imageOwnerUrl: "https://www.flickr.com/photos/141608731@N06/38843081961",
+  },
 ];
 
 let fansData = [
@@ -389,9 +453,10 @@ let fansData = [
   {
     searchTerm: "Trabzonspor",
     searchVolume: 7300000,
-    image: "assets/images/fansmode/me-trabzon-spor.webp",
-    imageOwnerName: "Me",
-    imageOwnerUrl: "",
+    image: "assets/images/fansmode/trabzonspor.webp",
+    imageOwnerName: "Богдан Заяц",
+    imageOwnerUrl:
+      "https://commons.wikimedia.org/wiki/File:Metallist-Trabzonspor_%288%29.jpg",
   },
   {
     searchTerm: "Başakşehir",
@@ -478,5 +543,27 @@ let fansData = [
     image: "assets/images/fansmode/roma.webp",
     imageOwnerName: "Massimo Mastropietro",
     imageOwnerUrl: "https://www.flickr.com/photos/8147424@N02/544390767",
+  },
+  {
+    searchTerm: "Bayern Munich",
+    searchVolume: 120000000,
+    image: "assets/images/fansmode/bayern-munich.webp",
+    imageOwnerName: "iPhone-SoccerWallpaper",
+    imageOwnerUrl: "https://www.flickr.com/photos/40583088@N07/3735789756",
+  },
+  {
+    searchTerm: "Borussia Dortmund",
+    searchVolume: 45000000,
+    image: "assets/images/fansmode/borussia-dortmund.webp",
+    imageOwnerName: "Adam Howarth",
+    imageOwnerUrl:
+      "https://www.borussiadortmund.co.uk/preview/borussia-dortmund-vs-chelsea-champions-league-preview/",
+  },
+  {
+    searchTerm: "FC Köln",
+    searchVolume: 3550000,
+    image: "assets/images/fansmode/fc-koln.webp",
+    imageOwnerName: "dronepicr",
+    imageOwnerUrl: "https://www.flickr.com/photos/132646954@N02/33947844388",
   },
 ];
