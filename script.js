@@ -183,7 +183,7 @@ const searchData = [
       "https://commons.wikimedia.org/wiki/File:Pacman_and_the_Lotus_Elise_-_Flickr_-_The_Pug_Father.jpg",
   },
   {
-    searchTerm: "Heart",
+    searchTerm: "Heart Disease",
     searchVolume: 135000,
     image: "assets/images/heart.webp",
     imageOwnerName: "Heart Disease",
