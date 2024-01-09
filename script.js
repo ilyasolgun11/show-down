@@ -90,6 +90,11 @@ let currentScore = document.getElementById("current-score");
 // Grab buttons from DOM
 let higherBtn = document.getElementById("higher-btn");
 let lowerBtn = document.getElementById("lower-btn");
+// Grab elements from DOM to credit image owner
+let imageOwnerNameOne = document.getElementById("image-owner-name-1");
+let imageOwnerLinkOne = document.getElementById("image-owner-link-1");
+let imageOwnerNameTwo = document.getElementById("image-owner-name-2");
+let imageOwnerLinkTwo = document.getElementById("image-owner-link-2");
 
 function startGame() {
   // Generate 2 random numbers
@@ -105,12 +110,24 @@ function startGame() {
   firstHalfSearchVolumeValue = searchData[randomNumber1].searchVolume;
   firstHalfSearchVolume.textContent = firstHalfSearchVolumeValue;
   firstHalf.style.backgroundImage = `url(${searchData[randomNumber1].image})`;
+  // Add image owner name and image link
+  imageOwnerNameOne.textContent = searchData[randomNumber1].imageOwnerName;
+  imageOwnerLinkOne.getAttribute(
+    "href",
+    searchData[randomNumber1].imageOwnerUrl
+  );
   secondHalfSearchTerm.textContent = searchData[randomNumber2].searchTerm;
   // Setting global variable value to searchData[randomNumber2].searchVolume
   secondHalfSearchVolumeValue = searchData[randomNumber2].searchVolume;
   secondHalfSearchVolume.textContent = secondHalfSearchVolumeValue;
   secondHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
   hideSecondSearchVolume();
+  // Add image owner name and image link
+  imageOwnerNameTwo.textContent = searchData[randomNumber2].imageOwnerName;
+  imageOwnerLinkTwo.getAttribute(
+    "href",
+    searchData[randomNumber2].imageOwnerUrl
+  );
   // Remove right and wrong box from DOM
   correctAnswerBox.classList.remove("show");
   wrongAnswerBox.classList.remove("show");
@@ -268,6 +285,11 @@ function guessedCorrect() {
   firstHalfSearchVolumeValue = searchData[randomNumber2].searchVolume;
   firstHalfSearchVolume.textContent = firstHalfSearchVolumeValue;
   firstHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
+  imageOwnerNameOne.textContent = searchData[randomNumber2].imageOwnerName;
+  imageOwnerLinkOne.getAttribute(
+    "href",
+    searchData[randomNumber2].imageOwnerUrl
+  );
   console.log(randomNumber1, randomNumber2);
 
   // Increment value for current score
@@ -281,4 +303,9 @@ function guessedCorrect() {
   secondHalfSearchVolumeValue = searchData[randomNumber2].searchVolume;
   secondHalfSearchVolume.textContent = secondHalfSearchVolumeValue;
   secondHalf.style.backgroundImage = `url(${searchData[randomNumber2].image})`;
+  imageOwnerNameTwo.textContent = searchData[randomNumber2].imageOwnerName;
+  imageOwnerLinkTwo.getAttribute(
+    "href",
+    searchData[randomNumber2].imageOwnerUrl
+  );
 }
