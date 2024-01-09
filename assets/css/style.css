@@ -141,7 +141,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.85);
   z-index: 1;
 }
 
@@ -541,14 +541,15 @@ body {
   .game-container {
     flex-direction: column;
   }
-  .logo {
-    display: none;
+  .logo img {
+    width: 80px;
+    height: 80px;
   }
 }
 
 @media screen and (max-width: 786px) {
   #main-menu {
-    height: 135vh;
+    height: 145vh;
   }
   .game-modes {
     flex-direction: column;
