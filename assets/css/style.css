@@ -65,12 +65,6 @@ body {
   color: white;
 }
 
-#failed-screen-play-again:hover {
-  background-color: white;
-  color: black;
-  transition: all 0.3s ease;
-}
-
 .pop-up-logo {
   margin-top: -20px;
   width: 170px;
@@ -317,6 +311,11 @@ body {
   #first-half-search-volume,
   #second-half-search-volume {
     font-size: 3rem;
+  }
+  #higher-btn:hover,
+  #lower-btn:hover {
+    background-color: transparent;
+    color: white;
   }
   #first-half p,
   #second-half p {

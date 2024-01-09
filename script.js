@@ -348,7 +348,7 @@ buttons.forEach((button) => {
     if (button.getAttribute("data-type") === "higher") {
       if (firstHalfSearchVolumeValue < secondHalfSearchVolumeValue) {
         showSecondSearchVolume();
-        let guess = secondHalfSearchVolumeValue - 350;
+        let guess = secondHalfSearchVolumeValue - 500;
         hideButtons();
         // Add interval animation so that it counts up
         const interval = setInterval(() => {
@@ -377,7 +377,7 @@ buttons.forEach((button) => {
         });
       } else {
         showSecondSearchVolume();
-        let guess = secondHalfSearchVolumeValue - 350;
+        let guess = secondHalfSearchVolumeValue - 500;
         hideButtons();
         // Add interval animation so that it counts up
         const interval = setInterval(() => {
@@ -405,7 +405,7 @@ buttons.forEach((button) => {
     } else if (button.getAttribute("data-type") === "lower") {
       if (firstHalfSearchVolumeValue > secondHalfSearchVolumeValue) {
         showSecondSearchVolume();
-        let guess = secondHalfSearchVolumeValue - 350;
+        let guess = secondHalfSearchVolumeValue - 500;
         hideButtons();
         // Add interval animation so that it counts up
         const interval = setInterval(() => {
@@ -434,7 +434,7 @@ buttons.forEach((button) => {
         });
       } else {
         showSecondSearchVolume();
-        let guess = secondHalfSearchVolumeValue - 350;
+        let guess = secondHalfSearchVolumeValue - 500;
         hideButtons();
         // Add interval animation so that it counts up
         const interval = setInterval(() => {
