@@ -145,9 +145,22 @@ function failScreenShow() {
       failedScreen.style.visibility = "hidden";
       score = 0;
     });
-  } else if (score > 10) {
+  } else if (score > 10 && score < 15) {
     congratsMessage.textContent = "OMG, what a pro!";
     failedScreen.style.backgroundImage = `url(${"assets/images/gif/men-celebrating.gif"})`;
+    failedPlayAgainBtn.addEventListener("click", function () {
+      startGame();
+      failedScreen.style.visibility = "hidden";
+      score = 0;
+    });
+    failedMainMenu.addEventListener("click", function () {
+      gameMainMenu();
+      failedScreen.style.visibility = "hidden";
+      score = 0;
+    });
+  } else if (score > 15) {
+    congratsMessage.textContent = "Now you, are special.";
+    failedScreen.style.backgroundImage = `url(${"assets/images/gif/gg.gif"})`;
     failedPlayAgainBtn.addEventListener("click", function () {
       startGame();
       failedScreen.style.visibility = "hidden";
