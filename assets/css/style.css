@@ -250,6 +250,10 @@ body {
   transform: translateX(-50%);
 }
 
+.logo:hover {
+  cursor: pointer;
+}
+
 .logo img {
   width: 110px;
   height: 110px;

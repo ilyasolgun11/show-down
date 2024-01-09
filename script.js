@@ -11,6 +11,13 @@ let secondHalf = document.getElementById("second-half");
 // Grab correct and wrong answer boxes from DOM
 let correctAnswerBox = document.getElementById("correct-answer");
 let wrongAnswerBox = document.getElementById("wrong-answer");
+// Grab search criteria from DOM
+let firstHalfSearchCriteriaMode = document.getElementById(
+  "first-half-search-criteria"
+);
+let secondHalfSearchCriteriaMode = document.getElementById(
+  "second-half-search-criteria"
+);
 // Grab score count variable from DOM
 let currentScore = document.getElementById("current-score");
 // Grab buttons from DOM
@@ -44,6 +51,7 @@ let randomNumber1;
 let randomNumber2;
 let score = 0;
 let currentArray;
+let searchCriteria;
 
 /**
  * Gives the player to have the option of choosing the game mode
@@ -53,12 +61,14 @@ function gameMainMenu() {
   fansMode.addEventListener("click", function () {
     currentArray = fansData;
     mainMenu.style.display = "none";
+    searchCriteria = "football fans";
     startGame();
   });
 
   randomMode.addEventListener("click", function () {
     currentArray = searchData;
     mainMenu.style.display = "none";
+    searchCriteria = "average monthly searches";
     startGame();
   });
 }
@@ -181,6 +191,9 @@ function startGame() {
   secondHalfSearchVolume.textContent =
     secondHalfSearchVolumeValue.toLocaleString();
   secondHalf.style.backgroundImage = `url(${currentArray[randomNumber2].image})`;
+  // Add search criteria mode
+  firstHalfSearchCriteriaMode.textContent = searchCriteria;
+  secondHalfSearchCriteriaMode.textContent = searchCriteria;
   hideSecondSearchVolume();
   // Add image owner name and image link
   imageOwnerNameTwo.textContent = currentArray[randomNumber2].imageOwnerName;
