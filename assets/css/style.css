@@ -225,6 +225,11 @@ body {
   #second-half p {
     font-size: 1rem;
   }
+  #correct-answer,
+  #wrong-answer {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 @media screen and (max-width: 500px) {

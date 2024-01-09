@@ -142,6 +142,22 @@ const searchData = [
     imageOwnerName: "slgckgc",
     imageOwnerUrl: "https://www.flickr.com/photos/slgc/3998375778",
   },
+  {
+    searchTerm: "Lung Cancer",
+    searchVolume: 201000,
+    image: "assets/images/lung-cancer.webp",
+    imageOwnerName: "Richard W",
+    imageOwnerUrl:
+      "https://en.wikipedia.org/wiki/Pleural_cavity#External_links",
+  },
+  {
+    searchTerm: "Immigration",
+    searchVolume: 823000,
+    image: "assets/images/immigration.webp",
+    imageOwnerName: "Nick Youngson",
+    imageOwnerUrl:
+      "https://thebluediamondgallery.com/highway-signs/i/immigration.html",
+  },
 ];
 
 // Set global variables so they can be accessed from anywhere
