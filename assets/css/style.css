@@ -65,6 +65,11 @@ body {
   color: white;
 }
 
+#failed-screen-play-again:focus {
+  background-color: transparent;
+  color: white;
+}
+
 .pop-up-logo {
   margin-top: -20px;
   width: 170px;
@@ -236,6 +241,12 @@ body {
 #higher-btn:hover,
 #lower-btn:hover {
   background-color: white;
+  color: black;
+}
+
+#higher-btn:focus,
+#lower-btn:focus {
+  background-color: transparent;
   color: black;
 }
 
