@@ -694,3 +694,117 @@ let fansData = [
     imageOwnerUrl: "https://www.flickr.com/photos/132646954@N02/33947844388",
   },
 ];
+
+let revenueCap = [
+  {
+    searchTerm: "Walmart",
+    searchVolume: 638780000000,
+    image: "assets/images/revenuemode/walmart.webp",
+    imageOwnerName: "Walmart",
+    imageOwnerUrl: "https://www.flickr.com/photos/walmartcorporate/5266815680",
+  },
+  {
+    searchTerm: "Amazon",
+    searchVolume: 554020000000,
+    image: "assets/images/revenuemode/amazon.webp",
+    imageOwnerName: "soumit",
+    imageOwnerUrl: "https://www.flickr.com/photos/soumit/2734471",
+  },
+  {
+    searchTerm: "Saudi Aramco",
+    searchVolume: 502350000000,
+    image: "assets/images/revenuemode/saudi-aramco.webp",
+    imageOwnerName: "Jack Dutton",
+    imageOwnerUrl:
+      "https://www.al-monitor.com/originals/2023/06/saudi-aramcos-50-billion-deal-turkey-seeks-less-dependency-west",
+  },
+  {
+    searchTerm: "Sinopec",
+    searchVolume: 473530000000,
+    image: "assets/images/revenuemode/sinopec.webp",
+    imageOwnerName: "Sguidu Faiem Saegoum",
+    imageOwnerUrl:
+      "https://commons.wikimedia.org/wiki/File:HK_ML_%E5%8D%8A%E5%B1%B1%E5%8D%80_Mid-levels_WC_%E7%81%A3%E4%BB%94_Wan_Chai_%E5%A0%85%E5%B0%BC%E5%9C%B0%E9%81%93_Kennedy_Road_SinoPec_Station_January_2021_SS2_09.jpg",
+  },
+  {
+    searchTerm: "Petro China",
+    searchVolume: 435300000000,
+    image: "assets/images/revenuemode/petro-china.webp",
+    imageOwnerName: "Chen Aizhu",
+    imageOwnerUrl:
+      "https://www.reuters.com/business/energy/petrochina-expects-oil-demand-recovery-after-record-2022-profit-2023-03-30/",
+  },
+  {
+    searchTerm: "Berkshire Hathaway",
+    searchVolume: 401770000000,
+    image: "assets/images/revenuemode/berkshire-hathaway.webp",
+    imageOwnerName: "Steve Evans",
+    imageOwnerUrl:
+      "https://www.artemis.bm/news/berkshire-hathaway-rumoured-buying-pge-buffett-quickly-denies-the-news/",
+  },
+  {
+    searchTerm: "Apple",
+    searchVolume: 383280000000,
+    image: "assets/images/revenuemode/apple.webp",
+    imageOwnerName: "Håkan Dahlström",
+    imageOwnerUrl: "https://www.flickr.com/photos/dahlstroms/4111380748",
+  },
+  {
+    searchTerm: "UnitedHealth",
+    searchVolume: 359980000000,
+    image: "assets/images/revenuemode/united-health.webp",
+    imageOwnerName: "United Health",
+    imageOwnerUrl:
+      "https://www.unitedhealthgroup.com/people-and-businesses/businesses/unitedhealthcare.html",
+  },
+  {
+    searchTerm: "CVS Health",
+    searchVolume: 347800000000,
+    image: "assets/images/revenuemode/cvs-health.webp",
+    imageOwnerName: "Mike Mozart",
+    imageOwnerUrl: "https://www.flickr.com/photos/jeepersmedia/27897972052",
+  },
+  {
+    searchTerm: "Exxon Mobil",
+    searchVolume: 346170000000,
+    image: "assets/images/revenuemode/exxon-mobil.webp",
+    imageOwnerName: "Nathan Hughes Hamilton",
+    imageOwnerUrl: "https://www.flickr.com/photos/nat507/14676345523",
+  },
+  {
+    searchTerm: "Shell",
+    searchVolume: 339190000000,
+    image: "assets/images/revenuemode/shell.webp",
+    imageOwnerName: "Mike Mozart",
+    imageOwnerUrl: "https://www.flickr.com/photos/jeepersmedia/13943342113",
+  },
+  {
+    searchTerm: "Volkswagen",
+    searchVolume: 335040000000,
+    image: "assets/images/revenuemode/volkswagen.webp",
+    imageOwnerName: "Georg Sander",
+    imageOwnerUrl: "https://www.flickr.com/photos/geralds_1311/5242686283",
+  },
+  {
+    searchTerm: "China Construction",
+    searchVolume: 310780000000,
+    image: "assets/images/revenuemode/china-construction.webp",
+    imageOwnerName: "Wikipedia",
+    imageOwnerUrl:
+      "https://en.wikipedia.org/wiki/China_State_Construction_Engineering",
+  },
+  {
+    searchTerm: "Google",
+    searchVolume: 297130000000,
+    image: "assets/images/revenuemode/google.webp",
+    imageOwnerName: "Global Panorama",
+    imageOwnerUrl: "https://www.flickr.com/photos/121483302@N02/14253849274",
+  },
+  {
+    searchTerm: "Toyota",
+    searchVolume: 296610000000,
+    image: "assets/images/revenuemode/toyota.webp",
+    imageOwnerName: "Toyota Motor Europe",
+    imageOwnerUrl: "https://www.flickr.com/photos/toyota-europe/14057640180",
+  },
+];

@@ -110,7 +110,12 @@ body {
 }
 
 .random-mode {
+  border-radius: 10px 0px 0px 10px;
   background: url(../images/randommode/bitcoin.webp) center/cover no-repeat;
+}
+
+.random-mode:before {
+  border-radius: 10px 0px 0px 10px;
 }
 
 .fans-mode {
@@ -118,13 +123,18 @@ body {
     no-repeat;
 }
 
-.coming-soon-mode {
-  background: url(../images/gif/drunk-man-at-store.gif) center/cover no-repeat;
+.market-cap-mode {
+  border-radius: 0px 10px 10px 0px;
+  background: url(../images/money.webp) center/cover no-repeat;
+}
+
+.market-cap-mode:before {
+  border-radius: 0px 10px 10px 0px;
 }
 
 .random-mode,
 .fans-mode,
-.coming-soon-mode {
+.market-cap-mode {
   position: relative;
   border: 2px solid white;
   display: flex;
@@ -132,15 +142,13 @@ body {
   justify-content: center;
   flex-direction: column;
   color: rgb(255, 255, 255);
-  border-radius: 10px;
   width: 320px;
   height: 440px;
 }
 
 .random-mode:before,
 .fans-mode:before,
-.coming-soon-mode:before {
-  border-radius: 10px;
+.market-cap-mode:before {
   content: "";
   position: absolute;
   top: 0;
@@ -153,7 +161,7 @@ body {
 
 .random-mode p,
 .fans-mode p,
-.coming-soon-mode p {
+.market-cap-mode p {
   position: relative;
   z-index: 3;
   text-align: center;
@@ -161,7 +169,8 @@ body {
 }
 
 .random-mode:hover,
-.fans-mode:hover {
+.fans-mode:hover,
+.market-cap-mode:hover {
   z-index: 7;
   transform: scale(1.05);
   cursor: pointer;
@@ -170,7 +179,7 @@ body {
 
 .random-mode h2,
 .fans-mode h2,
-.coming-soon-mode h2 {
+.market-cap-mode h2 {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.859);
   padding: 4px 13px;
@@ -535,6 +544,9 @@ body {
 }
 
 @media screen and (max-width: 930px) {
+  #main-menu {
+    height: 145vh;
+  }
   .game-container {
     flex-direction: column;
   }
@@ -544,15 +556,27 @@ body {
   }
   .random-mode,
   .fans-mode,
-  .coming-soon-mode {
+  .market-cap-mode {
     margin: 0px auto;
     width: 100%;
-    height: 270px;
+    height: 290px;
   }
   .random-mode:hover,
   .fans-mode:hover,
-  .coming-soon-mode:hover {
+  .market-cap-mode:hover {
     transform: scale(1);
+  }
+  .random-mode {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .random-mode:before {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .market-cap-mode {
+    border-radius: 0px 0px 10px 10px;
+  }
+  .market-cap-mode:before {
+    border-radius: 0px 0px 10px 10px;
   }
   .logo img {
     width: 80px;
@@ -561,9 +585,6 @@ body {
 }
 
 @media screen and (max-width: 786px) {
-  #main-menu {
-    height: 145vh;
-  }
   .game-modes {
     flex-direction: column;
     margin: 0px 25px;

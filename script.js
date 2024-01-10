@@ -41,8 +41,12 @@ let failedMainMenu = document.getElementById("failed-screen-main-menu");
 const mainMenu = document.getElementById("main-menu");
 let randomMode = document.getElementById("random-mode");
 let fansMode = document.getElementById("fans-mode");
+let revenueMode = document.getElementById("market-cap-mode");
 // Grab logo from game screen
 let logo = document.getElementById("logo");
+// Grab has/earned from DOM
+let hasEarnedOne = document.getElementById("has-earned-first");
+let hasEarnedTwo = document.getElementById("has-earned-second");
 
 // Set global variables so they can be accessed from anywhere
 let firstHalfSearchVolumeValue;
@@ -62,6 +66,8 @@ function gameMainMenu() {
     currentArray = fansData;
     mainMenu.style.display = "none";
     searchCriteria = "football fans";
+    hasEarnedOne.textContent = "has";
+    hasEarnedTwo.textContent = "has";
     startGame();
   });
 
@@ -69,6 +75,17 @@ function gameMainMenu() {
     currentArray = searchData;
     mainMenu.style.display = "none";
     searchCriteria = "average monthly searches";
+    hasEarnedOne.textContent = "has";
+    hasEarnedTwo.textContent = "has";
+    startGame();
+  });
+
+  revenueMode.addEventListener("click", function () {
+    currentArray = revenueCap;
+    mainMenu.style.display = "none";
+    searchCriteria = "in revenue last year";
+    hasEarnedOne.textContent = "has made";
+    hasEarnedTwo.textContent = "has made";
     startGame();
   });
 }
