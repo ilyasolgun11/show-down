@@ -58,7 +58,9 @@ body {
 }
 
 .game-modes-container {
-  margin-top: 0px;
+  gap: 0.5rem;
+  flex-direction: row;
+  margin-top: 30px;
 }
 
 .game-modes-container h3 {
@@ -127,8 +129,8 @@ body {
   flex-direction: column;
   color: rgb(255, 255, 255);
   border-radius: 10px;
-  width: 240px;
-  height: 300px;
+  width: 320px;
+  height: 440px;
 }
 
 .random-mode:before,
@@ -156,7 +158,7 @@ body {
 
 .random-mode:hover,
 .fans-mode:hover {
-  z-index: 2;
+  z-index: 7;
   transform: scale(1.15);
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -165,9 +167,13 @@ body {
 .random-mode h2,
 .fans-mode h2,
 .coming-soon-mode h2 {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.859);
+  padding: 4px 13px;
   font-size: 1.7rem;
   position: relative;
   z-index: 4;
+  border-radius: 30px;
 }
 
 #fail-screen {
@@ -541,6 +547,23 @@ body {
   .game-container {
     flex-direction: column;
   }
+  .game-modes-container {
+    gap: 0.5rem;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .random-mode,
+  .fans-mode,
+  .coming-soon-mode {
+    margin: 0px auto;
+    width: 100%;
+    height: 270px;
+  }
+  .random-mode:hover,
+  .fans-mode:hover,
+  .coming-soon-mode:hover {
+    transform: scale(1);
+  }
   .logo img {
     width: 80px;
     height: 80px;
@@ -555,18 +578,7 @@ body {
     flex-direction: column;
     margin: 0px 25px;
   }
-  .random-mode,
-  .fans-mode,
-  .coming-soon-mode {
-    margin: 0px auto;
-    width: 100%;
-    height: 250px;
-  }
-  .random-mode:hover,
-  .fans-mode:hover,
-  .coming-soon-mode:hover {
-    transform: scale(1);
-  }
+
   #first-half h2,
   #second-half h2 {
     font-size: 2.3rem;
