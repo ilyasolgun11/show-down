@@ -436,7 +436,6 @@ function guessedCorrect() {
     "href",
     currentArray[randomNumber2].imageOwnerUrl
   );
-  console.log(randomNumber1, randomNumber2);
 
   // Increment value for current score
   score += 1;
@@ -446,7 +445,6 @@ function guessedCorrect() {
   do {
     randomNumber2 = generateRandomNumber();
   } while (randomNumber2 === previousRandomNumber2);
-  console.log(randomNumber2);
   // Set the secondHalf DOM elements with the new random number
   secondHalfSearchTerm.textContent = currentArray[randomNumber2].searchTerm;
   secondHalfSearchVolumeValue = currentArray[randomNumber2].searchVolume;
