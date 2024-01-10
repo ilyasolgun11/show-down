@@ -432,10 +432,46 @@ let searchData = [
   },
   {
     searchTerm: "Tom Hardy",
-    searchVolume: 4090000,
+    searchVolume: 2240000,
     image: "assets/images/randommode/tom-hardy.webp",
     imageOwnerName: "Gage Skidmore",
     imageOwnerUrl: "https://www.flickr.com/photos/gageskidmore/42774766265",
+  },
+  {
+    searchTerm: "Jim Brown",
+    searchVolume: 74000,
+    image: "assets/images/randommode/jim-brown.webp",
+    imageOwnerName: "LBJ Library",
+    imageOwnerUrl: "https://www.flickr.com/photos/lbjlibrarynow/13742249895",
+  },
+  {
+    searchTerm: "Nikola Tesla",
+    searchVolume: 673000,
+    image: "assets/images/randommode/nikola-tesla.webp",
+    imageOwnerName: "Faces Of The World",
+    imageOwnerUrl:
+      "https://www.flickr.com/photos/faces-of-the-world/51333949572",
+  },
+  {
+    searchTerm: "Urban Dictionary",
+    searchVolume: 6120000,
+    image: "assets/images/randommode/urban-dictionary.webp",
+    imageOwnerName: "EFFIE YANG",
+    imageOwnerUrl: "https://www.flickr.com/photos/litgreen/7293081552",
+  },
+  {
+    searchTerm: "YouTube",
+    searchVolume: 2700000000,
+    image: "assets/images/randommode/youtube.webp",
+    imageOwnerName: "UKBERRI.NET",
+    imageOwnerUrl: "https://www.flickr.com/photos/www_ukberri_net/6197755378",
+  },
+  {
+    searchTerm: "Audi",
+    searchVolume: 4090000,
+    image: "assets/images/randommode/audi.webp",
+    imageOwnerName: "Alexandre Prevot",
+    imageOwnerUrl: "https://www.flickr.com/photos/alexprevot/52413066986",
   },
 ];
 

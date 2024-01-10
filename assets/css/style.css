@@ -159,7 +159,7 @@ body {
 .random-mode:hover,
 .fans-mode:hover {
   z-index: 7;
-  transform: scale(1.15);
+  transform: scale(1.05);
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -492,17 +492,8 @@ body {
   font-size: 1.2rem;
 }
 
+.second-half-credit-container,
 .first-half-credit-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-end;
-  position: absolute;
-  bottom: -10px;
-  right: 10px;
-}
-
-.second-half-credit-container {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -519,10 +510,6 @@ body {
   border-radius: 50px;
   font-family: "Lato", sans-serif;
   color: white;
-}
-
-#image-owner-link-1 {
-  margin-right: 4px;
 }
 
 #image-owner-link-1,
