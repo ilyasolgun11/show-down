@@ -346,6 +346,41 @@ let searchData = [
     imageOwnerName: "johnbill552",
     imageOwnerUrl: "https://www.flickr.com/photos/141608731@N06/38843081961",
   },
+  {
+    searchTerm: "BMW",
+    searchVolume: 6120000,
+    image: "assets/images/randommode/BMW.webp",
+    imageOwnerName: "Andrew Bone",
+    imageOwnerUrl: "https://www.flickr.com/photos/andreboeni/50926337142",
+  },
+  {
+    searchTerm: "Free Climbing",
+    searchVolume: 12100,
+    image: "assets/images/randommode/free-climbling.webp",
+    imageOwnerName: "Ed Dunens",
+    imageOwnerUrl: "https://www.flickr.com/photos/blachswan/50197487736",
+  },
+  {
+    searchTerm: "Candy Crush Saga",
+    searchVolume: 7480000,
+    image: "assets/images/randommode/candy-crash-saga.webp",
+    imageOwnerName: "Albert Hsieh",
+    imageOwnerUrl: "https://www.flickr.com/photos/albert_hsieh/8538528791",
+  },
+  {
+    searchTerm: "Halloween",
+    searchVolume: 4090000,
+    image: "assets/images/randommode/haloween.webp",
+    imageOwnerName: "Artiom P",
+    imageOwnerUrl: "https://www.flickr.com/photos/artiomp/4061353880",
+  },
+  {
+    searchTerm: "Birthday Cake",
+    searchVolume: 2240000,
+    image: "assets/images/randommode/birthday-cake.webp",
+    imageOwnerName: "Dark Dwarf",
+    imageOwnerUrl: "https://www.flickr.com/photos/darkdwarf/34851504355",
+  },
 ];
 
 let fansData = [

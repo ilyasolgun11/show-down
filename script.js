@@ -100,14 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
   gameMainMenu();
 });
 
-logo.addEventListener("click", function () {
-  gameMainMenu();
-  score = 0;
-  currentScore.textContent = score;
-});
-
 /**
- *
  * Generate random number
  */
 function generateRandomNumber() {
