@@ -381,6 +381,62 @@ let searchData = [
     imageOwnerName: "Dark Dwarf",
     imageOwnerUrl: "https://www.flickr.com/photos/darkdwarf/34851504355",
   },
+  {
+    searchTerm: "Spotify",
+    searchVolume: 24900000,
+    image: "assets/images/randommode/spotify.webp",
+    imageOwnerName: "andro mart",
+    imageOwnerUrl: "https://www.flickr.com/photos/187600977@N05/49760009206",
+  },
+  {
+    searchTerm: "Cricket",
+    searchVolume: 7480000,
+    image: "assets/images/randommode/cricket.webp",
+    imageOwnerName: "Patrick Case",
+    imageOwnerUrl: "https://www.pexels.com/photo/boys-playing-cricket-3718433/",
+  },
+  {
+    searchTerm: "Gymnastics",
+    searchVolume: 550000,
+    image: "assets/images/randommode/gymnastics.webp",
+    imageOwnerName: "Rick McCharles",
+    imageOwnerUrl: "https://www.flickr.com/photos/rickmccharles/7758961764",
+  },
+  {
+    searchTerm: "Prada",
+    searchVolume: 823000,
+    image: "assets/images/randommode/parada.webp",
+    imageOwnerName: "SoQ錫濛譙",
+    imageOwnerUrl: "https://www.flickr.com/photos/qiaomeng/4079489086",
+  },
+  {
+    searchTerm: "Google",
+    searchVolume: 89000000000,
+    image: "assets/images/randommode/google.webp",
+    imageOwnerName: "Global Panorama",
+    imageOwnerUrl: "https://www.flickr.com/photos/121483302@N02/14253849274",
+  },
+  {
+    searchTerm: "Selena Gomez",
+    searchVolume: 7480000,
+    image: "assets/images/randommode/selena-gomez.webp",
+    imageOwnerName: "Joella Marano",
+    imageOwnerUrl: "https://www.flickr.com/photos/ellasportfolio/8228618996",
+  },
+  {
+    searchTerm: "Marks and Spencer",
+    searchVolume: 4090000,
+    image: "assets/images/randommode/marks-and-spencer.webp",
+    imageOwnerName: "Elliott Brown",
+    imageOwnerUrl: "https://www.flickr.com/photos/ell-r-brown/5461097775",
+  },
+  {
+    searchTerm: "Tom Hardy",
+    searchVolume: 4090000,
+    image: "assets/images/randommode/tom-hardy.webp",
+    imageOwnerName: "Gage Skidmore",
+    imageOwnerUrl: "https://www.flickr.com/photos/gageskidmore/42774766265",
+  },
 ];
 
 let fansData = [
