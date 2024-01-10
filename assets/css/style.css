@@ -45,6 +45,10 @@ body {
   height: 100%;
 }
 
+.main-menu-inner-container {
+  margin: 0px 20px;
+}
+
 .logo-section,
 .introduction-section,
 .game-modes-container {
@@ -58,7 +62,7 @@ body {
 }
 
 .game-modes-container {
-  gap: 0.5rem;
+  gap: 0.8rem;
   flex-direction: row;
   margin-top: 30px;
 }
@@ -535,7 +539,6 @@ body {
     flex-direction: column;
   }
   .game-modes-container {
-    gap: 0.5rem;
     flex-direction: column;
     margin-top: 30px;
   }
