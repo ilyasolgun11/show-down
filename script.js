@@ -300,7 +300,7 @@ buttons.forEach((button) => {
 function triggerHigher() {
   if (firstHalfSearchVolumeValue <= secondHalfSearchVolumeValue) {
     showSecondSearchVolume();
-    let guess = secondHalfSearchVolumeValue - 10;
+    let guess = secondHalfSearchVolumeValue - 70;
     hideButtons();
     // Add interval animation so that it counts up
     const interval = setInterval(() => {
@@ -326,10 +326,10 @@ function triggerHigher() {
         guess += 1;
         secondHalfSearchVolume.textContent = guess.toLocaleString();
       }
-    });
+    }, 10);
   } else {
     showSecondSearchVolume();
-    let guess = secondHalfSearchVolumeValue - 10;
+    let guess = secondHalfSearchVolumeValue - 70;
     hideButtons();
     // Add interval animation so that it counts up
     const interval = setInterval(() => {
@@ -352,7 +352,7 @@ function triggerHigher() {
         guess += 1;
         secondHalfSearchVolume.textContent = guess.toLocaleString();
       }
-    });
+    }, 10);
   }
 }
 
@@ -362,7 +362,7 @@ function triggerHigher() {
 function triggerLower() {
   if (firstHalfSearchVolumeValue >= secondHalfSearchVolumeValue) {
     showSecondSearchVolume();
-    let guess = secondHalfSearchVolumeValue - 10;
+    let guess = secondHalfSearchVolumeValue - 70;
     hideButtons();
     // Add interval animation so that it counts up
     const interval = setInterval(() => {
@@ -388,10 +388,10 @@ function triggerLower() {
         guess += 1;
         secondHalfSearchVolume.textContent = guess.toLocaleString();
       }
-    });
+    }, 10);
   } else {
     showSecondSearchVolume();
-    let guess = secondHalfSearchVolumeValue - 10;
+    let guess = secondHalfSearchVolumeValue - 70;
     hideButtons();
     // Add interval animation so that it counts up
     const interval = setInterval(() => {
@@ -414,7 +414,7 @@ function triggerLower() {
         guess += 1;
         secondHalfSearchVolume.textContent = guess.toLocaleString();
       }
-    });
+    }, 10);
   }
 }
 
