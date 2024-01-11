@@ -112,8 +112,8 @@ function generateRandomNumber() {
 }
 
 /**
- * Displays fail screen and gives user the option to play again
- * Also displays a GIF
+ * Displays fail screen and gives user the option to play again or go to the main menu
+ * Also displays a funny GIF
  */
 function failScreenShow() {
   failedScreen.style.visibility = "visible";
@@ -141,7 +141,7 @@ function failScreenShow() {
       });
     });
     // If the score is less than 5 but more than 3 then display the following
-  } else if (score < 5 && score > 3) {
+  } else if (score < 6 && score > 3) {
     congratsMessage.textContent = "Almost a decent score...";
     // Make sure the image loads before anything else
     const backgroundImage = new Image();
