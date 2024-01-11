@@ -112,8 +112,8 @@ function generateRandomNumber() {
 }
 
 /**
- * Displays fail screen and gives user the option to play again or go to the main menu
- * Also displays a funny GIF
+ * Displays fail screen and gives user the option to play again
+ * Also displays a GIF
  */
 function failScreenShow() {
   failedScreen.style.visibility = "visible";
@@ -124,94 +124,69 @@ function failScreenShow() {
   // If the score is less than 3 then display the following
   if (score < 3) {
     congratsMessage.textContent = "Oof, better luck next time";
-    // Make sure the image loads before anything else
-    const backgroundImage = new Image();
-    backgroundImage.src = "assets/images/gif/joe-biden-giphy.gif";
-    backgroundImage.addEventListener("load", function () {
-      failedScreen.style.backgroundImage = `url(${backgroundImage.src})`;
-      failedPlayAgainBtn.addEventListener("click", function () {
-        startGame();
-        failedScreen.style.visibility = "hidden";
-        score = 0;
-      });
-      failedMainMenu.addEventListener("click", function () {
-        gameMainMenu();
-        failedScreen.style.visibility = "hidden";
-        score = 0;
-      });
+    failedScreen.style.backgroundImage = `url(${"assets/images/gif/joe-biden-giphy.gif"})`;
+    failedPlayAgainBtn.addEventListener("click", function () {
+      startGame();
+      failedScreen.style.visibility = "hidden";
+      score = 0;
+    });
+    failedMainMenu.addEventListener("click", function () {
+      gameMainMenu();
+      failedScreen.style.visibility = "hidden";
+      score = 0;
     });
     // If the score is less than 5 but more than 3 then display the following
-  } else if (score < 6 && score > 3) {
+  } else if (score < 5 && score > 3) {
     congratsMessage.textContent = "Almost a decent score...";
-    // Make sure the image loads before anything else
-    const backgroundImage = new Image();
-    backgroundImage.src = "assets/images/gif/drunk-man-at-store.gif";
-    backgroundImage.addEventListener("load", function () {
-      failedScreen.style.backgroundImage = `url(${backgroundImage.src})`;
-      failedPlayAgainBtn.addEventListener("click", function () {
-        startGame();
-        failedScreen.style.visibility = "hidden";
-        score = 0;
-      });
-      failedMainMenu.addEventListener("click", function () {
-        gameMainMenu();
-        failedScreen.style.visibility = "hidden";
-        score = 0;
-      });
+    failedScreen.style.backgroundImage = `url(${"assets/images/gif/drunk-man-at-store.gif"})`;
+    failedPlayAgainBtn.addEventListener("click", function () {
+      startGame();
+      failedScreen.style.visibility = "hidden";
+      score = 0;
+    });
+    failedMainMenu.addEventListener("click", function () {
+      gameMainMenu();
+      failedScreen.style.visibility = "hidden";
+      score = 0;
     });
   } else if (score > 5 && score < 10) {
-    congratsMessage.textContent = "OMG, we got a genius";
-    // Make sure the image loads before anything else
-    const backgroundImage = new Image();
-    backgroundImage.src = "assets/images/gif/man-celebrating.gif";
-    backgroundImage.addEventListener("load", function () {
-      failedScreen.style.backgroundImage = `url(${backgroundImage.src})`;
-      failedPlayAgainBtn.addEventListener("click", function () {
-        startGame();
-        failedScreen.style.visibility = "hidden";
-        score = 0;
-      });
-      failedMainMenu.addEventListener("click", function () {
-        gameMainMenu();
-        failedScreen.style.visibility = "hidden";
-        score = 0;
-      });
+    congratsMessage.textContent = "OMG, we got a genius!";
+    failedScreen.style.backgroundImage = `url(${"assets/images/gif/man-celebrating.gif"})`;
+    failedPlayAgainBtn.addEventListener("click", function () {
+      startGame();
+      failedScreen.style.visibility = "hidden";
+      score = 0;
+    });
+    failedMainMenu.addEventListener("click", function () {
+      gameMainMenu();
+      failedScreen.style.visibility = "hidden";
+      score = 0;
     });
   } else if (score > 10 && score < 15) {
     congratsMessage.textContent = "OMG, what a pro!";
-    // Make sure the image loads before anything else
-    const backgroundImage = new Image();
-    backgroundImage.src = "assets/images/gif/men-celebrating.gif";
-    backgroundImage.addEventListener("load", function () {
-      failedScreen.style.backgroundImage = `url(${backgroundImage.src})`;
-      failedPlayAgainBtn.addEventListener("click", function () {
-        startGame();
-        failedScreen.style.visibility = "hidden";
-        score = 0;
-      });
-      failedMainMenu.addEventListener("click", function () {
-        gameMainMenu();
-        failedScreen.style.visibility = "hidden";
-        score = 0;
-      });
+    failedScreen.style.backgroundImage = `url(${"assets/images/gif/men-celebrating.gif"})`;
+    failedPlayAgainBtn.addEventListener("click", function () {
+      startGame();
+      failedScreen.style.visibility = "hidden";
+      score = 0;
+    });
+    failedMainMenu.addEventListener("click", function () {
+      gameMainMenu();
+      failedScreen.style.visibility = "hidden";
+      score = 0;
     });
   } else if (score > 15) {
     congratsMessage.textContent = "Now you, are special.";
-    // Make sure the image loads before anything else
-    const backgroundImage = new Image();
-    backgroundImage.src = "assets/images/gif/gg.gif";
-    backgroundImage.addEventListener("load", function () {
-      failedScreen.style.backgroundImage = `url(${backgroundImage.src})`;
-      failedPlayAgainBtn.addEventListener("click", function () {
-        startGame();
-        failedScreen.style.visibility = "hidden";
-        score = 0;
-      });
-      failedMainMenu.addEventListener("click", function () {
-        gameMainMenu();
-        failedScreen.style.visibility = "hidden";
-        score = 0;
-      });
+    failedScreen.style.backgroundImage = `url(${"assets/images/gif/gg.gif"})`;
+    failedPlayAgainBtn.addEventListener("click", function () {
+      startGame();
+      failedScreen.style.visibility = "hidden";
+      score = 0;
+    });
+    failedMainMenu.addEventListener("click", function () {
+      gameMainMenu();
+      failedScreen.style.visibility = "hidden";
+      score = 0;
     });
   }
 }
@@ -325,7 +300,7 @@ buttons.forEach((button) => {
 function triggerHigher() {
   if (firstHalfSearchVolumeValue <= secondHalfSearchVolumeValue) {
     showSecondSearchVolume();
-    let guess = secondHalfSearchVolumeValue - 100;
+    let guess = secondHalfSearchVolumeValue - 10;
     hideButtons();
     // Add interval animation so that it counts up
     const interval = setInterval(() => {
@@ -354,7 +329,7 @@ function triggerHigher() {
     });
   } else {
     showSecondSearchVolume();
-    let guess = secondHalfSearchVolumeValue - 100;
+    let guess = secondHalfSearchVolumeValue - 10;
     hideButtons();
     // Add interval animation so that it counts up
     const interval = setInterval(() => {
@@ -387,7 +362,7 @@ function triggerHigher() {
 function triggerLower() {
   if (firstHalfSearchVolumeValue >= secondHalfSearchVolumeValue) {
     showSecondSearchVolume();
-    let guess = secondHalfSearchVolumeValue - 100;
+    let guess = secondHalfSearchVolumeValue - 10;
     hideButtons();
     // Add interval animation so that it counts up
     const interval = setInterval(() => {
@@ -416,7 +391,7 @@ function triggerLower() {
     });
   } else {
     showSecondSearchVolume();
-    let guess = secondHalfSearchVolumeValue - 100;
+    let guess = secondHalfSearchVolumeValue - 10;
     hideButtons();
     // Add interval animation so that it counts up
     const interval = setInterval(() => {

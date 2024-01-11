@@ -191,7 +191,7 @@ body {
 }
 
 #fail-screen {
-  background: center/cover no-repeat;
+  background: black center/cover no-repeat;
   visibility: hidden;
   display: flex;
   justify-content: center;
