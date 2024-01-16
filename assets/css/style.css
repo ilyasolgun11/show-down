@@ -456,8 +456,8 @@ body {
   margin: 5px;
 }
 
-#first-half-search-volume,
-#second-half-search-volume {
+#first-half-title-volume,
+#second-half-title-volume {
   background-color: rgba(0, 0, 0, 0.607);
   border-radius: 70px;
   padding: 4px 25px;
@@ -559,8 +559,8 @@ body {
 }
 
 @media screen and (max-width: 1138px) {
-  #first-half-search-volume,
-  #second-half-search-volume {
+  #first-half-title-volume,
+  #second-half-title-volume {
     font-size: 4rem;
   }
   .logo img {
@@ -621,8 +621,8 @@ body {
   #second-half h2 {
     font-size: 2.3rem;
   }
-  #first-half-search-volume,
-  #second-half-search-volume {
+  #first-half-title-volume,
+  #second-half-title-volume {
     font-size: 3rem;
   }
   #higher-btn:hover,
@@ -646,8 +646,8 @@ body {
   #second-half h2 {
     font-size: 2rem;
   }
-  #first-half-search-volume,
-  #second-half-search-volume {
+  #first-half-title-volume,
+  #second-half-title-volume {
     font-size: 2.4rem;
   }
 }

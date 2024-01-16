@@ -1,12 +1,10 @@
 // Grab first half DOM elements
-let firstHalfSearchTerm = document.getElementById("first-half-search-term");
-let firstHalfSearchVolume = document.getElementById("first-half-search-volume");
+let firstHalfTitle = document.getElementById("first-half-title");
+let firstHalfTitleVolume = document.getElementById("first-half-title-volume");
 let firstHalf = document.getElementById("first-half");
 // Grab second half DOM elements
-let secondHalfSearchTerm = document.getElementById("second-half-search-term");
-let secondHalfSearchVolume = document.getElementById(
-  "second-half-search-volume"
-);
+let secondHalfTitle = document.getElementById("second-half-title");
+let secondHalfTitleVolume = document.getElementById("second-half-title-volume");
 let secondHalf = document.getElementById("second-half");
 // Grab correct and wrong answer boxes from DOM
 let correctAnswerBox = document.getElementById("correct-answer");
@@ -50,8 +48,8 @@ let hasEarnedOne = document.getElementById("has-earned-first");
 let hasEarnedTwo = document.getElementById("has-earned-second");
 
 // Set global variables so they can be accessed from anywhere
-let firstHalfSearchVolumeValue;
-let secondHalfSearchVolumeValue;
+let firstHalfTitleVolumeValue;
+let secondHalfTitleVolumeValue;
 let randomNumber1;
 let randomNumber2;
 let score = 0;
@@ -204,11 +202,10 @@ function startGame() {
     randomNumber2 = generateRandomNumber();
   }
   // Assign values to the DOM elements using random number
-  firstHalfSearchTerm.textContent = currentArray[randomNumber1].searchTerm;
-  // Setting global variable value to currentArray[randomNumber1].searchVolume
-  firstHalfSearchVolumeValue = currentArray[randomNumber1].searchVolume;
-  firstHalfSearchVolume.textContent =
-    firstHalfSearchVolumeValue.toLocaleString();
+  firstHalfTitle.textContent = currentArray[randomNumber1].title;
+  // Setting global variable value to currentArray[randomNumber1].titleVolume
+  firstHalfTitleVolumeValue = currentArray[randomNumber1].titleVolume;
+  firstHalfTitleVolume.textContent = firstHalfTitleVolumeValue.toLocaleString();
   firstHalf.style.backgroundImage = `url(${currentArray[randomNumber1].image})`;
   // Add image owner name and image link
   imageOwnerNameOne.textContent = currentArray[randomNumber1].imageOwnerName;
@@ -216,11 +213,11 @@ function startGame() {
     "href",
     currentArray[randomNumber1].imageOwnerUrl
   );
-  secondHalfSearchTerm.textContent = currentArray[randomNumber2].searchTerm;
-  // Setting global variable value to currentArray[randomNumber2].searchVolume
-  secondHalfSearchVolumeValue = currentArray[randomNumber2].searchVolume;
-  secondHalfSearchVolume.textContent =
-    secondHalfSearchVolumeValue.toLocaleString();
+  secondHalfTitle.textContent = currentArray[randomNumber2].title;
+  // Setting global variable value to currentArray[randomNumber2].titleVolume
+  secondHalfTitleVolumeValue = currentArray[randomNumber2].titleVolume;
+  secondHalfTitleVolume.textContent =
+    secondHalfTitleVolumeValue.toLocaleString();
   secondHalf.style.backgroundImage = `url(${currentArray[randomNumber2].image})`;
   // Add search criteria mode
   firstHalfSearchCriteriaMode.textContent = searchCriteria;
@@ -271,16 +268,16 @@ function showButtons() {
  * Hide second half search volume
  */
 function hideSecondSearchVolume() {
-  secondHalfSearchVolume.style.visibility = "hidden";
-  secondHalfSearchVolume.style.fontSize = "0.1px";
+  secondHalfTitleVolume.style.visibility = "hidden";
+  secondHalfTitleVolume.style.fontSize = "0.1px";
 }
 
 /**
  * Hide second half search volume
  */
 function showSecondSearchVolume() {
-  secondHalfSearchVolume.style.visibility = "visible";
-  secondHalfSearchVolume.style.fontSize = "";
+  secondHalfTitleVolume.style.visibility = "visible";
+  secondHalfTitleVolume.style.fontSize = "";
 }
 
 // Gets the data-type of higher and lower buttons and depending on which one the user clicked, it triggers the corresponding function
@@ -299,13 +296,13 @@ buttons.forEach((button) => {
  * Triggers sequence that will see if the guess is higher or lower
  */
 function triggerHigher() {
-  if (firstHalfSearchVolumeValue <= secondHalfSearchVolumeValue) {
+  if (firstHalfTitleVolumeValue <= secondHalfTitleVolumeValue) {
     showSecondSearchVolume();
-    let guess = secondHalfSearchVolumeValue - 70;
+    let guess = secondHalfTitleVolumeValue - 70;
     hideButtons();
     // Add interval animation so that it counts up
     const interval = setInterval(() => {
-      if (guess > secondHalfSearchVolumeValue - 1) {
+      if (guess > secondHalfTitleVolumeValue - 1) {
         // Set time between the correctAnswerBox is showing and disappearing
         // When it disappears trigger the guessed correct function
         setTimeout(() => {
@@ -323,18 +320,18 @@ function triggerHigher() {
         }
         clearInterval(interval);
       } else {
-        secondHalfSearchVolume.textContent = guess;
+        secondHalfTitleVolume.textContent = guess;
         guess += 1;
-        secondHalfSearchVolume.textContent = guess.toLocaleString();
+        secondHalfTitleVolume.textContent = guess.toLocaleString();
       }
     }, 10);
   } else {
     showSecondSearchVolume();
-    let guess = secondHalfSearchVolumeValue - 70;
+    let guess = secondHalfTitleVolumeValue - 70;
     hideButtons();
     // Add interval animation so that it counts up
     const interval = setInterval(() => {
-      if (guess > secondHalfSearchVolumeValue - 1) {
+      if (guess > secondHalfTitleVolumeValue - 1) {
         setTimeout(() => {
           startGame();
           failScreenShow();
@@ -349,9 +346,9 @@ function triggerHigher() {
         }
         clearInterval(interval);
       } else {
-        secondHalfSearchVolume.textContent = guess;
+        secondHalfTitleVolume.textContent = guess;
         guess += 1;
-        secondHalfSearchVolume.textContent = guess.toLocaleString();
+        secondHalfTitleVolume.textContent = guess.toLocaleString();
       }
     }, 10);
   }
@@ -361,13 +358,13 @@ function triggerHigher() {
  * Triggers sequence that will see if the guess is higher or lower
  */
 function triggerLower() {
-  if (firstHalfSearchVolumeValue >= secondHalfSearchVolumeValue) {
+  if (firstHalfTitleVolumeValue >= secondHalfTitleVolumeValue) {
     showSecondSearchVolume();
-    let guess = secondHalfSearchVolumeValue - 70;
+    let guess = secondHalfTitleVolumeValue - 70;
     hideButtons();
     // Add interval animation so that it counts up
     const interval = setInterval(() => {
-      if (guess > secondHalfSearchVolumeValue - 1) {
+      if (guess > secondHalfTitleVolumeValue - 1) {
         // Set time between the correctAnswerBox is showing and disappearing
         // When it disappears trigger the guessed correct function
         setTimeout(() => {
@@ -385,18 +382,18 @@ function triggerLower() {
         }
         clearInterval(interval);
       } else {
-        secondHalfSearchVolume.textContent = guess;
+        secondHalfTitleVolume.textContent = guess;
         guess += 1;
-        secondHalfSearchVolume.textContent = guess.toLocaleString();
+        secondHalfTitleVolume.textContent = guess.toLocaleString();
       }
     }, 10);
   } else {
     showSecondSearchVolume();
-    let guess = secondHalfSearchVolumeValue - 70;
+    let guess = secondHalfTitleVolumeValue - 70;
     hideButtons();
     // Add interval animation so that it counts up
     const interval = setInterval(() => {
-      if (guess > secondHalfSearchVolumeValue - 1) {
+      if (guess > secondHalfTitleVolumeValue - 1) {
         setTimeout(() => {
           startGame();
           failScreenShow();
@@ -411,9 +408,9 @@ function triggerLower() {
         }
         clearInterval(interval);
       } else {
-        secondHalfSearchVolume.textContent = guess;
+        secondHalfTitleVolume.textContent = guess;
         guess += 1;
-        secondHalfSearchVolume.textContent = guess.toLocaleString();
+        secondHalfTitleVolume.textContent = guess.toLocaleString();
       }
     }, 10);
   }
@@ -427,10 +424,9 @@ function triggerLower() {
  */
 function guessedCorrect() {
   // Shifting the content that was on the secondHalf to the firstHalf
-  firstHalfSearchTerm.textContent = currentArray[randomNumber2].searchTerm;
-  firstHalfSearchVolumeValue = currentArray[randomNumber2].searchVolume;
-  firstHalfSearchVolume.textContent =
-    firstHalfSearchVolumeValue.toLocaleString();
+  firstHalfTitle.textContent = currentArray[randomNumber2].title;
+  firstHalfTitleVolumeValue = currentArray[randomNumber2].titleVolume;
+  firstHalfTitleVolume.textContent = firstHalfTitleVolumeValue.toLocaleString();
   firstHalf.style.backgroundImage = `url(${currentArray[randomNumber2].image})`;
   imageOwnerNameOne.textContent = currentArray[randomNumber2].imageOwnerName;
   imageOwnerLinkOne.setAttribute(
@@ -447,10 +443,10 @@ function guessedCorrect() {
     randomNumber2 = generateRandomNumber();
   } while (randomNumber2 === previousRandomNumber2);
   // Set the secondHalf DOM elements with the new random number
-  secondHalfSearchTerm.textContent = currentArray[randomNumber2].searchTerm;
-  secondHalfSearchVolumeValue = currentArray[randomNumber2].searchVolume;
-  secondHalfSearchVolume.textContent =
-    secondHalfSearchVolumeValue.toLocaleString();
+  secondHalfTitle.textContent = currentArray[randomNumber2].title;
+  secondHalfTitleVolumeValue = currentArray[randomNumber2].titleVolume;
+  secondHalfTitleVolume.textContent =
+    secondHalfTitleVolumeValue.toLocaleString();
   secondHalf.style.backgroundImage = `url(${currentArray[randomNumber2].image})`;
   imageOwnerNameTwo.textContent = currentArray[randomNumber2].imageOwnerName;
   imageOwnerLinkTwo.setAttribute(
