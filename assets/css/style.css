@@ -204,7 +204,20 @@ body {
   color: white;
 }
 
-#fail-screen:before {
+#gif-display {
+  background: black center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: white;
+}
+
+#gif-display:before {
   content: "";
   position: absolute;
   top: 0;

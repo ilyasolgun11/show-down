@@ -37,6 +37,7 @@ let failedAtScore = document.getElementById("failed-at-score");
 let congratsMessage = document.getElementById("congrats-message");
 let failedPlayAgainBtn = document.getElementById("failed-screen-play-again");
 let failedMainMenu = document.getElementById("failed-screen-main-menu");
+let gifDisplay = document.getElementById("gif-display");
 // Grab main menu from DOM
 const mainMenu = document.getElementById("main-menu");
 let randomMode = document.getElementById("random-mode");
@@ -124,7 +125,7 @@ function failScreenShow() {
   // If the score is less than 3 then display the following
   if (score < 3) {
     congratsMessage.textContent = "Oof, better luck next time";
-    failedScreen.style.backgroundImage = `url(${"assets/images/gif/joe-biden-giphy.gif"})`;
+    gifDisplay.style.backgroundImage = `url(${"assets/images/gif/joe-biden-giphy.gif"})`;
     failedPlayAgainBtn.addEventListener("click", function () {
       startGame();
       failedScreen.style.visibility = "hidden";
@@ -138,7 +139,7 @@ function failScreenShow() {
     // If the score is less than 5 but more than 3 then display the following
   } else if (score < 5 && score > 3) {
     congratsMessage.textContent = "Almost a decent score...";
-    failedScreen.style.backgroundImage = `url(${"assets/images/gif/drunk-man-at-store.gif"})`;
+    gifDisplay.style.backgroundImage = `url(${"assets/images/gif/drunk-man-at-store.gif"})`;
     failedPlayAgainBtn.addEventListener("click", function () {
       startGame();
       failedScreen.style.visibility = "hidden";
@@ -151,7 +152,7 @@ function failScreenShow() {
     });
   } else if (score > 5 && score < 10) {
     congratsMessage.textContent = "OMG, we got a genius!";
-    failedScreen.style.backgroundImage = `url(${"assets/images/gif/man-celebrating.gif"})`;
+    gifDisplay.style.backgroundImage = `url(${"assets/images/gif/man-celebrating.gif"})`;
     failedPlayAgainBtn.addEventListener("click", function () {
       startGame();
       failedScreen.style.visibility = "hidden";
@@ -164,7 +165,7 @@ function failScreenShow() {
     });
   } else if (score > 10 && score < 15) {
     congratsMessage.textContent = "OMG, what a pro!";
-    failedScreen.style.backgroundImage = `url(${"assets/images/gif/men-celebrating.gif"})`;
+    gifDisplay.style.backgroundImage = `url(${"assets/images/gif/men-celebrating.gif"})`;
     failedPlayAgainBtn.addEventListener("click", function () {
       startGame();
       failedScreen.style.visibility = "hidden";
@@ -177,7 +178,7 @@ function failScreenShow() {
     });
   } else if (score > 15) {
     congratsMessage.textContent = "Now you, are special.";
-    failedScreen.style.backgroundImage = `url(${"assets/images/gif/gg.gif"})`;
+    gifDisplay.style.backgroundImage = `url(${"assets/images/gif/gg.gif"})`;
     failedPlayAgainBtn.addEventListener("click", function () {
       startGame();
       failedScreen.style.visibility = "hidden";
