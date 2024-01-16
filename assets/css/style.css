@@ -40,6 +40,8 @@ body {
   background-size: 400% 400%;
   animation: movingGradient 60s ease infinite;
   display: none;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   z-index: 30;
   width: 100%;
@@ -48,6 +50,7 @@ body {
 
 .main-menu-inner-container {
   margin: 0px 20px;
+  padding-bottom: 20px;
 }
 
 .logo-section,
@@ -62,7 +65,12 @@ body {
   color: white;
 }
 
+.logo-section {
+  margin: 0px;
+}
+
 .game-modes-container {
+  height: 100%;
   gap: 0.8rem;
   flex-direction: row;
   margin-top: 30px;
@@ -564,6 +572,7 @@ body {
 @media screen and (max-width: 930px) {
   #main-menu {
     height: 145vh;
+    padding-bottom: 100px;
   }
   .game-container {
     flex-direction: column;
