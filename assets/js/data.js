@@ -473,6 +473,34 @@ let searchData = [
     imageOwnerName: "Alexandre Prevot",
     imageOwnerUrl: "https://www.flickr.com/photos/alexprevot/52413066986",
   },
+  {
+    title: "Super Bowl",
+    titleVolume: 1830000,
+    image: "assets/images/randommode/super-bowl.webp",
+    imageOwnerName: "Michael Tipton",
+    imageOwnerUrl: "https://www.flickr.com/photos/rmtip21/4304930330",
+  },
+  {
+    title: "Translate",
+    titleVolume: 277000000,
+    image: "assets/images/randommode/translate.webp",
+    imageOwnerName: "Jon Russell",
+    imageOwnerUrl: "https://www.flickr.com/photos/jonrussell/32015901864",
+  },
+  {
+    title: "Sky Dive",
+    titleVolume: 22200,
+    image: "assets/images/randommode/sky-dive.webp",
+    imageOwnerName: "alwaysmnky",
+    imageOwnerUrl: "https://www.flickr.com/photos/trussmonkey/66307221",
+  },
+  {
+    title: "Hair Transplant",
+    titleVolume: 22200,
+    image: "assets/images/randommode/hair-transplant.webp",
+    imageOwnerName: "AnatolianHair",
+    imageOwnerUrl: "https://anatolianhair.com/en/turkey-fut-hair-transplant/",
+  },
 ];
 
 let fansData = [
