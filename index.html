@@ -27,46 +27,47 @@
     <title>ShowDown!</title>
   </head>
   <body>
-    <div class="game-container">
-      <div id="main-menu">
+    <main class="game-container">
+      <section id="main-menu">
         <div class="main-menu-inner-container">
-          <div class="logo-section">
+          <section class="logo-section">
             <img
               class="main-menu-logo"
               src="assets/images/logo.png"
               alt="Game logo"
             />
-          </div>
-          <div class="introduction-section">
-            <h3>What is Show Down?</h3>
+          </section>
+          <article class="introduction-section">
+            <h1>What is Show Down?</h1>
             <p>
-              You have to guess whether something has less or more searches/fans
-              based on game mode!
+              You have to guess whether something is higher or lower based on
+              game mode. Clicking the logo while in-game will take you back to
+              the main menu!
             </p>
-          </div>
-          <div class="game-modes-container">
-            <div class="random-mode" id="random-mode">
+          </article>
+          <aside class="game-modes-container">
+            <section class="random-mode" id="random-mode">
               <h2>Random Mode</h2>
               <p>
                 Guess whether something has less or more google searches in the
                 past month!
               </p>
-            </div>
-            <div class="fans-mode" id="fans-mode">
+            </section>
+            <section class="fans-mode" id="fans-mode">
               <h2>Football Fans Mode</h2>
               <p>
                 Guess whether a football team has less or more fans around the
                 world!
               </p>
-            </div>
-            <div class="market-cap-mode" id="market-cap-mode">
+            </section>
+            <section class="market-cap-mode" id="market-cap-mode">
               <h2>Company Revenue</h2>
               <p>Guess which company gained more revenue last year!</p>
-            </div>
-          </div>
+            </section>
+          </aside>
         </div>
-      </div>
-      <div id="fail-screen">
+      </section>
+      <section id="fail-screen">
         <div id="gif-display">
           <img
             class="pop-up-logo"
@@ -79,16 +80,24 @@
           <button id="failed-screen-play-again">Play Again</button>
           <button id="failed-screen-main-menu">Main Menu</button>
           <div class="socials">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-youtube"></i>
+            <a
+              target="_blank"
+              href="https://github.com/ilyasolgun11/show-down"
+              aria-label="Link to this projects github repository"
+              ><i class="fa-brands fa-square-github"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/ilyascan-olgun-455290182/"
+              aria-label="Link to my linkedin profile"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
           </div>
           <div class="copyright-container">
             <h3 class="copyright">Built by Ilyascan Olgun</h3>
           </div>
         </div>
-      </div>
+      </section>
       <div id="logo" class="logo">
         <img src="assets/images/logo.png" alt="Game logo" />
       </div>
@@ -131,7 +140,7 @@
           ></a>
         </div>
       </section>
-    </div>
+    </main>
     <script src="assets/js/data.js"></script>
     <!-- Font awesome  -->
     <script

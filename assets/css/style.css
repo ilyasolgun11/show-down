@@ -88,11 +88,11 @@ body {
   object-fit: contain;
 }
 
-.introduction-section h3 {
+.introduction-section h1 {
   font-size: 1.6rem;
 }
 
-.introduction-section h3,
+.introduction-section h1,
 .introduction-section p {
   margin: 0px;
   max-width: 600px;
@@ -274,11 +274,10 @@ body {
 }
 
 .socials {
-  margin-right: 30px;
   margin-top: 20px;
   width: 150px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
 }
@@ -294,20 +293,11 @@ body {
 }
 
 .socials i:nth-of-type(1) {
-  font-size: 2.3rem;
+  font-size: 2.4rem;
 }
 
 .socials i:nth-of-type(2) {
-  font-size: 2rem;
-}
-
-.socials i:nth-of-type(3) {
-  font-size: 2.1rem;
-  margin-top: 2px;
-}
-
-.socials i:nth-of-type(4) {
-  font-size: 2.3rem;
+  font-size: 2.4rem;
 }
 
 .pop-up-logo {
