@@ -1,12 +1,5 @@
 let searchData = [
   {
-    title: "Grenfell Tower",
-    titleVolume: 550000,
-    image: "assets/images/randommode/grenfell-tower.webp",
-    imageOwnerName: "ChiralJon",
-    imageOwnerUrl: "https://www.flickr.com/photos/69057297@N04/",
-  },
-  {
     title: "Builder",
     titleVolume: 74000,
     image: "assets/images/randommode/builder.webp",
