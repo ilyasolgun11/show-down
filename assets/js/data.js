@@ -1012,4 +1012,63 @@ let revenueCap = [
     imageOwnerUrl:
       "https://munisanlorenzo.gob.ar/2023/05/02/el-banco-macro-eligio-a-san-lorenzo-para-construir-una-nueva-sede/",
   },
+  {
+    title: "China Railway",
+    titleVolume: 168680000000,
+    image: "assets/images/revenuemode/china-railway.webp",
+    imageOwnerName: "CRECofficial",
+    imageOwnerUrl: "https://twitter.com/CRECofficial",
+  },
+  {
+    title: "Elevance Health",
+    titleVolume: 168620000000,
+    image: "assets/images/revenuemode/elevance-health.webp",
+    imageOwnerName: "Elevance Health",
+    imageOwnerUrl:
+      "https://play.google.com/store/apps/details?id=com.emburse.elevance.travel&pli=1",
+  },
+  {
+    title: "Mercedes Benz",
+    titleVolume: 165680000000,
+    image: "assets/images/revenuemode/mercedes-benz.webp",
+    imageOwnerName: "Kay Gaensler",
+    imageOwnerUrl: "https://www.flickr.com/photos/gaensler/6001895552",
+  },
+  {
+    title: "BMW",
+    titleVolume: 163590000000,
+    image: "assets/images/revenuemode/bmw.webp",
+    imageOwnerName: "Automotive Rhythms",
+    imageOwnerUrl: "https://www.flickr.com/photos/artvlive/52823654647",
+  },
+  {
+    title: "Home Depot",
+    titleVolume: 153710000000,
+    image: "assets/images/revenuemode/home-depot.webp",
+    imageOwnerName: "JJBers",
+    imageOwnerUrl: "https://www.flickr.com/photos/jjbers/25895926348",
+  },
+  {
+    title: "Jingdong Mall",
+    titleVolume: 152480000000,
+    image: "assets/images/revenuemode/jd-mall.webp",
+    imageOwnerName: "Pandaily",
+    imageOwnerUrl:
+      "https://pandaily.com/chinas-first-offline-jd-mall-to-open-in-xian-on-september-30/",
+  },
+  {
+    title: "Marathon Petroleum",
+    titleVolume: 151930000000,
+    image: "assets/images/revenuemode/marathon-petroleum.webp",
+    imageOwnerName: "Marathon Petroleum",
+    imageOwnerUrl: "https://www.marathonpetroleum.com/",
+  },
+  {
+    title: "JPMorgan Chase",
+    titleVolume: 151200000000,
+    image: "assets/images/revenuemode/jp-morgan.webp",
+    imageOwnerName: "Jasper Jolly",
+    imageOwnerUrl:
+      "https://www.theguardian.com/business/2021/apr/21/jp-morgan-chase-gets-sustainability-downgrade-standard-ethics-after-funding-failed-super-league",
+  },
 ];
