@@ -1013,6 +1013,3 @@ let revenueCap = [
       "https://munisanlorenzo.gob.ar/2023/05/02/el-banco-macro-eligio-a-san-lorenzo-para-construir-una-nueva-sede/",
   },
 ];
-console.log(searchData);
-console.log(fansData);
-console.log(revenueCap);
