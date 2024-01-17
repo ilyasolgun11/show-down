@@ -981,4 +981,38 @@ let revenueCap = [
     imageOwnerUrl:
       "https://www.modernhealthcare.com/insurance/cigna-corporation-rebrands-cigna-group-cigna-healthcare-evernorth-health-services",
   },
+  {
+    title: "Allianz",
+    titleVolume: 177810000000,
+    image: "assets/images/revenuemode/allioanz.webp",
+    imageOwnerName: "insurtechinsights",
+    imageOwnerUrl:
+      "https://www.insurtechinsights.com/allianz-releases-net-zero-transition-plan-affirming-2050-sustainability-commitment/",
+  },
+  {
+    title: "Ford",
+    titleVolume: 174220000000,
+    image: "assets/images/revenuemode/ford.webp",
+    imageOwnerName: "Mike Mozart",
+    imageOwnerUrl: "https://www.flickr.com/photos/jeepersmedia/14040319347",
+  },
+  {
+    title: "General Motors",
+    titleVolume: 171970000000,
+    image: "assets/images/revenuemode/general-motors.webp",
+    imageOwnerName: "CNN Editorial Research",
+    imageOwnerUrl:
+      "https://edition.cnn.com/2014/04/08/us/general-motors-fast-facts/index.html",
+  },
+  {
+    title: "Banco Macro",
+    titleVolume: 169150000000,
+    image: "assets/images/revenuemode/marco.webp",
+    imageOwnerName: "Macarena Guzman",
+    imageOwnerUrl:
+      "https://munisanlorenzo.gob.ar/2023/05/02/el-banco-macro-eligio-a-san-lorenzo-para-construir-una-nueva-sede/",
+  },
 ];
+console.log(searchData);
+console.log(fansData);
+console.log(revenueCap);
