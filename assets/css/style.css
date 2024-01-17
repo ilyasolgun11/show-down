@@ -493,8 +493,8 @@ body {
   color: black;
 }
 
-#higher-btn:focus,
-#lower-btn:focus {
+#higher-btn:active,
+#lower-btn:active {
   color: rgb(250, 255, 161);
 }
 
