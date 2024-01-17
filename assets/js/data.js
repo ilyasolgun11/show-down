@@ -891,4 +891,94 @@ let revenueCap = [
     imageOwnerName: "Toyota Motor Europe",
     imageOwnerUrl: "https://www.flickr.com/photos/toyota-europe/14057640180",
   },
+  {
+    title: "McKesson",
+    titleVolume: 291090000000,
+    image: "assets/images/revenuemode/mckensson.webp",
+    imageOwnerName: "Beth Jones Sanborn",
+    imageOwnerUrl:
+      "https://www.healthcarefinancenews.com/news/mckesson-technology-solutions-rebrand-change-healthcare-after-merger-closes",
+  },
+  {
+    title: "Cencora",
+    titleVolume: 262170000000,
+    image: "assets/images/revenuemode/cencora.webp",
+    imageOwnerName: "Cencora",
+    imageOwnerUrl: "https://www.cencora.com/who-we-are/meet-cencora",
+  },
+  {
+    title: "Glencore",
+    titleVolume: 255980000000,
+    image: "assets/images/revenuemode/glencore.webp",
+    imageOwnerName: "Lima",
+    imageOwnerUrl:
+      "https://gestion.pe/economia/empresas/glencore-mas-cerca-de-construir-proyecto-de-cobre-en-argentina-noticia-2/#google_vignette",
+  },
+  {
+    title: "Costco",
+    titleVolume: 245650000000,
+    image: "assets/images/revenuemode/costco.webp",
+    imageOwnerName: "Mike Mozart",
+    imageOwnerUrl: "https://www.flickr.com/photos/jeepersmedia/15430691481",
+  },
+  {
+    title: "TotalEnergies",
+    titleVolume: 228130000000,
+    image: "assets/images/revenuemode/totalenergies.webp",
+    imageOwnerName: "Agenzia Nova",
+    imageOwnerUrl:
+      "https://www.agenzianova.com/en/news/totalenergies-acquires-the-Polish-biogazowa-group/",
+  },
+  {
+    title: "BP",
+    titleVolume: 227240000000,
+    image: "assets/images/revenuemode/bp.webp",
+    imageOwnerName: "Mike Mozart",
+    imageOwnerUrl: "https://www.flickr.com/photos/jeepersmedia/14231501542",
+  },
+  {
+    title: "Exor",
+    titleVolume: 223320000000,
+    image: "assets/images/revenuemode/exor.webp",
+    imageOwnerName: "Saf Malik",
+    imageOwnerUrl:
+      "https://www.capacitymedia.com/article/29uheskln4kic2uc89p8g/news/exor-increased-veon-stake-following-russian-invasion",
+  },
+  {
+    title: "Microsoft",
+    titleVolume: 218310000000,
+    image: "assets/images/revenuemode/microsoft.webp",
+    imageOwnerName: "Mike Mozart",
+    imageOwnerUrl: "https://www.flickr.com/photos/jeepersmedia/14790476531",
+  },
+  {
+    title: "Cardinal Health",
+    titleVolume: 210170000000,
+    image: "assets/images/revenuemode/cardinal-health.webp",
+    imageOwnerName: "Karen Brune Mathis",
+    imageOwnerUrl:
+      "https://www.colliers.com/en/news/jacksonville/cardinal-health-at-westlake",
+  },
+  {
+    title: "Chevron",
+    titleVolume: 202500000000,
+    image: "assets/images/revenuemode/chevron.webp",
+    imageOwnerName: "Roo Reynolds",
+    imageOwnerUrl: "https://www.flickr.com/photos/rooreynolds/2317142062",
+  },
+  {
+    title: "Samsung",
+    titleVolume: 200260000000,
+    image: "assets/images/revenuemode/samsung.webp",
+    imageOwnerName: "Maurizio Pesce",
+    imageOwnerUrl: "https://www.flickr.com/photos/pestoverde/17110472856",
+  },
+  {
+    title: "Cigna",
+    titleVolume: 189860000000,
+    image: "assets/images/revenuemode/cigna.webp",
+    imageOwnerName: "Lauren Berryman",
+    imageOwnerUrl:
+      "https://www.modernhealthcare.com/insurance/cigna-corporation-rebrands-cigna-group-cigna-healthcare-evernorth-health-services",
+  },
 ];
