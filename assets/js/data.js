@@ -342,7 +342,7 @@ let searchData = [
   {
     title: "BMW",
     titleVolume: 6120000,
-    image: "assets/images/randommode/BMW.webp",
+    image: "assets/images/randommode/bmw.webp",
     imageOwnerName: "Andrew Bone",
     imageOwnerUrl: "https://www.flickr.com/photos/andreboeni/50926337142",
   },
@@ -714,7 +714,7 @@ let fansData = [
   {
     title: "PSG",
     titleVolume: 91000000,
-    image: "assets/images/fansmode/PSG.webp",
+    image: "assets/images/fansmode/psg.webp",
     imageOwnerName: "Département des Yvelines",
     imageOwnerUrl: "https://www.flickr.com/photos/yvelines/51306123628",
   },
