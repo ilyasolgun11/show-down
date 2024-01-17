@@ -1,51 +1,53 @@
 // Grab first half DOM elements
-let firstHalfTitle = document.getElementById("first-half-title");
-let firstHalfTitleVolume = document.getElementById("first-half-title-volume");
-let firstHalf = document.getElementById("first-half");
+const firstHalfTitle = document.getElementById("first-half-title");
+const firstHalfTitleVolume = document.getElementById("first-half-title-volume");
+const firstHalf = document.getElementById("first-half");
 // Grab second half DOM elements
-let secondHalfTitle = document.getElementById("second-half-title");
-let secondHalfTitleVolume = document.getElementById("second-half-title-volume");
-let secondHalf = document.getElementById("second-half");
+const secondHalfTitle = document.getElementById("second-half-title");
+const secondHalfTitleVolume = document.getElementById(
+  "second-half-title-volume"
+);
+const secondHalf = document.getElementById("second-half");
 // Grab correct and wrong answer boxes from DOM
-let correctAnswerBox = document.getElementById("correct-answer");
-let wrongAnswerBox = document.getElementById("wrong-answer");
+const correctAnswerBox = document.getElementById("correct-answer");
+const wrongAnswerBox = document.getElementById("wrong-answer");
 // Grab search criteria from DOM
-let firstHalfSearchCriteriaMode = document.getElementById(
+const firstHalfSearchCriteriaMode = document.getElementById(
   "first-half-search-criteria"
 );
-let secondHalfSearchCriteriaMode = document.getElementById(
+const secondHalfSearchCriteriaMode = document.getElementById(
   "second-half-search-criteria"
 );
 // Grab score count variable from DOM
-let currentScore = document.getElementById("current-score");
+const currentScore = document.getElementById("current-score");
 // Grab buttons from DOM
-let higherBtn = document.getElementById("higher-btn");
-let lowerBtn = document.getElementById("lower-btn");
+const higherBtn = document.getElementById("higher-btn");
+const lowerBtn = document.getElementById("lower-btn");
 // Grab elements from DOM to credit image owner
-let imageOwnerNameOne = document.getElementById("image-owner-name-1");
-let imageOwnerLinkOne = document.getElementById("image-owner-link-1");
-let imageOwnerNameTwo = document.getElementById("image-owner-name-2");
-let imageOwnerLinkTwo = document.getElementById("image-owner-link-2");
+const imageOwnerNameOne = document.getElementById("image-owner-name-1");
+const imageOwnerLinkOne = document.getElementById("image-owner-link-1");
+const imageOwnerNameTwo = document.getElementById("image-owner-name-2");
+const imageOwnerLinkTwo = document.getElementById("image-owner-link-2");
 // Grab overlays from DOM
-let overlay = document.getElementsByClassName("overlay-green");
-let overlayRed = document.getElementsByClassName("overlay-red");
+const overlay = document.getElementsByClassName("overlay-green");
+const overlayRed = document.getElementsByClassName("overlay-red");
 // Grab fail screen elements from DOM
-let failedScreen = document.getElementById("fail-screen");
-let failedAtScore = document.getElementById("failed-at-score");
-let congratsMessage = document.getElementById("congrats-message");
-let failedPlayAgainBtn = document.getElementById("failed-screen-play-again");
-let failedMainMenu = document.getElementById("failed-screen-main-menu");
-let gifDisplay = document.getElementById("gif-display");
+const failedScreen = document.getElementById("fail-screen");
+const failedAtScore = document.getElementById("failed-at-score");
+const congratsMessage = document.getElementById("congrats-message");
+const failedPlayAgainBtn = document.getElementById("failed-screen-play-again");
+const failedMainMenu = document.getElementById("failed-screen-main-menu");
+const gifDisplay = document.getElementById("gif-display");
 // Grab main menu from DOM
 const mainMenu = document.getElementById("main-menu");
-let randomMode = document.getElementById("random-mode");
-let fansMode = document.getElementById("fans-mode");
-let revenueMode = document.getElementById("market-cap-mode");
+const randomMode = document.getElementById("random-mode");
+const fansMode = document.getElementById("fans-mode");
+const revenueMode = document.getElementById("market-cap-mode");
 // Grab logo from game screen
-let logo = document.getElementById("logo");
+const logo = document.getElementById("logo");
 // Grab has/earned from DOM
-let hasEarnedOne = document.getElementById("has-earned-first");
-let hasEarnedTwo = document.getElementById("has-earned-second");
+const hasEarnedOne = document.getElementById("has-earned-first");
+const hasEarnedTwo = document.getElementById("has-earned-second");
 
 // Set global variables so they can be accessed from anywhere
 let firstHalfTitleVolumeValue;
