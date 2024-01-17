@@ -575,7 +575,7 @@ body {
 
 @media screen and (max-width: 930px) {
   #main-menu {
-    padding-top: 100px;
+    padding-top: 80px;
     height: 145vh;
     padding-bottom: 100px;
   }
