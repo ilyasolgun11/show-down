@@ -441,7 +441,7 @@ function guessedCorrect() {
   score += 1;
   currentScore.textContent = score;
   // Generate a new random number for the second half and make sure its not the same as the previous
-  previousRandomNumber2 = randomNumber2;
+  let previousRandomNumber2 = randomNumber2;
   do {
     randomNumber2 = generateRandomNumber();
   } while (randomNumber2 === previousRandomNumber2);
