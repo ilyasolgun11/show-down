@@ -466,7 +466,7 @@ body {
   color: rgb(250, 255, 161);
   font-size: 5rem;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 #higher-btn,
@@ -495,8 +495,7 @@ body {
 
 #higher-btn:focus,
 #lower-btn:focus {
-  background-color: transparent;
-  color: black;
+  color: rgb(250, 255, 161);
 }
 
 .hide-btn {
@@ -531,11 +530,16 @@ body {
   font-size: 1.2rem;
 }
 
-.second-half-credit-container,
 .first-half-credit-container {
   position: absolute;
+  bottom: 17px;
+  right: 12px;
+}
+
+.second-half-credit-container {
+  position: absolute;
   bottom: 10px;
-  right: 10px;
+  right: 12px;
 }
 
 .game-high-score {
@@ -571,7 +575,7 @@ body {
 
 @media screen and (max-width: 930px) {
   #main-menu {
-    padding-top: 120px;
+    padding-top: 100px;
     height: 145vh;
     padding-bottom: 100px;
   }

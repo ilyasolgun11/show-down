@@ -57,10 +57,11 @@ let currentArray;
 let searchCriteria;
 
 /**
- * Gives the player to have the option of choosing the game mode
+ * Gives the player the option of choosing the game mode
  */
 function gameMainMenu() {
   mainMenu.style.display = "flex";
+
   fansMode.addEventListener("click", function () {
     currentArray = fansData;
     mainMenu.style.display = "none";
