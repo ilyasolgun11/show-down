@@ -271,7 +271,7 @@ body {
   border: 2px solid white;
   background-color: transparent;
   font-weight: 600;
-  color: white;
+  color: rgb(250, 255, 161);
 }
 
 #failed-screen-main-menu {
@@ -342,10 +342,30 @@ body {
   cursor: pointer;
 }
 
+.logo img:hover + .return-hint {
+  opacity: 1;
+}
+
 .logo img {
   width: 110px;
   height: 110px;
   object-fit: contain;
+}
+
+.return-hint {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  width: 200px;
+  padding: 5px 0px;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 20;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.2s ease;
 }
 
 .overlay-green {
@@ -609,6 +629,9 @@ body {
     width: 90px;
     height: 90px;
   }
+  .return-hint {
+    top: 80px;
+  }
 }
 
 /* Styles for screen sizes smaller than 930px */
@@ -631,6 +654,9 @@ body {
   .logo img {
     width: 80px;
     height: 80px;
+  }
+  .logo img:hover + .return-hint {
+    opacity: 0;
   }
 }
 
