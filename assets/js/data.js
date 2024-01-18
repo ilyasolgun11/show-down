@@ -892,6 +892,14 @@ let fansData = [
     imageOwnerUrl:
       "https://www.2playbook.com/clubes/rc-celta-renueva-recalvi-como-patrocinador-cantera_4390_102.html",
   },
+  {
+    title: "Almeria FC",
+    titleVolume: 8078000,
+    image: "assets/images/fansmode/almeria-fc.webp",
+    imageOwnerName: "GETFOOTBALL",
+    imageOwnerUrl:
+      "https://getfootballnewsspain.com/almeria-stun-league-leaders-barcelona-in-la-liga/",
+  },
 ];
 
 let revenueCap = [
