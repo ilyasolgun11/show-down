@@ -135,9 +135,7 @@ function failScreenDisplayFailType(message, gif) {
 function failScreenShow() {
   failedScreen.style.visibility = "visible";
   failedAtScore.textContent = score;
-  for (let i = 0; i < overlayRed.length; i++) {
-    overlayRed[i].classList.remove("visible");
-  }
+  overlayGreenRed(overlayRed, "hide");
   // If the score is less than 3 then display the following
   if (score < 3) {
     failScreenDisplayFailType(
@@ -232,6 +230,21 @@ function visibilitySecondSearchVolume(visible, font) {
   secondHalfTitleVolume.style.fontSize = font;
 }
 
+/**
+ * Based on passed parameters, hide or show a given overlay
+ */
+function overlayGreenRed(overlayType, addRemove) {
+  if (addRemove === "hide") {
+    for (let i = 0; i < overlayType.length; i++) {
+      overlayType[i].classList.remove("visible");
+    }
+  } else if (addRemove === "show") {
+    for (let i = 0; i < overlayType.length; i++) {
+      overlayType[i].classList.add("visible");
+    }
+  }
+}
+
 // Gets the data-type of higher and lower buttons and depending on which one the user clicked, it triggers the corresponding function
 let buttons = document.querySelectorAll(".btn");
 buttons.forEach((button) => {
@@ -262,14 +275,10 @@ function triggerHigher() {
           showHideButtons("show", "", "");
           visibilitySecondSearchVolume("hidden", "0.1px");
           correctAnswerBox.classList.remove("show");
-          for (let i = 0; i < overlay.length; i++) {
-            overlay[i].classList.remove("visible");
-          }
+          overlayGreenRed(overlay, "hide");
         }, 1000);
         correctAnswerBox.classList.add("show");
-        for (let i = 0; i < overlay.length; i++) {
-          overlay[i].classList.add("visible");
-        }
+        overlayGreenRed(overlay, "show");
         clearInterval(interval);
       } else {
         secondHalfTitleVolume.textContent = guess;
@@ -288,14 +297,10 @@ function triggerHigher() {
           startGame();
           failScreenShow();
           currentScore.textContent = 0;
-          for (let i = 0; i < overlayRed.length; i++) {
-            overlayRed[i].classList.remove("visible");
-          }
+          overlayGreenRed(overlayRed, "hide");
         }, 1000);
         wrongAnswerBox.classList.add("show");
-        for (let i = 0; i < overlayRed.length; i++) {
-          overlayRed[i].classList.add("visible");
-        }
+        overlayGreenRed(overlayRed, "show");
         clearInterval(interval);
       } else {
         secondHalfTitleVolume.textContent = guess;
@@ -324,14 +329,10 @@ function triggerLower() {
           showHideButtons("show", "", "");
           visibilitySecondSearchVolume("hidden", "0.1px");
           correctAnswerBox.classList.remove("show");
-          for (let i = 0; i < overlay.length; i++) {
-            overlay[i].classList.remove("visible");
-          }
+          overlayGreenRed(overlay, "hide");
         }, 1000);
         correctAnswerBox.classList.add("show");
-        for (let i = 0; i < overlay.length; i++) {
-          overlay[i].classList.add("visible");
-        }
+        overlayGreenRed(overlay, "show");
         clearInterval(interval);
       } else {
         secondHalfTitleVolume.textContent = guess;
@@ -350,14 +351,10 @@ function triggerLower() {
           startGame();
           failScreenShow();
           currentScore.textContent = 0;
-          for (let i = 0; i < overlayRed.length; i++) {
-            overlayRed[i].classList.add("hidden");
-          }
+          overlayGreenRed(overlay, "hide");
         }, 1000);
         wrongAnswerBox.classList.add("show");
-        for (let i = 0; i < overlayRed.length; i++) {
-          overlayRed[i].classList.add("visible");
-        }
+        overlayGreenRed(overlay, "show");
         clearInterval(interval);
       } else {
         secondHalfTitleVolume.textContent = guess;
