@@ -143,7 +143,7 @@ function failScreenShow() {
       "joe-biden-giphy.gif"
     );
     // If the score is less than 5 but more than 3 then display the following
-  } else if (score < 5 && score > 3) {
+  } else if (score <= 5 && score > 3) {
     failScreenDisplayFailType(
       "Almost a decent score...",
       "drunk-man-at-store.gif"
@@ -351,10 +351,10 @@ function triggerLower() {
           startGame();
           failScreenShow();
           currentScore.textContent = 0;
-          overlayGreenRed(overlay, "hide");
+          overlayGreenRed(overlayRed, "hide");
         }, 1000);
         wrongAnswerBox.classList.add("show");
-        overlayGreenRed(overlay, "show");
+        overlayGreenRed(overlayRed, "show");
         clearInterval(interval);
       } else {
         secondHalfTitleVolume.textContent = guess;
