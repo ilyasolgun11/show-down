@@ -58,6 +58,31 @@ let score = 0;
 let currentArray;
 let searchCriteria;
 
+// Once a mode is hovered, blur the other modes (only on large screen sizes)
+const modesHoverEffect = document.querySelectorAll(".hover-effect");
+modesHoverEffect.forEach((mode) => {
+  mode.addEventListener("mouseover", function () {
+    if (window.innerWidth > 1138) {
+      if (mode.classList.contains("random-mode")) {
+        fansMode.style.filter = "blur(5px)";
+        revenueMode.style.filter = "blur(5px)";
+      } else if (mode.classList.contains("fans-mode")) {
+        randomMode.style.filter = "blur(5px)";
+        revenueMode.style.filter = "blur(5px)";
+      } else if (mode.classList.contains("market-cap-mode")) {
+        randomMode.style.filter = "blur(5px)";
+        fansMode.style.filter = "blur(5px)";
+      }
+    }
+  });
+
+  mode.addEventListener("mouseleave", function () {
+    randomMode.style.filter = "blur(0px)";
+    fansMode.style.filter = "blur(0px)";
+    revenueMode.style.filter = "blur(0px)";
+  });
+});
+
 /**
  * Sets the first and second half search criteria and sets the hasEarned element either "has" or "has made", purpose of this is to eliminate DRY code
  */
