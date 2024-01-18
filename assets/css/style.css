@@ -587,7 +587,7 @@ body {
   border-radius: 50px;
   position: absolute;
   left: 10px;
-  bottom: 10px;
+  bottom: 17px;
   color: red;
 }
 
@@ -606,22 +606,25 @@ body {
 
 .first-half-credit-container {
   position: absolute;
-  bottom: 17px;
+  bottom: 25px;
   right: 12px;
 }
 
 .second-half-credit-container {
   position: absolute;
-  bottom: 10px;
-  right: 12px;
+  bottom: 25px;
+  right: 15px;
 }
 
 .game-high-score {
+  position: absolute;
+  bottom: 0px;
+  left: 12px;
   margin-top: 8px;
   text-align: center;
   width: 140px;
   color: white;
-  padding: 8px 18px;
+  padding: 8px 16px;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 20;
   border-radius: 50px;

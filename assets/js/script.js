@@ -7,6 +7,7 @@ const secondHalfTitle = document.getElementById("second-half-title");
 const secondHalfTitleVolume = document.getElementById(
   "second-half-title-volume"
 );
+const gameHighScore = document.getElementById("game-high-score");
 const secondHalf = document.getElementById("second-half");
 // Grab correct and wrong answer boxes from DOM
 const correctAnswerBox = document.getElementById("correct-answer");
@@ -43,6 +44,7 @@ const mainMenu = document.getElementById("main-menu");
 const randomMode = document.getElementById("random-mode");
 const fansMode = document.getElementById("fans-mode");
 const revenueMode = document.getElementById("market-cap-mode");
+const menuHighScore = document.getElementById("menu-high-score");
 // Grab logo from game screen
 const logo = document.getElementById("logo");
 // Grab has/earned from DOM
@@ -57,6 +59,7 @@ let randomNumber2;
 let score = 0;
 let currentArray;
 let searchCriteria;
+let highScore = parseInt(localStorage.getItem("highScore")) || 0;
 
 // Once a mode is hovered, blur the other modes (only on large screen sizes)
 const modesHoverEffect = document.querySelectorAll(".hover-effect");
@@ -118,11 +121,24 @@ function gameMainMenu() {
  */
 document.addEventListener("DOMContentLoaded", function () {
   gameMainMenu();
+  menuHighScore.textContent = highScore;
 });
+
+function setHighScore() {
+  menuHighScore.textContent = highScore;
+  gameHighScore.textContent = highScore;
+  if (score > highScore) {
+    highScore = score;
+    localStorage.setItem("highScore", highScore);
+    menuHighScore.textContent = highScore;
+    gameHighScore.textContent = highScore;
+  }
+}
 
 // When user clicks on logo while in-game, it takes them to the game menu screen and sets the score to 0
 logo.addEventListener("click", function () {
   gameMainMenu();
+  setHighScore();
   score = 0;
   currentScore.textContent = score;
 });
@@ -226,6 +242,7 @@ function startGame() {
   wrongAnswerBox.classList.remove("show");
   // Add buttons to game
   showHideButtons("show", "", "");
+  setHighScore();
 }
 
 /**
@@ -321,6 +338,7 @@ function triggerHigher() {
         setTimeout(() => {
           startGame();
           failScreenShow();
+          setHighScore();
           currentScore.textContent = 0;
           overlayGreenRed(overlayRed, "hide");
         }, 1000);
@@ -375,6 +393,7 @@ function triggerLower() {
         setTimeout(() => {
           startGame();
           failScreenShow();
+          setHighScore();
           currentScore.textContent = 0;
           overlayGreenRed(overlayRed, "hide");
         }, 1000);
