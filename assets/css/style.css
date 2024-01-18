@@ -49,7 +49,7 @@ body {
   position: absolute;
   z-index: 30;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .main-menu-inner-container {
@@ -642,7 +642,14 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* Styles for screen sizes smaller than 1138px */
+/* Styles for screen size height smaller than 780px */
+@media screen and (max-height: 780px) {
+  #main-menu {
+    height: 125vh;
+  }
+}
+
+/* Styles for screen size width smaller than 1138px */
 @media screen and (max-width: 1138px) {
   /* Main menu styles */
   #main-menu {
@@ -694,13 +701,17 @@ body {
   }
 }
 
-/* Styles for screen sizes smaller than 930px */
+/* Styles for screen size width smaller than 930px */
 @media screen and (max-width: 930px) {
   /* Game container styles  */
   .game-container {
     flex-direction: column;
+    height: 100vh;
   }
   /* Main menu styles  */
+  #main-menu {
+    height: 170vh;
+  }
   .game-modes-container {
     flex-direction: column;
     margin-top: 30px;
@@ -720,7 +731,7 @@ body {
   }
 }
 
-/* Styles for screen sizes smaller than 786px */
+/* Styles for screen size width smaller than 786px */
 @media screen and (max-width: 786px) {
   /* Main menu styles  */
   .game-modes {
@@ -743,6 +754,10 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
   }
   /* Game screen styles  */
+  #first-half,
+  #second-half {
+    height: 80%;
+  }
   #first-half h2,
   #second-half h2 {
     font-size: 2.3rem;
@@ -790,7 +805,7 @@ body {
   }
 }
 
-/* Styles for screen sizes smaller than 786px */
+/* Styles for screen size width smaller than 786px */
 @media screen and (max-width: 500px) {
   /* Game screen styles  */
   #first-half h2,
