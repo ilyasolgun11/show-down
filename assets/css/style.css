@@ -108,7 +108,8 @@ body {
 .menu-high-score {
   text-align: center;
   color: white;
-  margin-bottom: 0px;
+  margin: 0px;
+  margin-top: 21px;
   font-size: 2.5rem;
   font-family: "Lato", sans-serif;
   color: rgb(250, 255, 161);
