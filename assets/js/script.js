@@ -72,7 +72,6 @@ function modeContentSelector(criteria, has) {
  */
 function gameMainMenu() {
   mainMenu.style.display = "flex";
-
   randomMode.addEventListener("click", function () {
     currentArray = searchData;
     mainMenu.style.display = "none";
@@ -102,6 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
   gameMainMenu();
 });
 
+// When user clicks on logo while in-game, it takes them to the game menu screen and sets the score to 0
 logo.addEventListener("click", function () {
   gameMainMenu();
   score = 0;
@@ -117,7 +117,7 @@ function generateRandomNumber() {
 }
 
 /**
- * Function parameters take message and gif which will display in the fail screen, reason is to eliminate DRY code
+ * Function parameters take message and gif which will display in the fail screen
  */
 function failScreenDisplayFailType(message, gif) {
   congratsMessage.textContent = message;
@@ -197,7 +197,7 @@ function startGame() {
   // Add search criteria mode
   firstHalfSearchCriteriaMode.textContent = searchCriteria;
   secondHalfSearchCriteriaMode.textContent = searchCriteria;
-  hideSecondSearchVolume();
+  visibilitySecondSearchVolume("hidden", "0.1px");
   // Add image owner name and image link
   imageOwnerNameTwo.textContent = currentArray[randomNumber2].imageOwnerName;
   imageOwnerLinkTwo.setAttribute(
@@ -240,19 +240,11 @@ function showButtons() {
 }
 
 /**
- * Hide second half search volume
+ * Bases on passed parameters change the visibility and font size of the secondHalfTitleVolume
  */
-function hideSecondSearchVolume() {
-  secondHalfTitleVolume.style.visibility = "hidden";
-  secondHalfTitleVolume.style.fontSize = "0.1px";
-}
-
-/**
- * Hide second half search volume
- */
-function showSecondSearchVolume() {
-  secondHalfTitleVolume.style.visibility = "visible";
-  secondHalfTitleVolume.style.fontSize = "";
+function visibilitySecondSearchVolume(visible, font) {
+  secondHalfTitleVolume.style.visibility = visible;
+  secondHalfTitleVolume.style.fontSize = font;
 }
 
 // Gets the data-type of higher and lower buttons and depending on which one the user clicked, it triggers the corresponding function
@@ -272,7 +264,7 @@ buttons.forEach((button) => {
  */
 function triggerHigher() {
   if (firstHalfTitleVolumeValue <= secondHalfTitleVolumeValue) {
-    showSecondSearchVolume();
+    visibilitySecondSearchVolume("visible", "");
     let guess = secondHalfTitleVolumeValue - 70;
     hideButtons();
     // Add interval animation so that it counts up
@@ -283,7 +275,7 @@ function triggerHigher() {
         setTimeout(() => {
           guessedCorrect();
           showButtons();
-          hideSecondSearchVolume();
+          visibilitySecondSearchVolume("hidden", "0.1px");
           correctAnswerBox.classList.remove("show");
           for (let i = 0; i < overlay.length; i++) {
             overlay[i].classList.remove("visible");
@@ -301,7 +293,7 @@ function triggerHigher() {
       }
     }, 10);
   } else {
-    showSecondSearchVolume();
+    visibilitySecondSearchVolume("visible", "");
     let guess = secondHalfTitleVolumeValue - 70;
     hideButtons();
     // Add interval animation so that it counts up
@@ -334,7 +326,7 @@ function triggerHigher() {
  */
 function triggerLower() {
   if (firstHalfTitleVolumeValue >= secondHalfTitleVolumeValue) {
-    showSecondSearchVolume();
+    visibilitySecondSearchVolume("visible", "");
     let guess = secondHalfTitleVolumeValue - 70;
     hideButtons();
     // Add interval animation so that it counts up
@@ -345,7 +337,7 @@ function triggerLower() {
         setTimeout(() => {
           guessedCorrect();
           showButtons();
-          hideSecondSearchVolume();
+          visibilitySecondSearchVolume("hidden", "0.1px");
           correctAnswerBox.classList.remove("show");
           for (let i = 0; i < overlay.length; i++) {
             overlay[i].classList.remove("visible");
@@ -363,7 +355,7 @@ function triggerLower() {
       }
     }, 10);
   } else {
-    showSecondSearchVolume();
+    visibilitySecondSearchVolume("visible", "");
     let guess = secondHalfTitleVolumeValue - 70;
     hideButtons();
     // Add interval animation so that it counts up
