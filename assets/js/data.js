@@ -342,7 +342,7 @@ let searchData = [
   {
     title: "BMW",
     titleVolume: 6120000,
-    image: "assets/images/randommode/bmw.webp",
+    image: "assets/images/randommode/bmw-car.webp",
     imageOwnerName: "Andrew Bone",
     imageOwnerUrl: "https://www.flickr.com/photos/andreboeni/50926337142",
   },
@@ -692,14 +692,14 @@ let fansData = [
   },
   {
     title: "Real Madrid",
-    titleVolume: 252100000,
+    titleVolume: 372700000,
     image: "assets/images/fansmode/real-madrid.webp",
     imageOwnerName: "lvmiquilena",
     imageOwnerUrl: "https://www.flickr.com/photos/90734637@N07/8259908356",
   },
   {
     title: "Barcelona FC",
-    titleVolume: 250300000,
+    titleVolume: 335100000,
     image: "assets/images/fansmode/barcelona.webp",
     imageOwnerName: "Juanedc",
     imageOwnerUrl: "https://www.flickr.com/photos/juanedc/8440189313",
@@ -833,6 +833,64 @@ let fansData = [
     imageOwnerName: "SC Freiburg",
     imageOwnerUrl:
       "https://www.scfreiburg.com/en/latest/news/first-team/20222023/draw-in-friendly-against-fc-luzern",
+  },
+  {
+    title: "Atletico Madrid",
+    titleVolume: 51610000,
+    image: "assets/images/fansmode/atletico-madrid.webp",
+    imageOwnerName: "jpellgen",
+    imageOwnerUrl: "https://www.flickr.com/photos/jpellgen/46976303622",
+  },
+  {
+    title: "Sevilla FC",
+    titleVolume: 16280000,
+    image: "assets/images/fansmode/sevilla-fc.webp",
+    imageOwnerName: "Aleksandr Osipov",
+    imageOwnerUrl: "https://www.flickr.com/photos/da_belkin/26235556104/",
+  },
+  {
+    title: "Real Sociedad",
+    titleVolume: 13120000,
+    image: "assets/images/fansmode/real-sociedad.webp",
+    imageOwnerName: "TNT Sports",
+    imageOwnerUrl:
+      "https://www.tntsports.co.uk/football/liga/2022-2023/real-sociedad-v-real-madrid-la-liga-live_sto9586615/story.shtml",
+  },
+  {
+    title: "Real Betis",
+    titleVolume: 12220000,
+    image: "assets/images/fansmode/real-betis.webp",
+    imageOwnerName: "Tomás Quifes",
+    imageOwnerUrl: "https://www.flickr.com/photos/132118451@N07/37671827756",
+  },
+  {
+    title: "Valencia CF",
+    titleVolume: 11270000,
+    image: "assets/images/fansmode/valencia-cf.webp",
+    imageOwnerName: "Víctor Gutiérrez",
+    imageOwnerUrl: "https://www.flickr.com/photos/alquimiadigital/8195159013",
+  },
+  {
+    title: "Cadiz CF",
+    titleVolume: 9523000,
+    image: "assets/images/fansmode/cadiz-cf.webp",
+    imageOwnerName: "FC CARTAGENA",
+    imageOwnerUrl: "https://www.flickr.com/photos/fccartagena_efs/15456203873/",
+  },
+  {
+    title: "Athletic Club",
+    titleVolume: 9148000,
+    image: "assets/images/fansmode/athletic-club.webp",
+    imageOwnerName: "ugocuesta",
+    imageOwnerUrl: "https://www.flickr.com/photos/ugocuesta/6300554470",
+  },
+  {
+    title: "RC Celta",
+    titleVolume: 9038000,
+    image: "assets/images/fansmode/rc-celta.webp",
+    imageOwnerName: "2playbook",
+    imageOwnerUrl:
+      "https://www.2playbook.com/clubes/rc-celta-renueva-recalvi-como-patrocinador-cantera_4390_102.html",
   },
 ];
 
