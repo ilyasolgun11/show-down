@@ -147,6 +147,7 @@ body {
 .random-mode,
 .fans-mode,
 .market-cap-mode {
+  transform: scale(1);
   position: relative;
   border: 2px solid white;
   display: flex;
@@ -156,6 +157,7 @@ body {
   color: rgb(255, 255, 255);
   width: 320px;
   height: 440px;
+  transition: transform 0.2s ease;
 }
 
 .random-mode:before,
@@ -624,7 +626,7 @@ body {
   text-align: center;
   width: 140px;
   color: white;
-  padding: 8px 16px;
+  padding: 8px 12px;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 20;
   border-radius: 50px;
@@ -636,7 +638,7 @@ body {
 #image-owner-link-2 {
   text-decoration: none;
   font-size: 0.9rem;
-  color: rgba(206, 206, 206, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* Styles for screen sizes smaller than 1138px */
@@ -770,9 +772,20 @@ body {
     width: 70px;
     height: 70px;
   }
-
   .overlay {
     background-color: rgba(0, 0, 0, 0.6);
+  }
+  .second-half-credit-container {
+    bottom: 15px;
+  }
+  .game-high-score {
+    bottom: -10px;
+  }
+  .score-container {
+    bottom: 10px;
+  }
+  .first-half-credit-container {
+    bottom: 15px;
   }
 }
 

@@ -770,6 +770,70 @@ let fansData = [
     imageOwnerName: "dronepicr",
     imageOwnerUrl: "https://www.flickr.com/photos/132646954@N02/33947844388",
   },
+  {
+    title: "Bayer 04",
+    titleVolume: 9066000,
+    image: "assets/images/fansmode/bayer.webp",
+    imageOwnerName: "Atlético",
+    imageOwnerUrl:
+      "https://www.flickr.com/photos/clubeatleticomineiro/32115307042",
+  },
+  {
+    title: "RB Leipzig",
+    titleVolume: 6060000,
+    image: "assets/images/fansmode/rb-leipzig.webp",
+    imageOwnerName: "bundesliga",
+    imageOwnerUrl:
+      "https://www.bundesliga.com/en/bundesliga/news/rb-leipzig-10-years-4-promotions-1-goal-timo-werner-red-bull-ralf-rangnick-4636",
+  },
+  {
+    title: "Wolfsburg",
+    titleVolume: 4180000,
+    image: "assets/images/fansmode/wolfsberg.webp",
+    imageOwnerName: "Steffen Prößdorf",
+    imageOwnerUrl:
+      "https://en.m.wikipedia.org/wiki/File:2019-03-09_Fu%C3%9Fball,_M%C3%A4nner,_1._Bundesliga,_FC_Bayern_M%C3%BCnchen_-_VfL_Wolfsburg_StP_2585_by_Stepro.jpg",
+  },
+  {
+    title: "Borussia M'gladbach",
+    titleVolume: 3850000,
+    image: "assets/images/fansmode/borussia-mgladbach.webp",
+    imageOwnerName: "TNTSPORTS",
+    imageOwnerUrl:
+      "https://www.tntsports.co.uk/football/teams/borussia-monchengladbach/teamcenter.shtml",
+  },
+  {
+    title: "Eintracht Frankfurt",
+    titleVolume: 3700000,
+    image: "assets/images/fansmode/eintracht-frankfurt.webp",
+    imageOwnerName: "bundesliga",
+    imageOwnerUrl:
+      "https://www.bundesliga.com/en/news/Bundesliga/noblsp-bundesliga-basics-eintracht-frankfurt.jsp",
+  },
+  {
+    title: "Werder Bremen",
+    titleVolume: 2380000,
+    image: "assets/images/fansmode/werder-bremen.webp",
+    imageOwnerName: "Dennis Mabuka",
+    imageOwnerUrl:
+      "https://www.goal.com/en-cm/news/roger-assale-werder-bremen-sign-dijon-forward-on-loan/144ze9nh1tkh71hiogol7rwpqd",
+  },
+  {
+    title: "VfB Stuttgart",
+    titleVolume: 1870000,
+    image: "assets/images/fansmode/vfb-stuttgart.webp",
+    imageOwnerName: "bundesliga",
+    imageOwnerUrl:
+      "https://www.bundesliga.com/en/bundesliga/news/vfb-stuttgart-relegation-to-top-four-contenders-guirassy-hoeness-25068",
+  },
+  {
+    title: "SC Freiburg",
+    titleVolume: 1620000,
+    image: "assets/images/fansmode/sc-freiburg.webp",
+    imageOwnerName: "SC Freiburg",
+    imageOwnerUrl:
+      "https://www.scfreiburg.com/en/latest/news/first-team/20222023/draw-in-friendly-against-fc-luzern",
+  },
 ];
 
 let revenueCap = [
