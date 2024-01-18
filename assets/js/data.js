@@ -1030,7 +1030,7 @@ let revenueCap = [
   {
     title: "BMW",
     titleVolume: 163590000000,
-    image: "assets/images/revenuemode/bmw.webp",
+    image: "assets/images/revenuemode/bmw-company.webp",
     imageOwnerName: "Automotive Rhythms",
     imageOwnerUrl: "https://www.flickr.com/photos/artvlive/52823654647",
   },
