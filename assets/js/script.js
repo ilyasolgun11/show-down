@@ -117,6 +117,24 @@ function generateRandomNumber() {
 }
 
 /**
+ * Function parameters take message and gif which will display in the fail screen, reason is to eliminate DRY code
+ */
+function failScreenDisplayFailType(message, gif) {
+  congratsMessage.textContent = message;
+  gifDisplay.style.backgroundImage = `url("assets/images/gif/${gif}")`;
+  failedPlayAgainBtn.addEventListener("click", function () {
+    startGame();
+    failedScreen.style.visibility = "hidden";
+    score = 0;
+  });
+  failedMainMenu.addEventListener("click", function () {
+    gameMainMenu();
+    failedScreen.style.visibility = "hidden";
+    score = 0;
+  });
+}
+
+/**
  * Displays fail screen and gives user the option to play again
  * Also displays a GIF
  */
@@ -128,71 +146,22 @@ function failScreenShow() {
   }
   // If the score is less than 3 then display the following
   if (score < 3) {
-    congratsMessage.textContent = "Oof, better luck next time";
-    gifDisplay.style.backgroundImage = `url(${"assets/images/gif/joe-biden-giphy.gif"})`;
-    failedPlayAgainBtn.addEventListener("click", function () {
-      startGame();
-      failedScreen.style.visibility = "hidden";
-      score = 0;
-    });
-    failedMainMenu.addEventListener("click", function () {
-      gameMainMenu();
-      failedScreen.style.visibility = "hidden";
-      score = 0;
-    });
+    failScreenDisplayFailType(
+      "Oof, better luck next time",
+      "joe-biden-giphy.gif"
+    );
     // If the score is less than 5 but more than 3 then display the following
   } else if (score < 5 && score > 3) {
-    congratsMessage.textContent = "Almost a decent score...";
-    gifDisplay.style.backgroundImage = `url(${"assets/images/gif/drunk-man-at-store.gif"})`;
-    failedPlayAgainBtn.addEventListener("click", function () {
-      startGame();
-      failedScreen.style.visibility = "hidden";
-      score = 0;
-    });
-    failedMainMenu.addEventListener("click", function () {
-      gameMainMenu();
-      failedScreen.style.visibility = "hidden";
-      score = 0;
-    });
+    failScreenDisplayFailType(
+      "Almost a decent score...",
+      "drunk-man-at-store.gif"
+    );
   } else if (score > 5 && score < 10) {
-    congratsMessage.textContent = "OMG, we got a genius!";
-    gifDisplay.style.backgroundImage = `url(${"assets/images/gif/man-celebrating.gif"})`;
-    failedPlayAgainBtn.addEventListener("click", function () {
-      startGame();
-      failedScreen.style.visibility = "hidden";
-      score = 0;
-    });
-    failedMainMenu.addEventListener("click", function () {
-      gameMainMenu();
-      failedScreen.style.visibility = "hidden";
-      score = 0;
-    });
+    failScreenDisplayFailType("OMG, we got a genius!", "man-celebrating.gif");
   } else if (score > 10 && score < 15) {
-    congratsMessage.textContent = "OMG, what a pro!";
-    gifDisplay.style.backgroundImage = `url(${"assets/images/gif/men-celebrating.gif"})`;
-    failedPlayAgainBtn.addEventListener("click", function () {
-      startGame();
-      failedScreen.style.visibility = "hidden";
-      score = 0;
-    });
-    failedMainMenu.addEventListener("click", function () {
-      gameMainMenu();
-      failedScreen.style.visibility = "hidden";
-      score = 0;
-    });
+    failScreenDisplayFailType("OMG, what a pro!", "men-celebrating.gif");
   } else if (score > 15) {
-    congratsMessage.textContent = "Now you, are special.";
-    gifDisplay.style.backgroundImage = `url(${"assets/images/gif/gg.gif"})`;
-    failedPlayAgainBtn.addEventListener("click", function () {
-      startGame();
-      failedScreen.style.visibility = "hidden";
-      score = 0;
-    });
-    failedMainMenu.addEventListener("click", function () {
-      gameMainMenu();
-      failedScreen.style.visibility = "hidden";
-      score = 0;
-    });
+    failScreenDisplayFailType("Now you, are special.", "gg.gif");
   }
 }
 
