@@ -61,10 +61,13 @@ let searchCriteria;
 /**
  * Sets the first and second half search criteria and sets the hasEarned element either "has" or "has made", purpose of this is to eliminate DRY code
  */
-function modeContentSelector(criteria, has) {
+function modeContentSelector(criteria, has, type) {
   searchCriteria = criteria;
+  currentArray = type;
+  mainMenu.style.display = "none";
   hasEarnedOne.textContent = has;
   hasEarnedTwo.textContent = has;
+  startGame();
 }
 
 /**
@@ -73,24 +76,15 @@ function modeContentSelector(criteria, has) {
 function gameMainMenu() {
   mainMenu.style.display = "flex";
   randomMode.addEventListener("click", function () {
-    currentArray = searchData;
-    mainMenu.style.display = "none";
-    modeContentSelector("average monthly searches", "has");
-    startGame();
+    modeContentSelector("average monthly searches", "has", searchData);
   });
 
   fansMode.addEventListener("click", function () {
-    currentArray = fansData;
-    mainMenu.style.display = "none";
-    modeContentSelector("football fans", "has");
-    startGame();
+    modeContentSelector("football fans", "has", fansData);
   });
 
   revenueMode.addEventListener("click", function () {
-    currentArray = revenueCap;
-    mainMenu.style.display = "none";
-    modeContentSelector("in revenue last year", "has made");
-    startGame();
+    modeContentSelector("in revenue last year", "has made", revenueCap);
   });
 }
 
