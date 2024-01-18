@@ -216,6 +216,29 @@ body {
   border-radius: 30px;
 }
 
+.main-menu-credits-container {
+  margin-top: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-menu-credits-container p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.main-menu-credits-container i {
+  font-size: 2.3rem;
+  margin-left: 5px;
+  color: white;
+}
+
+.main-menu-credits-container i:hover {
+  color: rgb(29, 165, 24);
+}
+
 /* Fail screen styles */
 #fail-screen {
   background: black center/cover no-repeat;
@@ -692,6 +715,12 @@ body {
   .fans-mode:before,
   .market-cap-mode:before {
     background-color: rgba(0, 0, 0, 0.6);
+  }
+  .main-menu-credits-container p {
+    font-size: 1.05rem;
+  }
+  .main-menu-credits-container i {
+    font-size: 2.7rem;
   }
   /* Fail screen styles  */
   #gif-display:before {
