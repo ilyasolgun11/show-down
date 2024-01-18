@@ -202,35 +202,26 @@ function startGame() {
   correctAnswerBox.classList.remove("show");
   wrongAnswerBox.classList.remove("show");
   // Add buttons to game
-  showButtons();
+  showHideButtons("show", "", "");
 }
 
 /**
- * Hide Buttons
+ * Based on passed parameters, either show or hide buttons and edit the padding, margin and font size
  */
-function hideButtons() {
-  higherBtn.classList.add("hide-btn");
-  higherBtn.style.margin = "0px";
-  higherBtn.style.fontSize = "0.1px";
-  higherBtn.style.padding = "0px";
-  lowerBtn.classList.add("hide-btn");
-  lowerBtn.style.margin = "0px";
-  lowerBtn.style.fontSize = "0.1px";
-  lowerBtn.style.padding = "0px";
-}
-
-/**
- * Show Buttons
- */
-function showButtons() {
-  higherBtn.classList.remove("hide-btn");
-  higherBtn.style.margin = "";
-  higherBtn.style.fontSize = "";
-  higherBtn.style.padding = "";
-  lowerBtn.classList.remove("hide-btn");
-  lowerBtn.style.margin = "";
-  lowerBtn.style.fontSize = "";
-  lowerBtn.style.padding = "";
+function showHideButtons(type, spaceControl, font) {
+  if (type === "show") {
+    higherBtn.classList.remove("hide-btn");
+    lowerBtn.classList.remove("hide-btn");
+  } else if (type === "hide") {
+    higherBtn.classList.add("hide-btn");
+    lowerBtn.classList.add("hide-btn");
+  }
+  higherBtn.style.margin = spaceControl;
+  higherBtn.style.fontSize = font;
+  higherBtn.style.padding = spaceControl;
+  lowerBtn.style.margin = spaceControl;
+  lowerBtn.style.fontSize = font;
+  lowerBtn.style.padding = spaceControl;
 }
 
 /**
@@ -260,7 +251,7 @@ function triggerHigher() {
   if (firstHalfTitleVolumeValue <= secondHalfTitleVolumeValue) {
     visibilitySecondSearchVolume("visible", "");
     let guess = secondHalfTitleVolumeValue - 70;
-    hideButtons();
+    showHideButtons("hide", "0px", "0.1px");
     // Add interval animation so that it counts up
     const interval = setInterval(() => {
       if (guess > secondHalfTitleVolumeValue - 1) {
@@ -268,7 +259,7 @@ function triggerHigher() {
         // When it disappears trigger the guessed correct function
         setTimeout(() => {
           guessedCorrect();
-          showButtons();
+          showHideButtons("show", "", "");
           visibilitySecondSearchVolume("hidden", "0.1px");
           correctAnswerBox.classList.remove("show");
           for (let i = 0; i < overlay.length; i++) {
@@ -289,7 +280,7 @@ function triggerHigher() {
   } else {
     visibilitySecondSearchVolume("visible", "");
     let guess = secondHalfTitleVolumeValue - 70;
-    hideButtons();
+    showHideButtons("hide", "0px", "0.1px");
     // Add interval animation so that it counts up
     const interval = setInterval(() => {
       if (guess > secondHalfTitleVolumeValue - 1) {
@@ -322,7 +313,7 @@ function triggerLower() {
   if (firstHalfTitleVolumeValue >= secondHalfTitleVolumeValue) {
     visibilitySecondSearchVolume("visible", "");
     let guess = secondHalfTitleVolumeValue - 70;
-    hideButtons();
+    showHideButtons("hide", "0px", "0.1px");
     // Add interval animation so that it counts up
     const interval = setInterval(() => {
       if (guess > secondHalfTitleVolumeValue - 1) {
@@ -330,7 +321,7 @@ function triggerLower() {
         // When it disappears trigger the guessed correct function
         setTimeout(() => {
           guessedCorrect();
-          showButtons();
+          showHideButtons("show", "", "");
           visibilitySecondSearchVolume("hidden", "0.1px");
           correctAnswerBox.classList.remove("show");
           for (let i = 0; i < overlay.length; i++) {
@@ -351,7 +342,7 @@ function triggerLower() {
   } else {
     visibilitySecondSearchVolume("visible", "");
     let guess = secondHalfTitleVolumeValue - 70;
-    hideButtons();
+    showHideButtons("hide", "0px", "0.1px");
     // Add interval animation so that it counts up
     const interval = setInterval(() => {
       if (guess > secondHalfTitleVolumeValue - 1) {
