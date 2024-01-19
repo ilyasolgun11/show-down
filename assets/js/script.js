@@ -135,7 +135,7 @@ function setHighScore() {
   }
 }
 
-// When user clicks on logo while in-game, it takes them to the game menu screen and sets the score to 0
+// When user clicks on logo while in-game, it takes them to the game menu screen and sets the score to 0, also sets a new high score
 logo.addEventListener("click", function () {
   gameMainMenu();
   setHighScore();
