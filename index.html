@@ -37,6 +37,7 @@
     <main class="game-container">
       <!-- Menu section  -->
       <section id="main-menu" aria-label="Main menu">
+        <div class="main-menu-overlay"></div>
         <div class="main-menu-inner-container">
           <section class="logo-section">
             <img
@@ -60,6 +61,7 @@
             <h3 class="menu-high-score" aria-label="High score">
               High score: <span id="menu-high-score">0</span>
             </h3>
+            <button id="how-to-play-btn">How to play</button>
           </section>
           <nav class="game-modes-container" aria-label="Game modes">
             <section
@@ -144,6 +146,71 @@
           <footer class="copyright-container">
             <h3 class="copyright">Built by Ilyascan Olgun</h3>
           </footer>
+        </div>
+      </section>
+      <!-- How to play section  -->
+      <section id="how-to-play-container">
+        <span id="close-how-to-play"><i class="fa-solid fa-xmark"></i></span>
+        <div class="how-to-play-first-half">
+          <h3>How to play:</h3>
+          <p>
+            Based on game mode you have to guess whether the search volume, fans
+            amount or company revenue on the <span>right</span> is higher or
+            lower than the search volume, fans amount or company revenue on the
+            left, if you think its higher then click "higher", if you think
+            otherwise then click "lower"
+          </p>
+        </div>
+        <div class="how-to-play-second-half">
+          <h3>Keyboard shortcuts:</h3>
+          <div class="keyboard-shortcuts-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Keyboard shortcuts:</th>
+                  <th>What it does:</th>
+                  <th>Screen:</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>"Up Arrow"</td>
+                  <td>Choose Higher</td>
+                  <td>Game</td>
+                </tr>
+                <tr>
+                  <td>"Down Arrow"</td>
+                  <td>Choose Lower</td>
+                  <td>Game</td>
+                </tr>
+                <tr>
+                  <td>"M key"</td>
+                  <td>Main menu</td>
+                  <td>Game</td>
+                </tr>
+                <tr>
+                  <td>"R key"</td>
+                  <td>Random mode</td>
+                  <td>Main menu</td>
+                </tr>
+                <tr>
+                  <td>"F key"</td>
+                  <td>Fans mode</td>
+                  <td>Main menu</td>
+                </tr>
+                <tr>
+                  <td>"C key"</td>
+                  <td>Company mode</td>
+                  <td>Main menu</td>
+                </tr>
+                <tr>
+                  <td>"P key"</td>
+                  <td>Play again</td>
+                  <td>Fail screen</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
       <!-- Game display section start carrying on -->

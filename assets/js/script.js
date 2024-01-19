@@ -45,6 +45,10 @@ const randomMode = document.getElementById("random-mode");
 const fansMode = document.getElementById("fans-mode");
 const revenueMode = document.getElementById("market-cap-mode");
 const menuHighScore = document.getElementById("menu-high-score");
+const howToPlayBtn = document.getElementById("how-to-play-btn");
+const howToPlayContainer = document.getElementById("how-to-play-container");
+const closeHowToPlay = document.getElementById("close-how-to-play");
+const mainMenuOverlay = document.querySelector(".main-menu-overlay");
 // Grab logo from game screen
 const logo = document.getElementById("logo");
 // Grab has/earned from DOM
@@ -84,6 +88,15 @@ modesHoverEffect.forEach((mode) => {
     randomMode.style.filter = "blur(0px)";
     fansMode.style.filter = "blur(0px)";
     revenueMode.style.filter = "blur(0px)";
+  });
+});
+
+howToPlayBtn.addEventListener("click", function () {
+  howToPlayContainer.style.display = "flex";
+  mainMenuOverlay.style.display = "block";
+  closeHowToPlay.addEventListener("click", function () {
+    howToPlayContainer.style.display = "none";
+    mainMenuOverlay.style.display = "none";
   });
 });
 
@@ -332,6 +345,13 @@ function keyboardTrigger() {
         modeContentSelector("football fans", "has", fansData);
       } else if (e.key.toLowerCase() === "c") {
         modeContentSelector("in revenue last year", "has made", revenueCap);
+      }
+    }
+    if (failedScreen.style.visibility === "visible") {
+      if (e.key.toLowerCase() === "p") {
+        startGame();
+        failedScreen.style.visibility = "hidden";
+        score = 0;
       }
     }
   });

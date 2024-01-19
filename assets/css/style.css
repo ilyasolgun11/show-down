@@ -52,6 +52,17 @@ body {
   height: 100vh;
 }
 
+.main-menu-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 38;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 .main-menu-inner-container {
   margin: 0px 20px;
   padding-bottom: 20px;
@@ -122,32 +133,101 @@ body {
   color: rgb(250, 255, 161);
 }
 
-#recent-scores-btn {
+#how-to-play-btn {
+  font-weight: 600;
   cursor: pointer;
   border-radius: 80px;
   border: 2px solid white;
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
   font-size: 1.2rem;
-  margin-top: 20px;
+  margin-top: 22px;
   padding: 12px 20px;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-#recent-scores-btn:hover {
+#how-to-play-btn:hover {
   background-color: white;
   color: rgb(0, 0, 0);
 }
 
-#show-recent-scores {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 400px;
-  height: 400px;
-  color: black;
-  background-color: white;
+#how-to-play-container {
+  color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  border-radius: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 85%;
+  background: linear-gradient(
+    -45deg,
+    #001b01,
+    transparent,
+    #170000,
+    transparent,
+    #001b01,
+    transparent
+  );
+  background-color: #000000;
+  background-size: 400% 400%;
+  animation: movingGradient 40s ease infinite;
   z-index: 40;
+}
+
+.how-to-play-first-half,
+.how-to-play-second-half {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+#close-how-to-play {
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.how-to-play-first-half h3,
+.how-to-play-second-half h3 {
+  color: white;
+  font-size: 2rem;
+}
+
+.how-to-play-first-half p {
+  margin-top: -10px;
+  padding: 0px 70px;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+}
+
+.keyboard-shortcuts-container {
+  padding: 20px;
+}
+
+.keyboard-shortcuts-container table {
+  text-align: center;
+  color: white;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.keyboard-shortcuts-container th,
+.keyboard-shortcuts-container td {
+  font-weight: 500;
+  border: 2px solid white;
+  padding: 12px;
+}
+
+.keyboard-shortcuts-container th {
+  color: white;
 }
 
 .game-modes {
@@ -690,7 +770,7 @@ body {
   /* Main menu styles */
   #main-menu {
     padding-top: 80px;
-    height: 145vh;
+    height: 175vh;
     padding-bottom: 100px;
   }
   .game-modes-container {
@@ -722,7 +802,19 @@ body {
   .market-cap-mode:before {
     border-radius: 0px 0px 10px 10px;
   }
-
+  #how-to-play-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(0%, 0%);
+    border-radius: 0px;
+    height: 130%;
+    width: 100%;
+    flex-direction: column;
+  }
+  .how-to-play-first-half {
+    margin-bottom: 40px;
+  }
   /* Game screen styles */
   #first-half-title-volume,
   #second-half-title-volume {
@@ -785,6 +877,21 @@ body {
   .main-menu-credits-container i {
     font-size: 2.7rem;
   }
+  #how-to-play-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+  }
+  .how-to-play-first-half h3 {
+    font-size: 1.7rem;
+  }
+  .how-to-play-first-half p {
+    padding: 0px 20px;
+  }
+  .how-to-play-second-half {
+    display: none;
+  }
   /* Fail screen styles  */
   #gif-display:before {
     background-color: rgba(0, 0, 0, 0.6);
@@ -845,7 +952,7 @@ body {
 @media screen and (max-width: 500px) {
   /* Main menu styles  */
   #main-menu {
-    height: 220vh;
+    height: 200vh;
   }
   .introduction-section h1 {
     font-size: 1.4rem;
