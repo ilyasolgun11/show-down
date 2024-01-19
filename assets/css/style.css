@@ -959,7 +959,11 @@ body {
     margin-bottom: 10px;
   }
   .menu-high-score {
-    font-size: 1.9rem;
+    font-size: 1.4rem;
+  }
+  #how-to-play-btn {
+    font-size: 1rem;
+    padding: 10px 12px;
   }
   /* Game screen styles  */
   #first-half h2,
