@@ -178,13 +178,20 @@ body {
   z-index: 40;
 }
 
+.how-to-play-first-half {
+  width: 90%;
+}
+
+.how-to-play-second-half {
+  width: 110%;
+}
+
 .how-to-play-first-half,
 .how-to-play-second-half {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
 }
 
 #close-how-to-play {
@@ -811,6 +818,10 @@ body {
     height: 130%;
     width: 100%;
     flex-direction: column;
+  }
+  .how-to-play-first-half,
+  .how-to-play-second-half {
+    width: 100%;
   }
   .how-to-play-first-half {
     margin-bottom: 40px;
