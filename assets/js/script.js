@@ -301,6 +301,9 @@ buttons.forEach((button) => {
   });
 });
 
+/**
+ * Adds keyboard shortcut functionality to the game
+ */
 function keyboardTrigger() {
   window.addEventListener("keydown", function (e) {
     if (!keyCoolDown) {
@@ -314,6 +317,21 @@ function keyboardTrigger() {
         triggerHigher();
       } else if (e.key === "ArrowDown") {
         triggerLower();
+      }
+    }
+    if (mainMenu.style.display === "none") {
+      if (e.key.toLowerCase() === "m") {
+        gameMainMenu();
+        setHighScore();
+      }
+    }
+    if (mainMenu.style.display !== "none") {
+      if (e.key.toLowerCase() === "r") {
+        modeContentSelector("average monthly searches", "has", searchData);
+      } else if (e.key.toLowerCase() === "f") {
+        modeContentSelector("football fans", "has", fansData);
+      } else if (e.key.toLowerCase() === "c") {
+        modeContentSelector("in revenue last year", "has made", revenueCap);
       }
     }
   });
