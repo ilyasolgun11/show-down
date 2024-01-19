@@ -52,6 +52,7 @@ const hasEarnedOne = document.getElementById("has-earned-first");
 const hasEarnedTwo = document.getElementById("has-earned-second");
 
 // Set global variables so they can be accessed from anywhere
+let keyCoolDown = false;
 let firstHalfTitleVolumeValue;
 let secondHalfTitleVolumeValue;
 let randomNumber1;
@@ -122,6 +123,7 @@ function gameMainMenu() {
 document.addEventListener("DOMContentLoaded", function () {
   gameMainMenu();
   menuHighScore.textContent = highScore;
+  keyboardTrigger();
 });
 
 function setHighScore() {
@@ -298,6 +300,24 @@ buttons.forEach((button) => {
     }
   });
 });
+
+function keyboardTrigger() {
+  window.addEventListener("keydown", function (e) {
+    if (!keyCoolDown) {
+      keyCoolDown = true;
+
+      setTimeout(() => {
+        keyCoolDown = false;
+      }, 1700);
+
+      if (e.key === "ArrowUp") {
+        triggerHigher();
+      } else if (e.key === "ArrowDown") {
+        triggerLower();
+      }
+    }
+  });
+}
 
 /**
  * Triggers sequence that will see if the guess is higher or lower

@@ -36,8 +36,7 @@
     <!-- Game display section start  -->
     <main class="game-container">
       <!-- Menu section  -->
-
-      <section id="main-menu">
+      <section id="main-menu" aria-label="Main menu">
         <div class="main-menu-inner-container">
           <section class="logo-section">
             <img
@@ -46,7 +45,10 @@
               alt="Game logo"
             />
           </section>
-          <article class="introduction-section">
+          <article
+            class="introduction-section"
+            aria-label="Introduction section"
+          >
             <h1>What is Show Down?</h1>
             <p>
               You have to guess whether something is higher or lower based on
@@ -55,26 +57,38 @@
             </p>
           </article>
           <section class="menu-high-score-container">
-            <h3 class="menu-high-score">
+            <h3 class="menu-high-score" aria-label="High score">
               High score: <span id="menu-high-score">0</span>
             </h3>
           </section>
-          <nav class="game-modes-container">
-            <section class="random-mode hover-effect" id="random-mode">
+          <nav class="game-modes-container" aria-label="Game modes">
+            <section
+              class="random-mode hover-effect"
+              id="random-mode"
+              aria-label="Random mode"
+            >
               <h2>Random Mode</h2>
               <p>
                 Guess whether something has less or more google searches in the
                 past month!
               </p>
             </section>
-            <section class="fans-mode hover-effect" id="fans-mode">
+            <section
+              class="fans-mode hover-effect"
+              id="fans-mode"
+              aria-label="Football Fans mode"
+            >
               <h2>Football Fans Mode</h2>
               <p>
                 Guess whether a football team has less or more fans around the
                 world!
               </p>
             </section>
-            <section class="market-cap-mode hover-effect" id="market-cap-mode">
+            <section
+              class="market-cap-mode hover-effect"
+              id="market-cap-mode"
+              aria-label="Company revenue mode"
+            >
               <h2>Company Revenue</h2>
               <p>Guess which company gained more revenue last year!</p>
             </section>
@@ -99,7 +113,7 @@
         </div>
       </section>
       <!-- Fail screen section  -->
-      <section id="fail-screen">
+      <section id="fail-screen" aria-label="Fail screen">
         <div id="gif-display">
           <img
             class="pop-up-logo"
