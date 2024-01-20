@@ -24,6 +24,10 @@ The game's addictive nature makes it a perfect break from the outside world. The
       - [**Main Menu Logo**](#main-menu-logo)
       - [**Main Menu Header**](#main-menu-header)
       - [**Main Menu Game Modes**](#main-menu-game-modes)
+    - [**Game Screen**](#game-screen)
+      - [**Game Screen Body**](#game-screen-body)
+        - [**Game Screen Body First Container**](#game-screen-body-first-container)
+        - [**Game Screen Body Second Container**](#game-screen-body-second-containerr)
 
 ## **Planning Stage** <a name="planning-stage"></a>
 
@@ -138,3 +142,30 @@ The main menu contains the following:
   - Underneath the game modes, there is a copyright section that consists of my name and a social links section that takes the user either to the project's Repository or to my personal LinkedIn profile.
 
 ![Game modes](assets/images/readme/show-down-main-menu-game-modes.png)
+
+## **Game Screen** <a name="game-screen"></a>
+
+### **Game Screen Logo** <a name="game-screen-logo"></a>
+
+- The logo shows the name of the game
+- The logo for the game screens purpose is also to be a navigation back to the main menu, the user can do this by either clicking on it or hitting the "m" key on their keyboard.
+
+![Game logo](../assets/images/logo.png)
+
+### **Game Screen Body** <a name="game-screen-body"></a>
+
+The game screen body contains the following:
+
+#### **Game Screen Body First Container** <a name="game-screen-body-first-container"></a>
+
+- The first container's title and title volume are randomly generated when the user clicks on a game mode in the main menu.
+- It contains the user's score in the bottom left of the screen and also contains the image owner's link in the bottom right of the screen.
+
+![First container](assets/images/readme/show-down-game-screen-first-container.png)
+
+#### **Game Screen Body Second Container** <a name="game-screen-body-second-container"></a>
+
+- The first container's title is randomly generated as well when the user clicks on a game mode in the main menu.
+- It contains the higher and lower buttons which the user can click to reveal if they got the answer right or not, it also contains the user's high score on the bottom left of the screen and the image owner's link in the bottom right of the screen.
+
+![Second container](assets/images/readme/show-down-game-screen-second-container.png)
