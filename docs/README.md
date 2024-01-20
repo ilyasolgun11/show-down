@@ -120,7 +120,7 @@ The main menu contains the following:
 - The logo shows the name of the game
 - The logo does not contain an anchor tag as there are many other ways the user can navigate back to the menu and it is a single page of HTML.
 
-![Game logo](../assets/images/logo.png)
+![Game logo](assets/images/readme/show-down-main-menu-logo.png)
 
 ### **Main Menu Header** <a name="main-menu-header"></a>
 
@@ -129,6 +129,14 @@ The main menu contains the following:
 - The How-to-play button when clicked displays a guide on how to play the game and also gives the user the necessary information on how to use the keyboard shortcuts to easily navigate through the game.
 
 ![Header](assets/images/readme/show-down-main-menu-header.png)
+
+### **Main Menu How To Play** <a name="main-menu-how-to-play"></a>
+
+- The how-to-play screen contains a how-to-play guide and a keyword shortcut guide.
+- The how-to-play guide is short and informative to give the user a quick understanding of the functionality of the game.
+- The keyboard shortcut guide contains information on the keys the user has to press and what they do on which screens.
+
+![How to play](assets/images/readme/show-down-main-menu-how-to-play.png)
 
 ### **Main Menu Game Modes** <a name="main-menu-game-modes"></a>
 
@@ -150,7 +158,7 @@ The main menu contains the following:
 - The logo shows the name of the game
 - The logo for the game screens purpose is also to be a navigation back to the main menu, the user can do this by either clicking on it or hitting the "m" key on their keyboard.
 
-![Game logo](../assets/images/logo.png)
+![Game logo](assets/images/readme/show-down-game-screen-logo.png)
 
 ### **Game Screen Body** <a name="game-screen-body"></a>
 
