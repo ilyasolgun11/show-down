@@ -78,6 +78,7 @@ To give myself a guide on how to build the structure of my project, I built the 
   - [Fail screen](images/readme/show-down-fail-screen-desktop.png)
 
 - Mobile Wireframes:
+
   - [Main menu](images/readme/show-down-main-menu-mobile.png)
   - [Game screen](images/readme/show-down-game-screen-mobile.png)
   - [Fail screen](images/readme/show-down-fail-screen-mobile.png)

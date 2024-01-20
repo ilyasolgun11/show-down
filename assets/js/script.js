@@ -345,6 +345,13 @@ function keyboardTrigger() {
         modeContentSelector("football fans", "has", fansData);
       } else if (e.key.toLowerCase() === "c") {
         modeContentSelector("in revenue last year", "has made", revenueCap);
+      } else if (e.key.toLowerCase() === "h") {
+        howToPlayContainer.style.display = "flex";
+        mainMenuOverlay.style.display = "block";
+        closeHowToPlay.addEventListener("click", function () {
+          howToPlayContainer.style.display = "none";
+          mainMenuOverlay.style.display = "none";
+        });
       }
     }
     if (failedScreen.style.visibility === "visible") {

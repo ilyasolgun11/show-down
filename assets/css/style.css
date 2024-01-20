@@ -201,10 +201,16 @@ body {
   right: 30px;
 }
 
-.how-to-play-first-half h3,
+.how-to-play-first-half h3 {
+  color: white;
+  font-size: 2rem;
+}
+
 .how-to-play-second-half h3 {
   color: white;
   font-size: 2rem;
+  margin: 0px;
+  margin-bottom: -8px;
 }
 
 .how-to-play-first-half p {
