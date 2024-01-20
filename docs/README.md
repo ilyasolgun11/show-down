@@ -28,6 +28,7 @@ The game's addictive nature makes it a perfect break from the outside world. The
       - [**Game Screen Body**](#game-screen-body)
         - [**Game Screen Body First Container**](#game-screen-body-first-container)
         - [**Game Screen Body Second Container**](#game-screen-body-second-containerr)
+    - [**Fail Screen**](#fail-screen)
 
 ## **Planning Stage** <a name="planning-stage"></a>
 
@@ -177,3 +178,33 @@ The game screen body contains the following:
 - It contains the higher and lower buttons which the user can click to reveal if they got the answer right or not, it also contains the user's high score on the bottom left of the screen and the image owner's link in the bottom right of the screen.
 
 ![Second container](assets/images/readme/show-down-game-screen-second-container.png)
+
+## **Fail Screen** <a name="fail-screen"></a>
+
+The fail screen contains the following:
+
+### **Fail Screen Logo** <a name="fail-screen-logo"></a>
+
+- The logo shows the name of the game.
+- The logo for the fail screen does not have an event listener or an anchor tag as there is a main menu button and the user could also just tap the "m" key to navigate back.
+
+![Fail screen logo](assets/images/readme/show-down-fail-screen-logo.png)
+
+### **Fail Screen Body** <a name="fail-screen-body"></a>
+
+The fail screen body contains the following:
+
+#### **Fail Screen Body Information** <a name="fail-screen-body-information"></a>
+
+- The information section tells the user which score they failed on, and also a complimentary congratulations message, this message changes based on what score they got, for example, scores between 0 - 3 "Oof, better luck next time", this message is a way of telling the user to keep playing and attempt a higher score.
+
+![Fail screen information](assets/images/readme/show-down-fail-screen-information.png)
+
+#### **Fail Screen Body Navigation** <a name="fail-screen-body-navigation"></a>
+
+- The fail screen navigation contains a "Play again" button so the player can carry on playing in the game mode they chose before
+- The navigation also contains a "Main menu" button which the player can click to navigate back and choose a different game mode.
+- The fail screen also has a social links section which holds the project's Repository link and also my personal LinkedIn profile link.
+- Underneath the social links, there is another copyright section which has my name.
+
+![Fail screen Navigation](assets/images/readme/show-down-fail-screen-navigation.png)
