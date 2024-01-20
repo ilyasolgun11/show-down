@@ -17,6 +17,9 @@ The game's addictive nature makes it a perfect break from the outside world. The
     - [**Site Aims**](#site-aims)
     - [**How This Will Be Achieved**](#how-this-will-be-achieved)
     - [**Wireframes**](#wireframes)
+    - [**Color Scheme**](#color-scheme)
+    - [**Typography**](#typography)
+  - [**Current Features**](#current-features)
 
 ## **Planning Stage** <a name="planning-stage"></a>
 
@@ -59,9 +62,9 @@ As a user, I want to:
   - Project Repository
 - Upon user failing a round, they will be navigated to the fail screen and their score will be displayed, on this screen the user has links to:
   - Play again
-    - If the score the user failed on is higher than their recent high score, it will be updated on the game screen.
+    - If the score the user failed on, is higher than their recent high score, it will be updated on the game screen.
   - Main menu
-    - If the score the user failed on is higher than their recent high score, it will be updated in the main menu.
+    - If the score the user failed on, is higher than their recent high score, it will be updated in the main menu.
   - My Linkedin profile
   - Project Repository
 - Providing a clean, simple, appealing and accessible interface.
@@ -82,3 +85,20 @@ To give myself a guide on how to build the structure of my project, I built the 
   - [Main menu](images/readme/show-down-main-menu-mobile.png)
   - [Game screen](images/readme/show-down-game-screen-mobile.png)
   - [Fail screen](images/readme/show-down-fail-screen-mobile.png)
+
+### **Color Scheme:** <a name="color-scheme"></a>
+
+Considering the game has a dark theme, I went with lighter colors. The purpose of this was to have the colors pop and be more visible to the user.
+
+The color contrast grid was created using this site [https://contrast-grid.eightshapes.com](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23ffffff%2C%0D%0A%23000000%2C%0D%0A%23170000%2C%0D%0A%23001b01%2C%0D%0A%231da518%2C%0D%0A%230ecb00%2C%0D%0A%23ab1d1d%2C%0D%0A%23d20000%2C%0D%0A%23faffa1%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp)
+
+![Color Contrast](images/readme/show-down-color-contrast.png)
+
+### **Typography:** <a name="typography"></a>
+
+Both fonts used were imported from Google Fonts.
+
+- The Primary font used is "Poppins", this font was chosen because it compliments the game's modern look, also it pops with the game's dark background.
+- For the text of the title volumes I used "Lato", the main purpose of using this font was because it's more narrow compared to "Poppins" so for larger numbers it can fit within its container without spilling.
+
+## **Current Features:** <a name="current-features"></a>

@@ -10,7 +10,7 @@ body {
 .game-container {
   position: relative;
   margin: 0px;
-  background-color: black;
+  background-color: #000000;
   display: flex;
   width: 100%;
   height: 100vh;
@@ -60,7 +60,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 38;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #000000e6;
 }
 
 .main-menu-inner-container {
@@ -77,7 +77,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: white;
+  color: #ffffff;
 }
 
 .logo-section {
@@ -473,7 +473,7 @@ body {
 }
 
 .socials i:hover {
-  color: rgb(29, 165, 24);
+  color: #1da518;
   cursor: pointer;
 }
 
@@ -576,7 +576,7 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: rgb(29, 165, 24);
+  background-color: #1da518;
   visibility: hidden;
   opacity: 0;
   transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out,
@@ -596,7 +596,7 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: rgb(171, 29, 29);
+  background-color: #ab1d1d;
   visibility: hidden;
   opacity: 0;
   transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out,
@@ -685,7 +685,7 @@ body {
 
 #higher-btn:hover {
   transform: scale(1.02);
-  border: 2px solid rgb(14, 203, 0);
+  border: 2px solid #0ecb00;
   box-shadow: 0 0 30px rgba(14, 203, 0, 0.8);
   color: white;
   transition: all 0.1s ease-in-out;
@@ -693,7 +693,7 @@ body {
 
 #lower-btn:hover {
   transform: scale(1.02);
-  border: 2px solid rgb(210, 0, 0);
+  border: 2px solid #d20000;
   box-shadow: 0 0 30px rgba(210, 0, 0, 0.8);
   color: white;
   transition: all 0.1s ease-in-out;
@@ -930,7 +930,7 @@ body {
     transform: scale(1);
     border: 2px solid white;
     box-shadow: 0 0 30px rgba(14, 203, 0, 0);
-    color: rgb(250, 255, 161);
+    color: #faffa1;
   }
 
   #lower-btn:hover {
