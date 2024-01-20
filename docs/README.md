@@ -32,6 +32,7 @@ The game's addictive nature makes it a perfect break from the outside world. The
       - [**Fail Screen Body**](#fail-screen-body)
       - [**Fail Screen Body Information**](#fail-screen-body-information)
       - [**Fail Screen Body Navigation**](#fail-screen-body-navigation)
+  - [**Future enhancements**](#future-enhancements)
 
 ## **Planning Stage** <a name="planning-stage"></a>
 
@@ -211,3 +212,5 @@ The fail screen body contains the following:
 - Underneath the social links, there is another copyright section which has my name.
 
 ![Fail screen Navigation](assets/images/readme/show-down-fail-screen-navigation.png)
+
+## **Future Enhancements** <a name="future-enhancements"></a>
