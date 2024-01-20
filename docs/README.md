@@ -4,9 +4,9 @@
 
 Show Down is a guessing game where the user has to choose either Higher or Lower to move onto the next level, in the context of the "Random Mode", the user has to decide if the given data on the right's search volume is higher or lower than the left sides search volume (this is true on desktop screen, however on mobile screen it will be top and bottom)
 
-The game's addictive nature makes it a perfect break from the outside world. The reason why it is addictive is because the user is trying to get a higher score each time they play and they learn something new as well.
+The game's addictive nature makes it a perfect break from the outside world. The reason why it is addictive is that the user is trying to get a higher score each time they play and they learn something new as well.
 
-![Site responsiveness](images/readme/responsive.png)
+![Site responsiveness](assets/images/readme/responsive.png)
 
 ## **Table of contents:**
 
@@ -20,6 +20,10 @@ The game's addictive nature makes it a perfect break from the outside world. The
     - [**Color Scheme**](#color-scheme)
     - [**Typography**](#typography)
   - [**Current Features**](#current-features)
+    - [**Main Menu**](#main-menu)
+      - [**Main Menu Logo**](#main-menu-logo)
+      - [**Main Menu Header**](#main-menu-header)
+      - [**Main Menu Game Modes**](#main-menu-game-modes)
 
 ## **Planning Stage** <a name="planning-stage"></a>
 
@@ -76,15 +80,15 @@ To give myself a guide on how to build the structure of my project, I built the 
 
 - Desktop Wireframes:
 
-  - [Main menu](images/readme/show-down-main-menu-desktop.png)
-  - [Game screen](images/readme/show-down-game-screen-desktop.png)
-  - [Fail screen](images/readme/show-down-fail-screen-desktop.png)
+  - [Main menu](assets/wireframes/show-down-main-menu-desktop.png)
+  - [Game screen](assets/wireframes/show-down-game-screen-desktop.png)
+  - [Fail screen](assets/wireframes/show-down-fail-screen-desktop.png)
 
 - Mobile Wireframes:
 
-  - [Main menu](images/readme/show-down-main-menu-mobile.png)
-  - [Game screen](images/readme/show-down-game-screen-mobile.png)
-  - [Fail screen](images/readme/show-down-fail-screen-mobile.png)
+  - [Main menu](assets/wireframes/show-down-main-menu-mobile.png)
+  - [Game screen](assets/wireframes/show-down-game-screen-mobile.png)
+  - [Fail screen](assets/wireframes/show-down-fail-screen-mobile.png)
 
 ### **Color Scheme:** <a name="color-scheme"></a>
 
@@ -92,7 +96,7 @@ Considering the game has a dark theme, I went with lighter colors. The purpose o
 
 The color contrast grid was created using this site [https://contrast-grid.eightshapes.com](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23ffffff%2C%0D%0A%23000000%2C%0D%0A%23170000%2C%0D%0A%23001b01%2C%0D%0A%231da518%2C%0D%0A%230ecb00%2C%0D%0A%23ab1d1d%2C%0D%0A%23d20000%2C%0D%0A%23faffa1%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp)
 
-![Color Contrast](images/readme/show-down-color-contrast.png)
+![Color Contrast](assets/images/readme/show-down-color-contrast.png)
 
 ### **Typography:** <a name="typography"></a>
 
@@ -102,3 +106,35 @@ Both fonts used were imported from Google Fonts.
 - For the text of the title volumes I used "Lato", the main purpose of using this font was because it's more narrow compared to "Poppins" so for larger numbers it can fit within its container without spilling.
 
 ## **Current Features:** <a name="current-features"></a>
+
+## **Main Menu** <a name="main-menu"></a>
+
+The main menu contains the following:
+
+### **Main Menu Logo** <a name="main-menu-logo"></a>
+
+- The logo shows the name of the game
+- The logo does not contain an anchor tag as there are many other ways the user can navigate back to the menu and it is a single page of HTML.
+
+![Game logo](../assets/images/logo.png)
+
+### **Main Menu Header** <a name="main-menu-header"></a>
+
+- The main menu header tells the user what the game is and what the goal is.
+- The High Score section within the header displays the user's high score, the reason it is on the landing page is that even if the user never played before it gives them the challenge to try and make a high score.
+- The How-to-play button when clicked displays a guide on how to play the game and also gives the user the necessary information on how to use the keyboard shortcuts to easily navigate through the game.
+
+![Header](assets/images/readme/show-down-main-menu-header.png)
+
+### **Main Menu Game Modes** <a name="main-menu-game-modes"></a>
+
+- The main menu has 3 game modes, these include:
+  - Random mode, this mode has:
+    - Average monthly searches of various keywords in which the user has to guess which is higher or lower.
+  - Football(soccer) fans mode, this mode has:
+    - Average football fans per team, the user has to guess whether a team has higher or lower fans than another.
+  - Company revenue mode, this mode has:
+    - The revenue generated per company, the user has to guess which one generated higher or lower revenue.
+  - Underneath the game modes, there is a copyright section that consists of my name and a social links section that takes the user either to the project's Repository or to my personal LinkedIn profile.
+
+![Game modes](assets/images/readme/show-down-main-menu-game-modes.png)
