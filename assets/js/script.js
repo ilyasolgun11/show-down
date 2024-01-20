@@ -193,7 +193,7 @@ function failScreenShow() {
   failedAtScore.textContent = score;
   overlayGreenRed(overlayRed, "hide");
   // If the score is less than 3 then display the following
-  if (score < 3) {
+  if (score <= 3) {
     failScreenDisplayFailType(
       "Oof, better luck next time",
       "joe-biden-giphy.gif"
@@ -204,9 +204,9 @@ function failScreenShow() {
       "Almost a decent score...",
       "drunk-man-at-store.gif"
     );
-  } else if (score > 5 && score < 10) {
+  } else if (score > 5 && score <= 10) {
     failScreenDisplayFailType("OMG, we got a genius!", "man-celebrating.gif");
-  } else if (score > 10 && score < 15) {
+  } else if (score > 10 && score <= 15) {
     failScreenDisplayFailType("OMG, what a pro!", "men-celebrating.gif");
   } else if (score > 15) {
     failScreenDisplayFailType("Now you, are special.", "gg.gif");
