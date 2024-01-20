@@ -36,7 +36,7 @@
     <!-- Game display section start  -->
     <main class="game-container">
       <!-- Menu section  -->
-      <section id="main-menu" aria-label="Main menu">
+      <section id="main-menu" aria-label="Main menu container">
         <div class="main-menu-overlay"></div>
         <div class="main-menu-inner-container">
           <section class="logo-section">
@@ -59,15 +59,20 @@
           </article>
           <section class="menu-high-score-container">
             <h3 class="menu-high-score" aria-label="High score">
-              High score: <span id="menu-high-score">0</span>
+              High score: <span id="menu-high-score"></span>
             </h3>
-            <button id="how-to-play-btn">How to play</button>
+            <button
+              id="how-to-play-btn"
+              aria-label="Click me to open up the how to play container"
+            >
+              How to play
+            </button>
           </section>
           <nav class="game-modes-container" aria-label="Game modes">
             <section
               class="random-mode hover-effect"
               id="random-mode"
-              aria-label="Random mode"
+              aria-label="Random mode, tap the r key to enter"
             >
               <h2>Random Mode</h2>
               <p>
@@ -78,7 +83,7 @@
             <section
               class="fans-mode hover-effect"
               id="fans-mode"
-              aria-label="Football Fans mode"
+              aria-label="Football Fans mode, tap the f key to enter"
             >
               <h2>Football Fans Mode</h2>
               <p>
@@ -89,7 +94,7 @@
             <section
               class="market-cap-mode hover-effect"
               id="market-cap-mode"
-              aria-label="Company revenue mode"
+              aria-label="Company revenue mode, tap the c key to enter"
             >
               <h2>Company Revenue</h2>
               <p>Guess which company gained more revenue last year!</p>
@@ -115,7 +120,7 @@
         </div>
       </section>
       <!-- Fail screen section  -->
-      <section id="fail-screen" aria-label="Fail screen">
+      <section id="fail-screen" aria-label="Fail screen container">
         <div id="gif-display">
           <img
             class="pop-up-logo"
@@ -123,11 +128,24 @@
             alt="Game logo"
           />
           <h3>You scored:</h3>
-          <span id="failed-at-score"></span>
+          <span
+            id="failed-at-score"
+            aria-label="You failed at this score"
+          ></span>
           <p id="congrats-message"></p>
           <nav class="fail-screen-nav">
-            <button id="failed-screen-play-again">Play Again</button>
-            <button id="failed-screen-main-menu">Main Menu</button>
+            <button
+              id="failed-screen-play-again"
+              aria-label="Play again, tap the p key to play again"
+            >
+              Play Again
+            </button>
+            <button
+              id="failed-screen-main-menu"
+              aria-label="Main menu, tap the m key to go to the main menu"
+            >
+              Main Menu
+            </button>
           </nav>
           <div class="socials">
             <a
@@ -149,8 +167,12 @@
         </div>
       </section>
       <!-- How to play section  -->
-      <section id="how-to-play-container">
-        <span id="close-how-to-play"><i class="fa-solid fa-xmark"></i></span>
+      <section id="how-to-play-container" aria-label="How to play container">
+        <span
+          id="close-how-to-play"
+          aria-label="Click me to close the how to play container"
+          ><i class="fa-solid fa-xmark"></i
+        ></span>
         <div class="how-to-play-first-half">
           <h3>How to play:</h3>
           <p>
@@ -214,7 +236,11 @@
         </div>
       </section>
       <!-- Game display section start carrying on -->
-      <nav id="logo" class="logo">
+      <nav
+        id="logo"
+        class="logo"
+        aria-label="Click me to go back to the main menu"
+      >
         <img src="assets/images/logo.png" alt="Game logo" />
         <p class="return-hint">Return to main menu</p>
       </nav>
@@ -249,8 +275,22 @@
         <div class="overlay-red"></div>
         <h2>"<span id="second-half-title"></span>"</h2>
         <p id="has-earned-second">has</p>
-        <button class="btn" data-type="higher" id="higher-btn">Higher</button>
-        <button class="btn" data-type="lower" id="lower-btn">Lower</button>
+        <button
+          class="btn"
+          data-type="higher"
+          id="higher-btn"
+          aria-label="Click me to choose higher"
+        >
+          Higher
+        </button>
+        <button
+          class="btn"
+          data-type="lower"
+          id="lower-btn"
+          aria-label="Click me to choose lower"
+        >
+          Lower
+        </button>
         <span id="second-half-title-volume"></span>
         <p id="second-half-search-criteria"></p>
         <h3 class="game-high-score">

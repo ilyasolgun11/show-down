@@ -16,6 +16,7 @@ The game's addictive nature makes it a perfect break from the outside world. The
     - [**User Stories**](#user-stories)
     - [**Site Aims**](#site-aims)
     - [**How This Will Be Achieved**](#how-this-will-be-achieved)
+    - [**Wireframes**](#wireframes)
 
 ## **Planning Stage** <a name="planning-stage"></a>
 
@@ -55,13 +56,28 @@ As a user, I want to:
   - Football fans mode
   - Company revenue mode
   - My Linkedin profile
-  - Project repository
+  - Project Repository
 - Upon user failing a round, they will be navigated to the fail screen and their score will be displayed, on this screen the user has links to:
   - Play again
     - If the score the user failed on is higher than their recent high score, it will be updated on the game screen.
   - Main menu
     - If the score the user failed on is higher than their recent high score, it will be updated in the main menu.
   - My Linkedin profile
-  - Project repository
+  - Project Repository
 - Providing a clean, simple, appealing and accessible interface.
 - By providing a guide on how to use the keyboard shortcuts on the how-to-play screen.
+
+### **Wireframes:** <a name="wireframes"></a>
+
+To give myself a guide on how to build the structure of my project, I built the following Wireframes:
+
+- Desktop Wireframes:
+
+  - [Main menu](images/readme/show-down-main-menu-desktop.png)
+  - [Game screen](images/readme/show-down-game-screen-desktop.png)
+  - [Fail screen](images/readme/show-down-fail-screen-desktop.png)
+
+- Mobile Wireframes:
+  - [Main menu](images/readme/show-down-main-menu-mobile.png)
+  - [Game screen](images/readme/show-down-game-screen-mobile.png)
+  - [Fail screen](images/readme/show-down-fail-screen-mobile.png)
