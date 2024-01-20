@@ -854,9 +854,6 @@ body {
     height: 100vh;
   }
   /* Main menu styles  */
-  #main-menu {
-    height: 170vh;
-  }
   .game-modes-container {
     flex-direction: column;
     margin-top: 30px;
@@ -879,6 +876,9 @@ body {
 /* Styles for screen size width smaller than 786px */
 @media screen and (max-width: 786px) {
   /* Main menu styles  */
+  #main-menu {
+    height: 170vh;
+  }
   .game-modes {
     flex-direction: column;
     margin: 0px 25px;
@@ -969,7 +969,7 @@ body {
 @media screen and (max-width: 500px) {
   /* Main menu styles  */
   #main-menu {
-    height: 190vh;
+    height: 180vh;
   }
   .introduction-section h1 {
     font-size: 1.4rem;
