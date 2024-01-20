@@ -29,6 +29,9 @@ The game's addictive nature makes it a perfect break from the outside world. The
         - [**Game Screen Body First Container**](#game-screen-body-first-container)
         - [**Game Screen Body Second Container**](#game-screen-body-second-containerr)
     - [**Fail Screen**](#fail-screen)
+      - [**Fail Screen Body**](#fail-screen-body)
+      - [**Fail Screen Body Information**](#fail-screen-body-information)
+      - [**Fail Screen Body Navigation**](#fail-screen-body-navigation)
 
 ## **Planning Stage** <a name="planning-stage"></a>
 
