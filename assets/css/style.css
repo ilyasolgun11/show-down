@@ -969,7 +969,7 @@ body {
 @media screen and (max-width: 500px) {
   /* Main menu styles  */
   #main-menu {
-    height: 180vh;
+    height: 190vh;
   }
   .introduction-section h1 {
     font-size: 1.4rem;
