@@ -5,6 +5,7 @@
   - [**Bugs and Fixes**](#bugs-and-fixes)
 - [**Post Development Testing**](#post-development-testing)
   - [**Validators**](#validators)
+    - [**HTML**](#html)
 
 ## **During Development Testing:** <a name="during-development-testing"></a>
 
@@ -58,4 +59,14 @@ For all the browsers i used their own devtools to simulate a mobile screen and n
 
 ### **Validators** <a name="validators"></a>
 
-#### **HTML**
+#### **HTML** <a name="html"></a> - [https://validator.w3.org/nu/#textarea)
+
+Returned no errors when checking the HTML document, i got a few "info" warning because i used a self closing tag with a trailing slash. I am unable to remove then because my VSCode prettier extension puts then back when i do.
+
+![HTML validator](assets/images/readme/show-down-html-validation.png)
+
+#### **CSS** <a name="css"></a> - [https://validator.w3.org/nu/#textarea)
+
+Returned no errors from css file using direct and URL input.
+
+![CSS validator](assets/images/readme/show-down-css-validation.png)

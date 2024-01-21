@@ -130,10 +130,7 @@
             alt="Game logo"
           />
           <h3>You scored:</h3>
-          <span
-            id="failed-at-score"
-            aria-label="You failed at this score"
-          ></span>
+          <span id="failed-at-score" aria-live="assertive"></span>
           <p id="congrats-message"></p>
           <nav class="fail-screen-nav">
             <button
@@ -170,9 +167,7 @@
       </section>
       <!-- How to play section  -->
       <section id="how-to-play-container" aria-label="How to play container">
-        <span
-          id="close-how-to-play"
-          aria-label="Click me to close the how to play container"
+        <span id="close-how-to-play" aria-live="assertive"
           ><i class="fa-solid fa-xmark"></i
         ></span>
         <div class="how-to-play-first-half">
