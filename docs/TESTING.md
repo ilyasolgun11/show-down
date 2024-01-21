@@ -3,6 +3,8 @@
 - [**During Development Testing**](#during-development-testing)
   - [**Manual Testing**](#manual-testing)
   - [**Bugs and Fixes**](#bugs-and-fixes)
+- [**Post Development Testing**](#post-development-testing)
+  - [**Validators**](#validators)
 
 ## **During Development Testing:** <a name="during-development-testing"></a>
 
@@ -12,7 +14,7 @@ While i was building the game, i was manually testing the responsiveness and fun
 - After i published my project through github pages i asked fellow student's at slacks "peer-code-review" channel to see if they can find any bugs.
 - I published a post on LinkedIn and asked my network of 400+ developers to review, no issues were stated in the comments.
 
-### [**Manual Testing**](#manual-testing)
+### [**Manual Testing**] <a name="manual-testing"></a>
 
 During testing I used 5 different browsers to ensure cross-compatibility. The browsers used were:
 
@@ -24,7 +26,7 @@ During testing I used 5 different browsers to ensure cross-compatibility. The br
 
 For all the browsers i used their own devtools to simulate a mobile screen and no issues were found.
 
-### [**Bugs and Fixes:**](#bugs-and-fixes)
+### [**Bugs and Fixes:**] <a name="bugs-and-fixes"></a>
 
 1. **Intended Outcome** - For once the user clicks on either higher or lower, for the content on the right side to shift over to the left side, and also add a new content on the right side.
    - **_Issue Found:_**
@@ -51,3 +53,7 @@ For all the browsers i used their own devtools to simulate a mobile screen and n
      - I was not using a timeout function to display then hide the indicators.
    - **_Solution_**
    - I used a setTimeout function inside the iteration loops if statement, once the iteration finished i would display the indicators for 1 second using milliseconds intervals (1000) and then in the else statement of the iteration loops if statement i would set the indicators display to none, i would make this animation smooth by first setting a transition the indicators opacity in the CSS file so that it would smoothly display and then disappear.
+
+## **Post Development Testing** <a name="post-development-testing"></a>
+
+### **Validators** <a name="validators"></a>
