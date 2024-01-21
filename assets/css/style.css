@@ -28,6 +28,11 @@ body {
   }
 }
 
+.hidden-header {
+  font-size: 0.1px;
+  visibility: hidden;
+}
+
 /* Main menu styles */
 #main-menu {
   padding: 90px 0px;
@@ -46,7 +51,7 @@ body {
   display: none;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: absolute;
   z-index: 30;
   width: 100%;
   height: 100vh;

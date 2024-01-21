@@ -39,24 +39,26 @@
       <section id="main-menu" aria-label="Main menu container">
         <div class="main-menu-overlay"></div>
         <div class="main-menu-inner-container">
-          <section class="logo-section">
-            <img
-              class="main-menu-logo"
-              src="assets/images/logo.png"
-              alt="Game logo"
-            />
-          </section>
-          <article
+          <div class="logo-section">
+            <h1 aria-label="Show Down Logo">
+              <img
+                class="main-menu-logo"
+                src="assets/images/logo.png"
+                alt="Game logo"
+              />
+            </h1>
+          </div>
+          <section
             class="introduction-section"
             aria-label="Introduction section"
           >
-            <h1>What is Show Down?</h1>
+            <h2>What is Show Down?</h2>
             <p>
               You have to guess whether something is higher or lower based on
               game mode. Clicking the logo while in-game will take you back to
               the main menu!
             </p>
-          </article>
+          </section>
           <section class="menu-high-score-container">
             <h3 class="menu-high-score" aria-label="High score">
               High score: <span id="menu-high-score"></span>

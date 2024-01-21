@@ -57,3 +57,5 @@ For all the browsers i used their own devtools to simulate a mobile screen and n
 ## **Post Development Testing** <a name="post-development-testing"></a>
 
 ### **Validators** <a name="validators"></a>
+
+#### **HTML**
