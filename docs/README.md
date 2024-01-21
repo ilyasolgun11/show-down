@@ -33,6 +33,8 @@ The game's addictive nature makes it a perfect break from the outside world. The
       - [**Fail Screen Body Information**](#fail-screen-body-information)
       - [**Fail Screen Body Navigation**](#fail-screen-body-navigation)
   - [**Future enhancements**](#future-enhancements)
+  - [**Testing Phase**](#testing-phase)
+  - [**Deployment**](#eployment)
 
 ## **Planning Stage** <a name="planning-stage"></a>
 
@@ -214,3 +216,20 @@ The fail screen body contains the following:
 ![Fail screen Navigation](assets/images/readme/show-down-fail-screen-navigation.png)
 
 ## **Future Enhancements** <a name="future-enhancements"></a>
+
+- Monetization, in the future I want to add a pro version of Show-Down, as of right now users can play as long as they want without any restrictions. If I give the users a free 1-day trial of the game initially and then offer a pro version where they can play as long as they want, I believe the game could be quite profitable.
+- Online, in the future I also want to add an online Battle Royal mode where up to 10 users can join a game at once and compete, the mode would have a count-down timer of 10 seconds per round where each user has to guess correctly to move onto the next round. If a play guesses incorrectly they will be eliminated, and the player who ends up with the highest score wins. Ranked and leaderboards could also be integrated to give the user the motivation to get the highest rank each ranked season and also a chance to be on the global leaderboards.
+- Another future enhancement could be different color themes such as light mode, rainbow mode and so on.
+
+## **Testing Phase** <a name="testing-phase"></a>
+
+I have included details of testing both during development and post-development in a separate document called
+
+## **Deployment** <a name="deployment"></a>
+
+I deployed the project on Github pages using the following steps:
+
+- From the project's Repository, go to the _Settings_ tab.
+- From the left-hand menu, select the _Pages_ tab.
+- Select the _Main_ branch from under the _Source_ section dropdown and click _Save_.
+- After a few minutes, a message will display to indicate a successful deployment and provide a _Live link_.
