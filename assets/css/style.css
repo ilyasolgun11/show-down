@@ -1128,7 +1128,7 @@ body {
   }
   .logo-section span {
     font-size: 3.2rem;
-    margin-top: -20px;
+    margin-top: -24px;
   }
 
   /* Fail screen logo  */
@@ -1145,11 +1145,11 @@ body {
 
   /* Game screen logo  */
   .game-logo-section {
-    top: -40px;
+    top: -20px;
   }
 
   .game-logo {
-    margin-bottom: -10px;
+    margin-bottom: -15px;
   }
   /* Main menu styles  */
   #main-menu {

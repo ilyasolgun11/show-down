@@ -34,7 +34,9 @@ The game's addictive nature makes it a perfect break from the outside world. The
       - [**Fail Screen Body Navigation**](#fail-screen-body-navigation)
   - [**Future enhancements**](#future-enhancements)
   - [**Testing Phase**](#testing-phase)
-  - [**Deployment**](#eployment)
+  - [**Deployment**](#deployment)
+  - [**Credits**](#credits)
+    - [**Honorable Mentions**](#honorable-mentions)
 
 ## **Planning Stage** <a name="planning-stage"></a>
 
@@ -113,7 +115,7 @@ The color contrast grid was created using this site [https://contrast-grid.eight
 
 Both fonts used were imported from Google Fonts.
 
-- The Primary font used is "Poppins", this font was chosen because it compliments the game's modern look, also it pops with the game's dark background.
+- The Primary font used is "Poppins", this font was chosen because it compliments the game's modern look, and also it pops with the game's dark background.
 - For the text of the title volumes I used "Lato", the main purpose of using this font was because it's more narrow compared to "Poppins" so for larger numbers it can fit within its container without spilling.
 
 ## **Current Features:** <a name="current-features"></a>
@@ -233,3 +235,9 @@ I deployed the project on Github pages using the following steps:
 - From the left-hand menu, select the _Pages_ tab.
 - Select the _Main_ branch from under the _Source_ section dropdown and click _Save_.
 - After a few minutes, a message will display to indicate a successful deployment and provide a _Live link_.
+
+Go to the live site using this URL - [Show-Down](https://ilyasolgun11.github.io/show-down/)
+
+## **Credits** <a name="credits"></a>
+
+### **Honorable Mentions:** <a name="honorable-mentions"></a>
