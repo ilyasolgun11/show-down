@@ -6,6 +6,11 @@
 - [**Post Development Testing**](#post-development-testing)
   - [**Validators**](#validators)
     - [**HTML**](#html)
+    - [**CSS**](#css)
+    - [**JavaScript**](#javascript)
+  - [**Lighthouse Scores**](#lighthouse-scores)
+    - [**Desktop Version**](#desktop-version)
+    - [**Mobile Version**](#mobile-version)
 
 ## **During Development Testing:** <a name="during-development-testing"></a>
 
@@ -15,7 +20,7 @@ While i was building the game, i was manually testing the responsiveness and fun
 - After i published my project through github pages i asked fellow student's at slacks "peer-code-review" channel to see if they can find any bugs.
 - I published a post on LinkedIn and asked my network of 400+ developers to review, no issues were stated in the comments.
 
-### [**Manual Testing**] <a name="manual-testing"></a>
+### **Manual Testing** <a name="manual-testing"></a>
 
 During testing I used 5 different browsers to ensure cross-compatibility. The browsers used were:
 
@@ -27,7 +32,7 @@ During testing I used 5 different browsers to ensure cross-compatibility. The br
 
 For all the browsers i used their own devtools to simulate a mobile screen and no issues were found.
 
-### [**Bugs and Fixes:**] <a name="bugs-and-fixes"></a>
+### **Bugs and Fixes:** <a name="bugs-and-fixes"></a>
 
 1. **Intended Outcome** - For once the user clicks on either higher or lower, for the content on the right side to shift over to the left side, and also add a new content on the right side.
    - **_Issue Found:_**
@@ -65,8 +70,34 @@ Returned no errors when checking the HTML document, i got a few "info" warning b
 
 ![HTML validator](assets/images/readme/show-down-html-validation.png)
 
-#### **CSS** <a name="css"></a> - [https://validator.w3.org/nu/#textarea)
+#### **CSS** <a name="css"></a> - [https://jigsaw.w3.org/css-validator/)
 
 Returned no errors from css file using direct and URL input.
 
 ![CSS validator](assets/images/readme/show-down-css-validation.png)
+
+#### **JavaScript** <a name="javascript"></a> - [https://jshint.com/)
+
+Since i have 2 JavaScript folders i pasted both of them into the JavaScript Validator, the reason for this was because the game only works if the files are combined, I managed to achieve this by adding both JavaScript files in script tags in my HTML file. If i only add 1 file into the JavaScript validator for example my script.js file, i get errors mentioning that i have 3 undefined variables; searchData, fansData and revenueCap. These variables are arrays in the data.js file that i am extracting as mentioned above by having them in the body of my HTML file. Other than this there is no errors returned.
+
+Also in the configure section in JSHint i turned on "New JavaScript features (ES6)" so the validator recognizes ES6 code.
+
+The final metrics returned by JSHint are:
+
+- There are 39 functions in this file.
+- Function with the largest signature take 3 arguments, while the median is 0.
+- Largest function has 23 statements in it, while the median is 4.
+- The most complex function has a cyclomatic complexity value of 13 while the median is 1.
+
+![JS validator](assets/images/readme/show-down-js-validation.png)
+
+### **Lighthouse Scores** <a name="lighthouse-scores"></a>
+
+Test conditions
+
+- I did all lighthouse tests in incognito mode to avoid interface from extensions.
+- I ran the tests for both mobile and desktop.
+
+#### **_Desktop Version:_** <a name="desktop-version"></a>
+
+#### **_Mobile Version:_** <a name="mobile-version"></a>
