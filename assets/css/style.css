@@ -116,7 +116,7 @@ body {
 }
 
 .logo-section span {
-  margin-top: -39px;
+  margin-top: -31px;
 }
 
 .logo:hover {
@@ -125,12 +125,6 @@ body {
 
 .game-logo-section:hover + .return-hint {
   opacity: 1;
-}
-
-.logo img {
-  width: 110px;
-  height: 110px;
-  object-fit: contain;
 }
 
 .game-modes-container {
@@ -461,7 +455,7 @@ body {
 }
 
 .fail-screen-logo {
-  margin-bottom: -23px;
+  margin-bottom: -20px;
   padding: 0px 20px;
   background: linear-gradient(
     -45deg,
@@ -614,7 +608,7 @@ body {
 
 .game-logo {
   cursor: pointer;
-  margin-bottom: -25px;
+  margin-bottom: -20px;
   padding: 10px 20px;
   background: linear-gradient(
     -45deg,
