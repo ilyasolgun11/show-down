@@ -11,6 +11,7 @@
   - [**Lighthouse Scores**](#lighthouse-scores)
     - [**Desktop Version**](#desktop-version)
     - [**Mobile Version**](#mobile-version)
+  - [**Accessability**](#accessability)
 
 ## **During Development Testing:** <a name="during-development-testing"></a>
 
@@ -105,3 +106,9 @@ Test conditions
 #### **_Mobile Version:_** <a name="mobile-version"></a>
 
 ![Mobile Lighthouse Score](assets/images/readme/show-down-lighthouse-mobile.png)
+
+### **Accessability** <a name="accessability"></a>
+
+In addition to the lighthouse accessibility score, I also used [WAVE - Web accessibility evaluation tool](https://wave.webaim.org/extension/) to check my pages for accessibility, and i got no errors.
+
+[return to README.md](README.md)
