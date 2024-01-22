@@ -127,7 +127,7 @@ The main menu contains the following:
 - The logo shows the name of the game
 - The logo does not contain an anchor tag as there are many other ways the user can navigate back to the menu and it is a single page of HTML.
 
-![Game logo](assets/images/readme/show-down-main-menu-logo.png)
+![Game logo](assets/images/readme/show-down-main-menu-text-logo.png)
 
 ### **Main Menu Header** <a name="main-menu-header"></a>
 
@@ -156,7 +156,7 @@ The main menu contains the following:
     - The revenue generated per company, the user has to guess which one generated higher or lower revenue.
   - Underneath the game modes, there is a copyright section that consists of my name and a social links section that takes the user either to the project's Repository or to my personal LinkedIn profile.
 
-![Game modes](assets/images/readme/show-down-main-menu-game-modes.png)
+![Game modes](assets/images/readme/show-down-game-screen-text-logo.png)
 
 ## **Game Screen** <a name="game-screen"></a>
 
@@ -194,7 +194,7 @@ The fail screen contains the following:
 - The logo shows the name of the game.
 - The logo for the fail screen does not have an event listener or an anchor tag as there is a main menu button and the user could also just tap the "m" key to navigate back.
 
-![Fail screen logo](assets/images/readme/show-down-fail-screen-logo.png)
+![Fail screen logo](assets/images/readme/show-down-main-menu-text-logo.png)
 
 ### **Fail Screen Body** <a name="fail-screen-body"></a>
 
