@@ -88,6 +88,8 @@ body {
   margin: 0px;
 }
 
+/* Logo styles for all pages */
+/* Main menu logo  */
 .logo,
 .logo-section span {
   margin: 0px;
@@ -116,11 +118,124 @@ body {
 }
 
 .logo-section span {
-  margin-top: -31px;
+  margin-top: -50px;
 }
 
-.logo:hover {
+/* Fail screen logo  */
+.fail-screen-logo {
+  margin-bottom: -28px;
+  padding: 0px 20px;
+  background: linear-gradient(
+    -45deg,
+    #cf0000,
+    #cf0000,
+    #cf0000,
+    #cf0000,
+    #fff,
+    #00d507,
+    #00d507,
+    #00d507,
+    #00d507
+  );
+  background-size: 400% 400%;
+  animation: movingGradient 10s ease infinite;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 4.2rem;
+}
+
+.fail-screen-logo-section span {
+  margin: 0px;
+  padding: 0px 20px;
+  background: linear-gradient(
+    -45deg,
+    #cf0000,
+    #cf0000,
+    #cf0000,
+    #cf0000,
+    #fff,
+    #00d507,
+    #00d507,
+    #00d507,
+    #00d507
+  );
+  background-size: 400% 400%;
+  animation: movingGradient 10s ease infinite;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 4.2rem;
+}
+
+/* Game screen logo  */
+.game-logo-section {
   cursor: pointer;
+  padding-bottom: 20px;
+  position: absolute;
+  z-index: 20;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.game-logo {
+  cursor: pointer;
+  margin-bottom: -30px;
+  padding: 10px 20px;
+  background: linear-gradient(
+    -45deg,
+    #cf0000,
+    #cf0000,
+    #cf0000,
+    #cf0000,
+    #fff,
+    #00d507,
+    #00d507,
+    #00d507,
+    #00d507
+  );
+  background-size: 400% 400%;
+  animation: movingGradient 10s ease infinite;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 3rem;
+}
+
+.game-logo-section span {
+  cursor: pointer;
+  padding: 0px 20px;
+  background: linear-gradient(
+    -45deg,
+    #cf0000,
+    #cf0000,
+    #cf0000,
+    #cf0000,
+    #fff,
+    #00d507,
+    #00d507,
+    #00d507,
+    #00d507
+  );
+  background-size: 400% 400%;
+  animation: movingGradient 10s ease infinite;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 3rem;
 }
 
 .game-logo-section:hover + .return-hint {
@@ -454,58 +569,6 @@ body {
   z-index: -1;
 }
 
-.fail-screen-logo {
-  margin-bottom: -20px;
-  padding: 0px 20px;
-  background: linear-gradient(
-    -45deg,
-    #cf0000,
-    #cf0000,
-    #cf0000,
-    #cf0000,
-    #fff,
-    #00d507,
-    #00d507,
-    #00d507,
-    #00d507
-  );
-  background-size: 400% 400%;
-  animation: movingGradient 10s ease infinite;
-  background-clip: text;
-  color: transparent;
-  font-weight: 800;
-  letter-spacing: 1px;
-  font-style: italic;
-  font-family: "Luckiest Guy", cursive;
-  font-size: 4.2rem;
-}
-
-.fail-screen-logo-section span {
-  margin: 0px;
-  padding: 0px 20px;
-  background: linear-gradient(
-    -45deg,
-    #cf0000,
-    #cf0000,
-    #cf0000,
-    #cf0000,
-    #fff,
-    #00d507,
-    #00d507,
-    #00d507,
-    #00d507
-  );
-  background-size: 400% 400%;
-  animation: movingGradient 10s ease infinite;
-  background-clip: text;
-  color: transparent;
-  font-weight: 800;
-  letter-spacing: 1px;
-  font-style: italic;
-  font-family: "Luckiest Guy", cursive;
-  font-size: 4.2rem;
-}
-
 #fail-screen h3 {
   font-size: 1.5rem;
 }
@@ -596,68 +659,6 @@ body {
 }
 
 /* Game screen styles */
-.game-logo-section {
-  cursor: pointer;
-  padding-bottom: 20px;
-  position: absolute;
-  z-index: 20;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.game-logo {
-  cursor: pointer;
-  margin-bottom: -20px;
-  padding: 10px 20px;
-  background: linear-gradient(
-    -45deg,
-    #cf0000,
-    #cf0000,
-    #cf0000,
-    #cf0000,
-    #fff,
-    #00d507,
-    #00d507,
-    #00d507,
-    #00d507
-  );
-  background-size: 400% 400%;
-  animation: movingGradient 10s ease infinite;
-  background-clip: text;
-  color: transparent;
-  font-weight: 800;
-  letter-spacing: 1px;
-  font-style: italic;
-  font-family: "Luckiest Guy", cursive;
-  font-size: 3rem;
-}
-
-.game-logo-section span {
-  cursor: pointer;
-  padding: 0px 20px;
-  background: linear-gradient(
-    -45deg,
-    #cf0000,
-    #cf0000,
-    #cf0000,
-    #cf0000,
-    #fff,
-    #00d507,
-    #00d507,
-    #00d507,
-    #00d507
-  );
-  background-size: 400% 400%;
-  animation: movingGradient 10s ease infinite;
-  background-clip: text;
-  color: transparent;
-  font-weight: 800;
-  letter-spacing: 1px;
-  font-style: italic;
-  font-family: "Luckiest Guy", cursive;
-  font-size: 3rem;
-}
 
 .return-hint {
   opacity: 0;
@@ -1120,6 +1121,36 @@ body {
 
 /* Styles for screen size width smaller than 786px */
 @media screen and (max-width: 500px) {
+  /* Logo styles for all pages */
+  /* Main menu logo  */
+  .logo {
+    font-size: 3.2rem;
+  }
+  .logo-section span {
+    font-size: 3.2rem;
+    margin-top: -20px;
+  }
+
+  /* Fail screen logo  */
+  .fail-screen-logo {
+    padding: 10px 20px;
+    margin-bottom: -10px;
+    font-size: 3.2rem;
+  }
+
+  .fail-screen-logo-section span {
+    padding: 10px 20px;
+    font-size: 3.2rem;
+  }
+
+  /* Game screen logo  */
+  .game-logo-section {
+    top: -40px;
+  }
+
+  .game-logo {
+    margin-bottom: -10px;
+  }
   /* Main menu styles  */
   #main-menu {
     height: 190vh;
