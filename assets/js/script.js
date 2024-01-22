@@ -50,7 +50,7 @@ const howToPlayContainer = document.getElementById("how-to-play-container");
 const closeHowToPlay = document.getElementById("close-how-to-play");
 const mainMenuOverlay = document.querySelector(".main-menu-overlay");
 // Grab logo from game screen
-const logo = document.getElementById("logo");
+const gameLogoSection = document.querySelector(".game-logo-section");
 // Grab has/earned from DOM
 const hasEarnedOne = document.getElementById("has-earned-first");
 const hasEarnedTwo = document.getElementById("has-earned-second");
@@ -151,7 +151,7 @@ function setHighScore() {
 }
 
 // When user clicks on logo while in-game, it takes them to the game menu screen and sets the score to 0, also sets a new high score
-logo.addEventListener("click", function () {
+gameLogoSection.addEventListener("click", function () {
   gameMainMenu();
   setHighScore();
   score = 0;

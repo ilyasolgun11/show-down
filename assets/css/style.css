@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedgwick+Ave+Display&display=swap");
 
 /* Body styles */
 body {
@@ -86,6 +86,51 @@ body {
 
 .logo-section {
   margin: 0px;
+}
+
+.logo,
+.logo-section span {
+  margin: 0px;
+  padding: 0px 20px;
+  background: linear-gradient(
+    -45deg,
+    #cf0000,
+    #cf0000,
+    #cf0000,
+    #cf0000,
+    #fff,
+    #00d507,
+    #00d507,
+    #00d507,
+    #00d507
+  );
+  background-size: 400% 400%;
+  animation: movingGradient 10s ease infinite;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 4.2rem;
+}
+
+.logo-section span {
+  margin-top: -26px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.game-logo-section:hover + .return-hint {
+  opacity: 1;
+}
+
+.logo img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
 }
 
 .game-modes-container {
@@ -415,6 +460,58 @@ body {
   z-index: -1;
 }
 
+.fail-screen-logo {
+  margin-bottom: -23px;
+  padding: 0px 20px;
+  background: linear-gradient(
+    -45deg,
+    #cf0000,
+    #cf0000,
+    #cf0000,
+    #cf0000,
+    #fff,
+    #00d507,
+    #00d507,
+    #00d507,
+    #00d507
+  );
+  background-size: 400% 400%;
+  animation: movingGradient 10s ease infinite;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 4.2rem;
+}
+
+.fail-screen-logo-section span {
+  margin: 0px;
+  padding: 0px 20px;
+  background: linear-gradient(
+    -45deg,
+    #cf0000,
+    #cf0000,
+    #cf0000,
+    #cf0000,
+    #fff,
+    #00d507,
+    #00d507,
+    #00d507,
+    #00d507
+  );
+  background-size: 400% 400%;
+  animation: movingGradient 10s ease infinite;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 4.2rem;
+}
+
 #fail-screen h3 {
   font-size: 1.5rem;
 }
@@ -505,26 +602,67 @@ body {
 }
 
 /* Game screen styles */
-.logo {
+.game-logo-section {
+  cursor: pointer;
+  padding-bottom: 20px;
   position: absolute;
   z-index: 20;
-  top: 10px;
+  top: -20px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.logo:hover {
+.game-logo {
   cursor: pointer;
+  margin-bottom: -18px;
+  padding: 0px 20px;
+  background: linear-gradient(
+    -45deg,
+    #cf0000,
+    #cf0000,
+    #cf0000,
+    #cf0000,
+    #fff,
+    #00d507,
+    #00d507,
+    #00d507,
+    #00d507
+  );
+  background-size: 400% 400%;
+  animation: movingGradient 10s ease infinite;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 3rem;
 }
 
-.logo img:hover + .return-hint {
-  opacity: 1;
-}
-
-.logo img {
-  width: 110px;
-  height: 110px;
-  object-fit: contain;
+.game-logo-section span {
+  cursor: pointer;
+  padding: 0px 20px;
+  background: linear-gradient(
+    -45deg,
+    #cf0000,
+    #cf0000,
+    #cf0000,
+    #cf0000,
+    #fff,
+    #00d507,
+    #00d507,
+    #00d507,
+    #00d507
+  );
+  background-size: 400% 400%;
+  animation: movingGradient 10s ease infinite;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 3rem;
 }
 
 .return-hint {
@@ -537,7 +675,7 @@ body {
   border-radius: 50px;
   position: absolute;
   z-index: 20;
-  top: 100px;
+  top: 105px;
   left: 50%;
   transform: translateX(-50%);
   transition: opacity 0.2s ease;
@@ -847,7 +985,7 @@ body {
     height: 90px;
   }
   .return-hint {
-    top: 80px;
+    top: 105px;
   }
 }
 
@@ -857,6 +995,14 @@ body {
   .game-container {
     flex-direction: column;
     height: 100vh;
+  }
+  .game-logo {
+    margin-bottom: -10px;
+    font-size: 2.2rem;
+  }
+
+  .game-logo-section span {
+    font-size: 2.2rem;
   }
   /* Main menu styles  */
   .game-modes-container {
@@ -868,12 +1014,20 @@ body {
   .market-cap-mode:hover {
     transform: scale(1);
   }
+  /* Fail screen styles  */
+  .fail-screen-logo {
+    font-size: 3.2rem;
+    margin-bottom: -19px;
+  }
+  .fail-screen-logo-section span {
+    font-size: 3.2rem;
+  }
   /* Game screen styles  */
   .logo img {
     width: 80px;
     height: 80px;
   }
-  .logo img:hover + .return-hint {
+  .game-logo-section:hover + .return-hint {
     opacity: 0;
   }
 }
