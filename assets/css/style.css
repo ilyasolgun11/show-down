@@ -91,7 +91,7 @@ body {
 .logo,
 .logo-section span {
   margin: 0px;
-  padding: 0px 20px;
+  padding: 10px 20px;
   background: linear-gradient(
     -45deg,
     #cf0000,
@@ -116,7 +116,7 @@ body {
 }
 
 .logo-section span {
-  margin-top: -26px;
+  margin-top: -39px;
 }
 
 .logo:hover {
@@ -614,8 +614,8 @@ body {
 
 .game-logo {
   cursor: pointer;
-  margin-bottom: -18px;
-  padding: 0px 20px;
+  margin-bottom: -25px;
+  padding: 10px 20px;
   background: linear-gradient(
     -45deg,
     #cf0000,
@@ -997,7 +997,7 @@ body {
     height: 100vh;
   }
   .game-logo {
-    margin-bottom: -12px;
+    margin-bottom: -22px;
     font-size: 2.2rem;
   }
 
