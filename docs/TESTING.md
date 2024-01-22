@@ -100,4 +100,8 @@ Test conditions
 
 #### **_Desktop Version:_** <a name="desktop-version"></a>
 
+![Desktop Lighthouse Score](assets/images/readme/show-down-lighthouse-desktop.png)
+
 #### **_Mobile Version:_** <a name="mobile-version"></a>
+
+![Mobile Lighthouse Score](assets/images/readme/show-down-lighthouse-mobile.png)

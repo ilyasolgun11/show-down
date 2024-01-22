@@ -223,7 +223,7 @@ The fail screen body contains the following:
 
 ## **Testing Phase** <a name="testing-phase"></a>
 
-I have included details of testing both during development and post-development in a separate document called
+I have included details of testing both during development and post-development in a separate document called [TESTING.md](TESTING.md)
 
 ## **Deployment** <a name="deployment"></a>
 

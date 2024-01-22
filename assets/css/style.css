@@ -569,7 +569,7 @@ body {
   z-index: -1;
 }
 
-#fail-screen h3 {
+#fail-screen .you-scored {
   font-size: 1.5rem;
 }
 
