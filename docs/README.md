@@ -158,7 +158,7 @@ The main menu contains the following:
     - The revenue generated per company, the user has to guess which one generated higher or lower revenue.
   - Underneath the game modes, there is a copyright section that consists of my name and a social links section that takes the user either to the project's Repository or to my personal LinkedIn profile.
 
-![Game modes](assets/images/readme/show-down-game-screen-text-logo.png)
+![Game modes](assets/images/readme/show-down-main-menu-game-modes.png)
 
 ## **Game Screen** <a name="game-screen"></a>
 
