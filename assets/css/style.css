@@ -690,7 +690,7 @@ body {
   border-radius: 50px;
   position: absolute;
   z-index: 20;
-  top: 105px;
+  top: 109px;
   left: 50%;
   transform: translateX(-50%);
   transition: opacity 0.2s ease;
@@ -1000,7 +1000,7 @@ body {
     height: 90px;
   }
   .return-hint {
-    top: 105px;
+    top: 110px;
   }
 }
 
