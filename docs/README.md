@@ -167,7 +167,7 @@ The main menu contains the following:
 - The logo shows the name of the game
 - The logo for the game screens purpose is also to be a navigation back to the main menu, the user can do this by either clicking on it or hitting the "m" key on their keyboard.
 
-![Game logo](assets/images/readme/show-down-game-screen-logo.png)
+![Game logo](assets/images/readme/show-down-game-screen-text-logo.png)
 
 ### **Game Screen Body** <a name="game-screen-body"></a>
 
