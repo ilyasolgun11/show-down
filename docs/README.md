@@ -37,6 +37,9 @@ The game's addictive nature makes it a perfect break from the outside world. The
   - [**Deployment**](#deployment)
   - [**Credits**](#credits)
     - [**Honorable Mentions**](#honorable-mentions)
+    - [**General Reference**](#general-reference)
+    - [**Content**](#content)
+    - [**Media**](#media)
 
 ## **Planning Stage** <a name="planning-stage"></a>
 
@@ -241,3 +244,24 @@ Go to the live site using this URL - [Show-Down](https://ilyasolgun11.github.io/
 ## **Credits** <a name="credits"></a>
 
 ### **Honorable Mentions:** <a name="honorable-mentions"></a>
+
+These awesome people helped me in the process of making this project, so I will mention them below in no particular order:
+
+- David Bowers - My mentor David did an excellent job in helping me fix issues that I was not aware of, great help to me on my previous project and this one too.
+- GianlucaZ_5P - Gianluca has been a great help by pointing out a bug I had early on in my project so I am grateful.
+- Jörgen_5p_lead - Jörgen's advice on Slack helped me realize I needed more items in my football data, this has been fixed due to Jörgen.
+- Georgina Carlisle - Georgina's kind words of encouragement helped me push through and finish the project so I am grateful.
+
+### **General reference:** <a name="general-reference"></a>
+
+- The project was influenced by the popular game [Higher or Lower](https://www.higherlowergame.com/)
+- The layout for this readme and testing file is inspired by David Bower's [Black Jack Game README and TESTING files](https://github.com/dnlbowers/blackjack/blob/main/README.md)
+
+### **Content:** <a name="content"></a>
+
+All content was written by myself
+
+### **Media:** <a name="media"></a>
+
+- The GIFs that were used in the fail screen are from [Giphy](https://giphy.com/)
+- The credits for the images displayed on the game screen first and second halves are credited in the bottom right of both halves, they were taken from [Flickr](https://www.flickr.com/)
