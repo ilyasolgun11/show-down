@@ -101,11 +101,11 @@ Test conditions
 
 #### **_Desktop Version:_**
 
-![Desktop Lighthouse Score](assets/images/readme/show-down-lighthouse-desktop.png)
+![Desktop Lighthouse Score](assets/images/readme/show-down-lighthouse-desktop-new.png)
 
 #### **_Mobile Version:_**
 
-![Mobile Lighthouse Score](assets/images/readme/show-down-lighthouse-mobile.png)
+![Mobile Lighthouse Score](assets/images/readme/show-down-lighthouse-mobile-new.png)
 
 ### **Accessability**
 
