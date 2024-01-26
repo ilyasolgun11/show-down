@@ -1,6 +1,6 @@
 # **Show Down**
 
-## **Site Overview** <a name="site-overview"></a>
+## **Site Overview**
 
 Show Down is a guessing game where the user has to choose either Higher or Lower to move onto the next level, in the context of the "Random Mode", the user has to decide if the given data on the right's search volume is higher or lower than the left sides search volume (this is true on desktop screen, however on mobile screen it will be top and bottom)
 
@@ -41,16 +41,16 @@ The game's addictive nature makes it a perfect break from the outside world. The
     - [**Content**](#content)
     - [**Media**](#media)
 
-## **Planning Stage** <a name="planning-stage"></a>
+## **Planning Stage**
 
-### **Target Audience:** <a name="target-audience"></a>
+### **Target Audience:**
 
 - People who like testing their luck and also learning facts in the process.
 - People who want a break from the real world and have a relaxed game.
 - People who want to play a game using only their keyboard.
 - Visually impaired people who still want to enjoy the gameplay of a guessing game.
 
-### **User Stories:** <a name="user-stories"></a>
+### **User Stories:**
 
 As a user, I want to:
 
@@ -61,7 +61,7 @@ As a user, I want to:
 - Be able to use only my keyboard to navigate and play the game.
 - Be able to see how I can play the game by looking at the how-to-play guide.
 
-### **Site Aims:** <a name="site-aims"></a>
+### **Site Aims:**
 
 - Ensure the site is easy to navigate.
 - Keep a record of the user's high score.
@@ -70,7 +70,7 @@ As a user, I want to:
 - To give the user new knowledge of how many people search topics based on keywords (random mode), how many football fans a team has (football fans mode) and how much revenue a company makes (company revenue mode).
 - To be fully accessible to screen readers by utilizing keyboard shortcuts and aria labels.
 
-### **How This Will Be Achieved** <a name="how-this-will-be-achieved"></a>
+### **How This Will Be Achieved**
 
 - The game will be free of charge and no sign-up will be required.
 - Ensuring the use of aria labels, alt text and semantic elements are used appropriately.
@@ -90,7 +90,7 @@ As a user, I want to:
 - Providing a clean, simple, appealing and accessible interface.
 - By providing a guide on how to use the keyboard shortcuts on the how-to-play screen.
 
-### **Wireframes:** <a name="wireframes"></a>
+### **Wireframes:**
 
 To give myself a guide on how to build the structure of my project, I built the following Wireframes:
 
@@ -106,7 +106,7 @@ To give myself a guide on how to build the structure of my project, I built the 
   - [Game screen](assets/wireframes/show-down-game-screen-mobile.png)
   - [Fail screen](assets/wireframes/show-down-fail-screen-mobile.png)
 
-### **Color Scheme:** <a name="color-scheme"></a>
+### **Color Scheme:**
 
 Considering the game has a dark theme, I went with lighter colors. The purpose of this was to have the colors pop and be more visible to the user.
 
@@ -114,28 +114,28 @@ The color contrast grid was created using this site [https://contrast-grid.eight
 
 ![Color Contrast](assets/images/readme/show-down-color-contrast.png)
 
-### **Typography:** <a name="typography"></a>
+### **Typography:** >
 
 Both fonts used were imported from Google Fonts.
 
 - The Primary font used is "Poppins", this font was chosen because it compliments the game's modern look, and also it pops with the game's dark background.
 - For the text of the title volumes I used "Lato", the main purpose of using this font was because it's more narrow compared to "Poppins" so for larger numbers it can fit within its container without spilling.
 
-## **Current Features:** <a name="current-features"></a>
+## **Current Features:**
 
-## **Main Menu** <a name="main-menu"></a>
+## **Main Menu**
 
 The main menu contains the following:
 
-### **Main Menu Logo** <a name="main-menu-logo"></a>
+### **Main Menu Logo**
 
 - The logo shows the name of the game
 - The logo does not contain an anchor tag as there are many other ways the user can navigate back to the menu and it is a single page of HTML.
-- The logo changes color with an animation of red white and green every few second.
+- The logo changes color with an animation of red white and green every few seconds.
 
 ![Game logo](assets/images/readme/show-down-main-menu-text-logo.png)
 
-### **Main Menu Header** <a name="main-menu-header"></a>
+### **Main Menu Header**
 
 - The main menu header tells the user what the game is and what the goal is.
 - The High Score section within the header displays the user's high score, the reason it is on the landing page is that even if the user never played before it gives them the challenge to try and make a high score.
@@ -143,7 +143,7 @@ The main menu contains the following:
 
 ![Header](assets/images/readme/show-down-main-menu-header.png)
 
-### **Main Menu How To Play** <a name="main-menu-how-to-play"></a>
+### **Main Menu How To Play**
 
 - The how-to-play screen contains a how-to-play guide and a keyword shortcut guide.
 - The how-to-play guide is short and informative to give the user a quick understanding of the functionality of the game.
@@ -151,7 +151,7 @@ The main menu contains the following:
 
 ![How to play](assets/images/readme/show-down-main-menu-how-to-play.png)
 
-### **Main Menu Game Modes** <a name="main-menu-game-modes"></a>
+### **Main Menu Game Modes**
 
 - The main menu has 3 game modes, these include:
   - Random mode, this mode has:
@@ -164,57 +164,57 @@ The main menu contains the following:
 
 ![Game modes](assets/images/readme/show-down-main-menu-game-modes.png)
 
-## **Game Screen** <a name="game-screen"></a>
+## **Game Screen**
 
-### **Game Screen Logo** <a name="game-screen-logo"></a>
+### **Game Screen Logo**
 
 - The logo shows the name of the game
 - The logo for the game screens purpose is also to be a navigation back to the main menu, the user can do this by either clicking on it or hitting the "m" key on their keyboard.
-- The logo changes color with an animation of red white and green every few second.
+- The logo changes color with an animation of red white and green every few seconds.
 
 ![Game logo](assets/images/readme/show-down-game-screen-text-logo.png)
 
-### **Game Screen Body** <a name="game-screen-body"></a>
+### **Game Screen Body**
 
 The game screen body contains the following:
 
-#### **Game Screen Body First Container** <a name="game-screen-body-first-container"></a>
+#### **Game Screen Body First Container**
 
 - The first container's title and title volume are randomly generated when the user clicks on a game mode in the main menu.
 - It contains the user's score in the bottom left of the screen and also contains the image owner's link in the bottom right of the screen.
 
 ![First container](assets/images/readme/show-down-game-screen-first-container.png)
 
-#### **Game Screen Body Second Container** <a name="game-screen-body-second-container"></a>
+#### **Game Screen Body Second Container**
 
 - The first container's title is randomly generated as well when the user clicks on a game mode in the main menu.
 - It contains the higher and lower buttons which the user can click to reveal if they got the answer right or not, it also contains the user's high score on the bottom left of the screen and the image owner's link in the bottom right of the screen.
 
 ![Second container](assets/images/readme/show-down-game-screen-second-container.png)
 
-## **Fail Screen** <a name="fail-screen"></a>
+## **Fail Screen**
 
 The fail screen contains the following:
 
-### **Fail Screen Logo** <a name="fail-screen-logo"></a>
+### **Fail Screen Logo**
 
 - The logo shows the name of the game.
 - The logo for the fail screen does not have an event listener or an anchor tag as there is a main menu button and the user could also just tap the "m" key to navigate back.
-- The logo changes color with an animation of red white and green every few second.
+- The logo changes color with an animation of red white and green every few seconds.
 
 ![Fail screen logo](assets/images/readme/show-down-main-menu-text-logo.png)
 
-### **Fail Screen Body** <a name="fail-screen-body"></a>
+### **Fail Screen Body**
 
 The fail screen body contains the following:
 
-#### **Fail Screen Body Information** <a name="fail-screen-body-information"></a>
+#### **Fail Screen Body Information**
 
 - The information section tells the user which score they failed on, and also a complimentary congratulations message, this message changes based on what score they got, for example, scores between 0 - 3 "Oof, better luck next time", this message is a way of telling the user to keep playing and attempt a higher score.
 
 ![Fail screen information](assets/images/readme/show-down-fail-screen-information.png)
 
-#### **Fail Screen Body Navigation** <a name="fail-screen-body-navigation"></a>
+#### **Fail Screen Body Navigation**
 
 - The fail screen navigation contains a "Play again" button so the player can carry on playing in the game mode they chose before
 - The navigation also contains a "Main menu" button which the player can click to navigate back and choose a different game mode.
@@ -223,17 +223,17 @@ The fail screen body contains the following:
 
 ![Fail screen Navigation](assets/images/readme/show-down-fail-screen-navigation.png)
 
-## **Future Enhancements** <a name="future-enhancements"></a>
+## **Future Enhancements**
 
 - Monetization, in the future I want to add a pro version of Show-Down, as of right now users can play as long as they want without any restrictions. If I give the users a free 1-day trial of the game initially and then offer a pro version where they can play as long as they want, I believe the game could be quite profitable.
 - Online, in the future I also want to add an online Battle Royal mode where up to 10 users can join a game at once and compete, the mode would have a count-down timer of 10 seconds per round where each user has to guess correctly to move onto the next round. If a play guesses incorrectly they will be eliminated, and the player who ends up with the highest score wins. Ranked and leaderboards could also be integrated to give the user the motivation to get the highest rank each ranked season and also a chance to be on the global leaderboards.
 - Another future enhancement could be different color themes such as light mode, rainbow mode and so on.
 
-## **Testing Phase** <a name="testing-phase"></a>
+## **Testing Phase**
 
 I have included details of testing both during development and post-development in a separate document called [TESTING.md](TESTING.md)
 
-## **Deployment** <a name="deployment"></a>
+## **Deployment**
 
 I deployed the project on Github pages using the following steps:
 
@@ -244,9 +244,9 @@ I deployed the project on Github pages using the following steps:
 
 Go to the live site using this URL - [Show-Down](https://ilyasolgun11.github.io/show-down/)
 
-## **Credits** <a name="credits"></a>
+## **Credits**
 
-### **Honorable Mentions:** <a name="honorable-mentions"></a>
+### **Honorable Mentions:**
 
 These awesome people helped me in the process of making this project, so I will mention them below in no particular order:
 
@@ -255,16 +255,16 @@ These awesome people helped me in the process of making this project, so I will 
 - Jörgen_5p_lead - Jörgen's advice on Slack helped me realize I needed more items in my football data, this has been fixed due to Jörgen.
 - Georgina Carlisle - Georgina's kind words of encouragement helped me push through and finish the project so I am grateful.
 
-### **General reference:** <a name="general-reference"></a>
+### **General reference:**
 
 - The project was influenced by the popular game [Higher or Lower](https://www.higherlowergame.com/)
 - The layout for this readme and testing file is inspired by David Bower's [Black Jack Game README and TESTING files](https://github.com/dnlbowers/blackjack/blob/main/README.md)
 
-### **Content:** <a name="content"></a>
+### **Content:**
 
 All content was written by myself
 
-### **Media:** <a name="media"></a>
+### **Media:**
 
 - The GIFs that were used in the fail screen are from [Giphy](https://giphy.com/)
 - The credits for the images displayed on the game screen first and second halves are credited in the bottom right of both halves, they were taken from [Flickr](https://www.flickr.com/)

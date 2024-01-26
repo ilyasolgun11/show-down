@@ -1,4 +1,4 @@
-let searchData = [
+const searchData = [
   {
     title: "Builder",
     titleVolume: 74000,
@@ -552,7 +552,7 @@ let searchData = [
   },
 ];
 
-let fansData = [
+const fansData = [
   {
     title: "Manchester United",
     titleVolume: 82000000,
@@ -902,7 +902,7 @@ let fansData = [
   },
 ];
 
-let revenueCap = [
+const revenueCap = [
   {
     title: "Walmart",
     titleVolume: 638780000000,

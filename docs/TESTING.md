@@ -13,7 +13,7 @@
     - [**Mobile Version**](#mobile-version)
   - [**Accessability**](#accessability)
 
-## **During Development Testing:** <a name="during-development-testing"></a>
+## **During Development Testing:**
 
 While i was building the game, i was manually testing the responsiveness and functionality in the following ways:
 
@@ -21,7 +21,7 @@ While i was building the game, i was manually testing the responsiveness and fun
 - After i published my project through github pages i asked fellow student's at slacks "peer-code-review" channel to see if they can find any bugs.
 - I published a post on LinkedIn and asked my network of 400+ developers to review, no issues were stated in the comments.
 
-### **Manual Testing** <a name="manual-testing"></a>
+### **Manual Testing**
 
 During testing I used 5 different browsers to ensure cross-compatibility. The browsers used were:
 
@@ -33,7 +33,7 @@ During testing I used 5 different browsers to ensure cross-compatibility. The br
 
 For all the browsers i used their own devtools to simulate a mobile screen and no issues were found.
 
-### **Bugs and Fixes:** <a name="bugs-and-fixes"></a>
+### **Bugs and Fixes:**
 
 1. **Intended Outcome** - For once the user clicks on either higher or lower, for the content on the right side to shift over to the left side, and also add a new content on the right side.
    - **_Issue Found:_**
@@ -61,23 +61,23 @@ For all the browsers i used their own devtools to simulate a mobile screen and n
    - **_Solution_**
    - I used a setTimeout function inside the iteration loops if statement, once the iteration finished i would display the indicators for 1 second using milliseconds intervals (1000) and then in the else statement of the iteration loops if statement i would set the indicators display to none, i would make this animation smooth by first setting a transition the indicators opacity in the CSS file so that it would smoothly display and then disappear.
 
-## **Post Development Testing** <a name="post-development-testing"></a>
+## **Post Development Testing**
 
-### **Validators** <a name="validators"></a>
+### **Validators**
 
-#### **HTML** <a name="html"></a> - [https://validator.w3.org/nu/#textarea)
+#### **HTML** - [https://validator.w3.org/nu/#textarea)
 
 Returned no errors when checking the HTML document, i got a few "info" warning because i used a self closing tag with a trailing slash. I am unable to remove then because my VSCode prettier extension puts then back when i do.
 
 ![HTML validator](assets/images/readme/show-down-html-validation.png)
 
-#### **CSS** <a name="css"></a> - [https://jigsaw.w3.org/css-validator/)
+#### **CSS** - [https://jigsaw.w3.org/css-validator/)
 
 Returned no errors from css file using direct and URL input.
 
 ![CSS validator](assets/images/readme/show-down-css-validation.png)
 
-#### **JavaScript** <a name="javascript"></a> - [https://jshint.com/)
+#### **JavaScript** - [https://jshint.com/)
 
 Since i have 2 JavaScript folders i pasted both of them into the JavaScript Validator, the reason for this was because the game only works if the files are combined, I managed to achieve this by adding both JavaScript files in script tags in my HTML file. If i only add 1 file into the JavaScript validator for example my script.js file, i get errors mentioning that i have 3 undefined variables; searchData, fansData and revenueCap. These variables are arrays in the data.js file that i am extracting as mentioned above by having them in the body of my HTML file. Other than this there is no errors returned.
 
@@ -92,22 +92,22 @@ The final metrics returned by JSHint are:
 
 ![JS validator](assets/images/readme/show-down-js-validation.png)
 
-### **Lighthouse Scores** <a name="lighthouse-scores"></a>
+### **Lighthouse Scores**
 
 Test conditions
 
 - I did all lighthouse tests in incognito mode to avoid interface from extensions.
 - I ran the tests for both mobile and desktop.
 
-#### **_Desktop Version:_** <a name="desktop-version"></a>
+#### **_Desktop Version:_**
 
 ![Desktop Lighthouse Score](assets/images/readme/show-down-lighthouse-desktop.png)
 
-#### **_Mobile Version:_** <a name="mobile-version"></a>
+#### **_Mobile Version:_**
 
 ![Mobile Lighthouse Score](assets/images/readme/show-down-lighthouse-mobile.png)
 
-### **Accessability** <a name="accessability"></a>
+### **Accessability**
 
 In addition to the lighthouse accessibility score, I also used [WAVE - Web accessibility evaluation tool](https://wave.webaim.org/extension/) to check my pages for accessibility, and i got no errors.
 

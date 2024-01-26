@@ -303,7 +303,7 @@ function overlayGreenRed(overlayType, addRemove) {
 }
 
 // Gets the data-type of higher and lower buttons and depending on which one the user clicked, it triggers the corresponding function
-let buttons = document.querySelectorAll(".btn");
+const buttons = document.querySelectorAll(".btn");
 buttons.forEach((button) => {
   button.addEventListener("click", function () {
     if (button.getAttribute("data-type") === "higher") {
