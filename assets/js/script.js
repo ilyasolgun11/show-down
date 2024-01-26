@@ -118,6 +118,7 @@ function modeContentSelector(criteria, has, type) {
  */
 function gameMainMenu() {
   mainMenu.style.display = "flex";
+  failedScreen.style.visibility = "hidden";
   randomMode.addEventListener("click", function () {
     modeContentSelector("average monthly searches", "has", searchData);
   });
@@ -331,16 +332,23 @@ function keyboardTrigger() {
         keyCoolDown = false;
       }, 1700);
 
-      if (e.key === "ArrowUp") {
-        triggerHigher();
-      } else if (e.key === "ArrowDown") {
-        triggerLower();
+      if (e.key.toLowerCase() === "p") {
+        startGame();
+        failedScreen.style.visibility = "hidden";
+        score = 0;
+        currentScore.textContent = score;
       }
-    }
-    if (mainMenu.style.display === "none") {
       if (e.key.toLowerCase() === "m") {
         gameMainMenu();
         setHighScore();
+      }
+
+      if (mainMenu.style.display !== "flex") {
+        if (e.key === "ArrowUp") {
+          triggerHigher();
+        } else if (e.key === "ArrowDown") {
+          triggerLower();
+        }
       }
     }
     if (mainMenu.style.display !== "none") {
@@ -357,13 +365,6 @@ function keyboardTrigger() {
           howToPlayContainer.style.display = "none";
           mainMenuOverlay.style.display = "none";
         });
-      }
-    }
-    if (failedScreen.style.visibility === "visible") {
-      if (e.key.toLowerCase() === "p") {
-        startGame();
-        failedScreen.style.visibility = "hidden";
-        score = 0;
       }
     }
   });
