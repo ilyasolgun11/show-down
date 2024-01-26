@@ -101,7 +101,8 @@ howToPlayBtn.addEventListener("click", function () {
 });
 
 /**
- * Sets the first and second half search criteria and sets the hasEarned element either "has" or "has made", purpose of this is to eliminate DRY code
+ * Sets the first and second half search criteria and sets the hasEarned element either
+ *  "has" or "has made", purpose of this is to eliminate DRY code
  */
 function modeContentSelector(criteria, has, type) {
   searchCriteria = criteria;
@@ -150,7 +151,8 @@ function setHighScore() {
   }
 }
 
-// When user clicks on logo while in-game, it takes them to the game menu screen and sets the score to 0, also sets a new high score
+// When user clicks on logo while in-game, it takes them to the
+// game menu screen and sets the score to 0, also sets a new high score
 gameLogoSection.addEventListener("click", function () {
   gameMainMenu();
   setHighScore();
@@ -261,7 +263,8 @@ function startGame() {
 }
 
 /**
- * Based on passed parameters, either show or hide buttons and edit the padding, margin and font size
+ * Based on passed parameters, either show or hide buttons
+ * and edit the padding, margin and font size
  */
 function showHideButtons(type, spaceControl, font) {
   if (type === "show") {
@@ -280,7 +283,8 @@ function showHideButtons(type, spaceControl, font) {
 }
 
 /**
- * Bases on passed parameters change the visibility and font size of the secondHalfTitleVolume
+ * Bases on passed parameters change the visibility and
+ * font size of the secondHalfTitleVolume
  */
 function visibilitySecondSearchVolume(visible, font) {
   secondHalfTitleVolume.style.visibility = visible;
@@ -302,7 +306,8 @@ function overlayGreenRed(overlayType, addRemove) {
   }
 }
 
-// Gets the data-type of higher and lower buttons and depending on which one the user clicked, it triggers the corresponding function
+// Gets the data-type of higher and lower buttons and depending on which one
+// the user clicked, it triggers the corresponding function
 const buttons = document.querySelectorAll(".btn");
 buttons.forEach((button) => {
   button.addEventListener("click", function () {
