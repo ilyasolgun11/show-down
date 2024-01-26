@@ -131,6 +131,7 @@ The main menu contains the following:
 
 - The logo shows the name of the game
 - The logo does not contain an anchor tag as there are many other ways the user can navigate back to the menu and it is a single page of HTML.
+- The logo changes color with an animation of red white and green every few second.
 
 ![Game logo](assets/images/readme/show-down-main-menu-text-logo.png)
 
@@ -169,6 +170,7 @@ The main menu contains the following:
 
 - The logo shows the name of the game
 - The logo for the game screens purpose is also to be a navigation back to the main menu, the user can do this by either clicking on it or hitting the "m" key on their keyboard.
+- The logo changes color with an animation of red white and green every few second.
 
 ![Game logo](assets/images/readme/show-down-game-screen-text-logo.png)
 
@@ -198,6 +200,7 @@ The fail screen contains the following:
 
 - The logo shows the name of the game.
 - The logo for the fail screen does not have an event listener or an anchor tag as there is a main menu button and the user could also just tap the "m" key to navigate back.
+- The logo changes color with an animation of red white and green every few second.
 
 ![Fail screen logo](assets/images/readme/show-down-main-menu-text-logo.png)
 
