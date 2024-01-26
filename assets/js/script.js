@@ -375,7 +375,7 @@ function triggerHigher() {
     // Add interval animation so that it counts up
     const interval = setInterval(() => {
       if (guess > secondHalfTitleVolumeValue - 1) {
-        // Set time between the correctAnswerBox is showing and disappearing
+        // Set time between the correctAnswerBox showing and disappearing
         // When it disappears trigger the guessed correct function
         setTimeout(() => {
           guessedCorrect();
