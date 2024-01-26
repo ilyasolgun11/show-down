@@ -73,7 +73,7 @@ Returned no errors when checking the HTML document, i got a few "info" warning b
 
 #### **CSS** - [https://jigsaw.w3.org/css-validator/)
 
-Returned no errors from css file using direct and URL input.
+Returned no errors from css file using direct and URL input. However there are a few warnings telling me that using background-clip to text method has been deprecated, But when i checked all browsers to see cross-compatibility of my game i noticed no issues with the background color being clipped to the header.
 
 ![CSS validator](assets/images/readme/show-down-css-validation.png)
 
