@@ -714,7 +714,7 @@ const fansData = [
   {
     title: "PSG",
     titleVolume: 91000000,
-    image: "assets/images/fansmode/psg.webp",
+    image: "assets/images/fansmode/psg-team.webp",
     imageOwnerName: "Département des Yvelines",
     imageOwnerUrl: "https://www.flickr.com/photos/yvelines/51306123628",
   },
